@@ -357,7 +357,7 @@ background-color: rgba(255, 255, 255, 0.75)!important;
 }
 
 .service-icon img {
-	max-width: 50px;
+	width: 50px;
 	height: auto;
 }
 
@@ -372,7 +372,8 @@ background-color: rgba(255, 255, 255, 0.75)!important;
 
 .warranty-badge {
 	position: absolute;
-	max-width: 250px;
+	width: 250px;
+	height: auto;
 	left: 50%;
 	margin-left: -125px;
 	top: 50%;
@@ -405,4 +406,17 @@ background-color: rgba(255, 255, 255, 0.75)!important;
 	padding: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+/* ---------------------------------
+----------IE SPECIFIC CSS-----------
+-----------------------------------*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.approved-centres .title-container {
+		padding-bottom: 50px;
+	}
+	.services-section {
+		padding-bottom: 100px;
+	}
 }
