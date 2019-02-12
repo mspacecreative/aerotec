@@ -1,0 +1,408 @@
+/*
+ Theme Name:   Aerotec Engines Ltd.
+ Theme URI:    http://aerotecengines.ca
+ Description:  Aerotec Engines custom theme
+ Author:       Matt
+ Author URI:   http://mspacecreative.com
+ Template:     Divi
+ Version:      1.0
+*/
+
+.home #main-content .container {
+	max-width: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+.hero-slider .inner-content {
+	max-width: 1080px;
+	margin: auto;
+	width: 100%;
+	padding: 0 5%;
+	text-align: center;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+}
+
+#page-container {
+	padding-top: 0!important;
+}
+
+.hero-slider {
+	position: relative;
+	max-height: 950px;
+}
+
+.hero-slider .slick-slide {
+	display: table;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-slider div {
+	height: 100%!important;
+}
+
+.hero-slider .slick-slide {
+	background-size: cover;
+}
+
+.hero-slider div.slider-header-underlay {
+	background-image: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,.5));
+	background-color: transparent;
+	border-bottom: none;
+	box-shadow: none;
+	position: absolute;
+	width: 100%;
+	height: 400px!important;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.hero-slider h1 {
+	font-size: 50px;
+	text-transform: uppercase;
+	font-family: Proxima Nova, sans-serif;
+	line-height: 1.25em;
+}
+
+#et-top-navigation a {
+	color: #fff;
+}
+
+.hero-slider .slick-active .slider-header-underlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+#main-header {
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	position: absolute;
+}
+
+.hero-slider .inner-content h1 {
+	color: #fff;
+	padding: 0;
+}
+
+.hero-slider.slick-dotted.slick-slider {
+	margin: 0;
+}
+
+.hero-slider .slick-next, .hero-slider .slick-prev {
+	z-index: 10;
+	width: auto;
+	height: auto;
+}
+
+.hero-slider .slick-next:before, .hero-slider .slick-prev:before {
+	content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='39px' height='85px' fill='white'><path fill='white' d='M2.001,84.967c-0.476,0-0.952-0.168-1.333-0.512C-0.15,83.72-0.217,82.459,0.52,81.64l33.121-36.804  L0.444,3.237c-0.688-0.86-0.546-2.114,0.314-2.801C1.62-0.252,2.874-0.11,3.56,0.75l35.307,44.241L3.484,84.308  C3.09,84.745,2.547,84.967,2.001,84.967z' /></svg>");
+	height: 85px;
+	width: 39px;
+	display: block;
+}
+
+.hero-slider .slick-prev:before {
+	transform: rotate(180deg);
+}
+
+.hero-slider .slick-next {
+	right: 50px;
+}
+
+.hero-slider .slick-prev {
+	left: 50px;
+}
+
+.entry-content {
+	position: relative;
+}
+
+/*------------------------------
+----------CONTACT BAR-----------
+-------------------------------*/
+
+.outer-container {
+	position: absolute;
+	border: 2px solid #AE7331;
+	bottom: -65px;
+	right: 10%;
+	z-index: 10;
+}
+
+.contact-bar {
+	padding: 25px;
+	background: #AE7331;
+	width: 300px;
+	text-align: center;
+	margin: 10px;
+}
+
+.contact-bar ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.contact-bar li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+.contact-bar li .fa {
+	color: #fff;
+	font-size: 30px;
+}
+
+.phone-number {
+	margin: 15px 0;
+}
+
+.info_content {
+	padding: 15px;
+}
+
+.info_content a {
+	display: inline-block;
+	margin: 15px 0 0;
+	background: #233d98;
+	color: #fff;
+	padding: 10px 15px;
+}
+
+#phoneNumber {
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+
+.gm-style-pbc {
+background-color: rgba(255, 255, 255, 0.75)!important;
+}
+
+.gm-ui-hover-effect, .gm-ui-hover-effect img {
+	width: 40px!important;
+	height: 40px!important;
+}
+
+.gm-ui-hover-effect img {
+	padding: 5px!important;
+	margin: 0!important;
+}
+
+.gm-style-pbt {
+	color: #000!important;
+}
+
+.cta-buttons li {
+	display: block;
+	border: 2px solid #fff;
+	padding: 0;
+}
+
+.cta-buttons li:first-of-type {
+	margin-bottom: 15px;
+}
+
+.cta-buttons li a {
+	display: block;
+	padding: 15px 25px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.light, .light h3, .light h2, .light h1, h1.light {
+	color: #fff;
+}
+
+.section-title-container {
+	padding: 25px 0;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.landing-area {
+	position: relative;
+}
+
+.home #left-area {
+	padding-bottom: 0;
+}
+
+.approved-centres {
+	height: 800px;
+}
+
+.approved-centres .title-container {
+	position: absolute;
+	padding: 25px 0 100px;
+	background-image: linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.95)30%);
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.approved-centres iframe {
+	display: block;
+}
+
+.home #left-area ul {
+	padding: 0;
+}
+
+.section-title {
+	padding: 0 25px;
+	border-right: 2px solid #AE7331;
+	border-left: 2px solid #AE7331;
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.section-title:before, .section-title:after {
+	height: 2px;
+	background: #AE7331;
+	width: 1000px;
+	content: '';
+	position: absolute;
+	top: 15px;
+}
+
+.section-title:before {
+	right: 100%;
+}
+
+.section-title:after {
+	left: 100%;
+}
+
+#main-header.et-fixed-header {
+	background: #233d98;
+}
+
+#main-header.et-fixed-header img {
+	padding: 10px;
+}
+
+/*------------------------------
+------------SERVICES------------
+-------------------------------*/
+
+.services-section {
+	position: relative;
+	padding: 100px 0 150px 0;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+	z-index: 2;
+}
+
+.services-section:before {
+	position: absolute;
+	content: '';
+	background: #3b4b82;
+	opacity: .85;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.inner {
+	width: 90%;
+	margin: auto;
+	max-width: 1080px;
+	position: relative;
+}
+
+.service {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	display: flex;
+}
+
+.service:last-of-type {
+	margin-right: 0;
+}
+
+.services-section ul.inline {
+	margin: 25px 0 0;
+	text-align: center;
+}
+
+.services-section ul.inline li {
+	display: inline-block;
+	margin: 10px;
+}
+
+.services-section ul.inline li a {
+	display: block;
+	padding: 15px 25px;
+}
+
+.service-icon {
+	margin: 0 15px 0 0;
+}
+
+.service-icon img {
+	max-width: 50px;
+	height: auto;
+}
+
+/*------------------------------
+--------WARRANTY SECTION--------
+-------------------------------*/
+
+.warranty-section {
+	position: relative;
+	overflow: hidden;
+}
+
+.warranty-badge {
+	position: absolute;
+	max-width: 250px;
+	left: 50%;
+	margin-left: -125px;
+	top: 50%;
+	margin-top: -125px;
+}
+
+.warranty-blurb-container {
+	padding-left: 25px;
+	border-left: 2px solid #AE7331;
+	position: relative;
+}
+
+.warranty-blurb-container:before {
+	height: 2px;
+	background: #AE7331;
+	width: 1000px;
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 100%;
+}
+
+.one-half {
+	float: left;
+	width: 50%;
+	padding: 10% 15% 10% 10%;
+}
+
+.one-half.bg-img {
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
