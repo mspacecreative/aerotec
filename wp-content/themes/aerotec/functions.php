@@ -49,8 +49,12 @@ function my_theme_enqueue_styles() {
 	wp_register_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
 	wp_enqueue_script('scripts');
 	
-	wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto', array(), '1.0', 'all');
-	wp_enqueue_style('google-fonts');
+	/*wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto', array(), '1.0', 'all');
+	wp_enqueue_style('google-fonts');*/
+	
+	wp_register_style('typekit', 'https://use.typekit.net/gfo2vxu.css', array(), '1.0', 'all');
+	wp_enqueue_style('typekit');
+	
 	
 	wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), null, true);
 	wp_enqueue_script('fontawesome');
@@ -118,6 +122,13 @@ function serviceCentresMap() {
 function sponsorLogos() {
 	ob_start();
 		get_template_part('includes/sponsor-logos-home');
+	return ob_get_clean();
+}
+
+// TESTIMONIALS ON HOME PAGE
+function testimonialsHome() {
+	ob_start();
+		get_template_part('templates/carousel/testimonials-loop');
 	return ob_get_clean();
 }
 
@@ -255,6 +266,26 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'home page', 'content' ),
 		));
+		
+		acf_register_block(array(
+			'name'				=> 'testimonial',
+			'title'				=> __('Testimonial Block'),
+			'description'		=> __('Add and edit customer testimonials'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'home page', 'content' ),
+		));
+		
+		acf_register_block(array(
+			'name'				=> 'affiliations',
+			'title'				=> __('Affiliations Block'),
+			'description'		=> __('Add affiliation logos and links'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'home page', 'content' ),
+		));
 	}
 }
 
@@ -264,8 +295,8 @@ function my_acf_block_render_callback( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	
 	// include a template part from within the "template-parts/block" folder
-	if( file_exists( get_theme_file_path("/templates/content-{$slug}.php") ) ) {
-		include( get_theme_file_path("/templates/content-{$slug}.php") );
+	if( file_exists( get_theme_file_path("/templates/blocks/content-{$slug}.php") ) ) {
+		include( get_theme_file_path("/templates/blocks/content-{$slug}.php") );
 	}
 }
 
@@ -286,6 +317,7 @@ add_shortcode( 'mailchimp_form', 'mailChimpForm' );
 add_shortcode( 'sponsor_logos_footer', 'sponsorLogosFooter' );
 add_shortcode( 'hero_slider', 'heroSlider' );
 add_shortcode( 'service_centres_map', 'serviceCentresMap' );
+add_shortcode( 'testimonials_carousel', 'testimonialsHome' );
 
 // CUSTOM THUMBNAIL IN BACKEND
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );

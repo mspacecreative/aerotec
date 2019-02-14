@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Complex Marker Icons</title>
+    <title>Aerotec Engines – Approved Service Centres</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -248,6 +248,7 @@
                         infoWindow.setContent(infoWindowContent[i][0]);
                         infoWindow.open(map, marker);
 						map.setCenter(marker.getPosition());
+						map.panBy(0,-100);
                     }
                 })(marker, i));
         
