@@ -213,10 +213,10 @@
             var markers = [
                 ['Alpha One Flight School', 41.9114243, -70.7329279, 1],
                 ['Border City Aviation', 53.3126503, -110.0768333, 2],
-                ['Canadian Aviation Maintenance', 45.3349636, -75.6896825, 3]
+                ['Canadian Aviation Maintenance', 45.3349636, -75.6896825, 3],
 				['Kings Aero Tech', 45.1442102, -64.4252045, 4],
 				['Hampton Airfield', 42.9612064, -70.8339491, 5],
-				['Maine Instrument Flight', 44.3180341, -69.7949923, 6]
+				['Maine Instrument Flight', 44.3180341, -69.7949923, 6],
 				['Northwind Aviation', 42.7322938, -81.0053827, 7],
 				['Rockcliffe Flying Club', 45.4621376, -75.6479172, 8],
 				['Vermont Flight Academy', 44.4628445, -73.1455876, 9]
