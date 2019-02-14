@@ -211,22 +211,22 @@
                 
             // Multiple markers location, latitude, and longitude
             var markers = [
-                ['Nova Scotia', 43.6386507, -65.7209915, 3],
-                ['New Brunswick', 46.1804165, -68.5934095, 2],
-                ['PEI', 46.6644233, -64.2350265, 1]
+                ['Alpha One Flight School', 41.9114243, -70.7329279, 1],
+                ['Border City Aviation', 53.3126503, -110.0768333, 2],
+                ['Canadian Aviation Maintenance', 45.3349636, -75.6896825, 3]
             ];
                                 
             // Info window content
             var infoWindowContent = [
                 ['<div class="info_content">' +
-                '<h3>Lorem ipsum dolor sit amet</h3>' +
-                '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nunc quis dui posuere feugiat imperdiet eu felis. Ut sollicitudin libero eget rutrum hendrerit.</p>' + '<a href="#">LEARN MORE</a>' + '</div>'],
+                '<h3>Alpha One Flight School</h3>' +
+                '<p>246 South Meadow Rd, Plymouth, MA 02360, USA</p>' + '<a href="http://alpha-1.com">LEARN MORE</a>' + '</div>'],
                 ['<div class="info_content">' +
-                '<h3>Lorem ipsum dolor sit amet</h3>' +
-                '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nunc quis dui posuere feugiat imperdiet eu felis. Ut sollicitudin libero eget rutrum hendrerit.</p>' + '<a href="#">LEARN MORE</a>' + '</div>'],
+                '<h3>Border City Aviation</h3>' +
+                '<p>7054-83rd Avenue, Lloydminster, AB T9V 3B3, Canada</p>' + '<a href="https://bordercityaviation.com" target="_blank">LEARN MORE</a>' + '</div>'],
                 ['<div class="info_content">' +
-                '<h3>Lorem ipsum dolor sit amet</h3>' +
-                '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nunc quis dui posuere feugiat imperdiet eu felis. Ut sollicitudin libero eget rutrum hendrerit.</p>' + '<a href="#">LEARN MORE</a>' + '</div>']
+                '<h3>Canadian Aviation Maintenance</h3>' +
+                '<p>20 Lindbergh Private, Ottawa, ON K1V 1H7</p>' + '</div>']
             ];
                 
             // Add multiple markers to map
