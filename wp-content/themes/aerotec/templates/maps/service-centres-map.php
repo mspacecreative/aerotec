@@ -214,19 +214,43 @@
                 ['Alpha One Flight School', 41.9114243, -70.7329279, 1],
                 ['Border City Aviation', 53.3126503, -110.0768333, 2],
                 ['Canadian Aviation Maintenance', 45.3349636, -75.6896825, 3]
+				['Kings Aero Tech', 45.1442102, -64.4252045, 4],
+				['Hampton Airfield', 53.3126503, -110.0768333, 5],
+				['Maine Instrument Flight', 45.3349636, -75.6896825, 6]
+				['Northwind Aviation', 45.1442102, -64.4252045, 7],
+				['Rockcliffe Flying Club', 53.3126503, -110.0768333, 8],
+				['Vermont Flight Academy', 45.3349636, -75.6896825, 9]
             ];
                                 
             // Info window content
             var infoWindowContent = [
                 ['<div class="info_content">' +
                 '<h3>Alpha One Flight School</h3>' +
-                '<p>246 South Meadow Rd, Plymouth, MA 02360, USA</p>' + '<a href="http://alpha-1.com">LEARN MORE</a>' + '</div>'],
+                '<p>246 South Meadow Rd, Plymouth, MA 02360, USA</p>' + '<a href="http://alpha-1.com">VISIT WEBSITE</a>' + '<a href="tel:+1508-747-1494">CALL</a>' + '</div>'],
                 ['<div class="info_content">' +
                 '<h3>Border City Aviation</h3>' +
-                '<p>7054-83rd Avenue, Lloydminster, AB T9V 3B3, Canada</p>' + '<a href="https://bordercityaviation.com" target="_blank">LEARN MORE</a>' + '</div>'],
+                '<p>7054-83rd Avenue, Lloydminster, AB T9V 3B3, Canada</p>' + '<a href="https://bordercityaviation.com" target="_blank">VISIT WEBSITE</a>' + '<a href="tel:+1780-875-5834">CALL</a>' + '</div>'],
                 ['<div class="info_content">' +
                 '<h3>Canadian Aviation Maintenance</h3>' +
-                '<p>20 Lindbergh Private, Ottawa, ON K1V 1H7</p>' + '</div>']
+                '<p>20 Lindbergh Private, Ottawa, ON K1V 1H7</p>' + '<a href="tel:+1613-799-2568">CALL</a>' + '</div>']
+				['<div class="info_content">' +
+				'<h3>Kings Aero Tech</h3>' +
+				'<p>1670 Saxon Street,Hillaton,Nova Scotia, B0P 1T0, Canada</p>' + '<a href="https://kingsaero.com/kings-aerodrome/">VISIT WEBSITE</a>' + '<a href="tel:+1902-670-2118">CALL</a>' + '</div>'],
+				['<div class="info_content">' +
+				'<h3>Hampton Airfield</h3>' +
+				'<p>9A Lafayette Rd, North Hampton, NH 03862, USA</p>' + '<a href="http://hamptonairfield.com/" target="_blank">VISIT WEBSITE</a>' + '<a href="tel:+1603-964-6749">CALL</a>' + '</div>'],
+				['<div class="info_content">' +
+				'<h3>Maine Instrument Flight</h3>' +
+				'<p>215 Winthrop St, Augusta, ME 04330, USA</p>' + '<a href="https://www.maineinstrumentflight.com/" target="_blank">VISIT WEBSITE</a>' + '<a href="tel:+1207-622-1211">CALL</a>' + '</div>']
+				['<div class="info_content">' +
+				'<h3>Northwind Aviation</h3>' +
+				'<p>48726 John Wise Line, Aylmer, Ontario  N5H 2R4, Canada</p>' + '<a href="https://www.northwindaviation.ca/">VISIT WEBSITE</a>' + '<a href="tel:+1519-765-2209">CALL</a>' + '</div>'],
+				['<div class="info_content">' +
+				'<h3>Rockcliffe Flying Club</h3>' +
+				'<p>1495 Sir George-Étienne Cartier Pkwy, Ottawa, ON K1K 4Y5, Canada</p>' + '<a href="http://www.rfc.ca/en/home/" target="_blank">VISIT WEBSITE</a>' + '<a href="tel:+1613-746-4425">CALL</a>' + '</div>'],
+				['<div class="info_content">' +
+				'<h3>Vermont Flight Academy</h3>' +
+				'<p>355 Valley Rd, South Burlington, VT 05403, USA</p>' + '<a href="https://flyvfa.org/" target="_blank">VISIT WEBSITE</a>' + '<a href="tel:+1802-863-5988">CALL</a>' + '</div>']
             ];
                 
             // Add multiple markers to map
