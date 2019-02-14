@@ -258,7 +258,7 @@
         
             // Set zoom level
             var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-                this.setZoom(7);
+                this.setZoom(4);
                 google.maps.event.removeListener(boundsListener);
             });
             
