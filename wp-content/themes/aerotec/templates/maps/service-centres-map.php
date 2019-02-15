@@ -27,6 +27,7 @@
             var bounds = new google.maps.LatLngBounds();
             var mapOptions = {
                 mapTypeId: 'roadmap',
+				disableDefaultUI: true,
 				styles: [
 				    {
 				        "featureType": "water",
