@@ -490,6 +490,14 @@ h1,h2,h3,h4,h5,p {
 	.services-section {
 		padding-bottom: 80px;
 	}
+	.slick-next:before, .slick-prev:before {
+		content: '';
+		background-image: url(img/slider/next.png);
+		height: 85px;
+		width: 39px;
+		display: block;
+		background-repeat: no-repeat;
+	}
 }
 
 /* ---------------------------------
