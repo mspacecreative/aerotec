@@ -1,14 +1,15 @@
-<?php if( have_rows('service_blocks') ): ?>
 <div class="services-section clearfix" style="background: url(<?php the_field('section_bg_img'); ?>);">
 	
 	<div class="section-title-container">
 		<h1 class="section-title light"><?php the_field('section_title'); ?></h1>
-	</div>
+	</div><!-- / section-title-container -->
 	
 	<div class="inner">
 		
 		<div class="service-block-container clearfix light">
-			<?php while ( have_rows('service_blocks') ) : the_row(); ?>
+			
+			<?php if( have_rows('service_blocks') ):
+			while ( have_rows('service_blocks') ) : the_row(); ?>
 			
 			<div class="service">
 				
@@ -20,35 +21,40 @@
 						echo wp_get_attachment_image( $image, $size );
 					}
 					?>
-				</div>
+				</div><!-- / service-icon -->
 				
 				<?php if ( get_sub_field('service_blurb') ): ?>
 				<div class="service-blurb">
 					<?php the_sub_field('service_blurb'); ?>
-				</div>
+				</div><!-- / service-blurb -->
 				<?php endif; ?>
 				
-			</div>
-			
+			</div><!-- / service -->
 			<?php endwhile;
 			
 			else :
 			
 			endif; ?>
-		</div>
+			
+		</div><!-- / service-block-container -->
 		
-		<?php if( have_rows('service_buttons') ): ?>
+		<div class="buttons-container">
+			
+			<?php if( have_rows('service_buttons') ): ?>
+			
+			<ul class="cta-buttons inline">
+				<?php while ( have_rows('service_buttons') ) : the_row(); ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endwhile;
+				else : ?>
+			</ul>
 		
-		<ul class="cta-buttons inline">
-			<?php while ( have_rows('service_buttons') ) : the_row(); ?>
-			<li>
-				<a href="<?php the_sub_field('button_link'); ?>"><?php the_sub_field('button_label'); ?></a>
-			</li>
-			<?php endwhile;
-			else : ?>
-		</ul>
+			<?php endif; ?>
 		
-	</div>
+		</div><!-- / buttons-container -->
+		
+	</div><!-- / inner -->
 	
-</div>
-<?php endif; ?>
+</div><!-- / services-section -->

@@ -1,6 +1,4 @@
-<?php 
-if( have_rows('image_slider') ): ?>
-
+<div class="landing-area">
 	<div class="outer-container">
 		<div class="contact-bar">
 			<ul>
@@ -31,33 +29,32 @@ if( have_rows('image_slider') ): ?>
 			</ul>
 		</div>
 	</div>
-
 	<div class="hero-slider">
-	
-	<?php while ( have_rows('image_slider') ) : the_row(); 
-	
-		if ( get_sub_field('slide_background_image') ): ?>
-			
-	    <div style="background: url(<?php the_sub_field('slide_background_image'); ?>);">
-			<div class="slider-header-underlay"></div>
-			<div class="inner-content">
-					
-				<?php if ( get_sub_field('slide_content') ): ?>
-					
-				<h1><?php the_sub_field('slide_content'); ?></h1>
-					
-				<?php endif; ?>
-					
+		<?php if( have_rows('image_slider') ):
+		while ( have_rows('image_slider') ) : the_row(); 
+		
+			if ( get_sub_field('slide_background_image') ): ?>
+				
+		    <div style="background-image: url(<?php the_sub_field('slide_background_image'); ?>);">
+				<div class="slider-header-underlay"></div>
+				<div class="inner-content">
+						
+					<?php if ( get_sub_field('slide_content') ): ?>
+						
+					<h1><?php the_sub_field('slide_content'); ?></h1>
+						
+					<?php endif; ?>
+						
+				</div><!-- / inner-content -->
 			</div>
-		</div>
+				
+			<?php endif;
 			
-		<?php endif;
+		endwhile;
+			
+		else :
 		
-		endwhile; ?>
-		
-	</div>
-	
-	<?php else :
-	
-endif;
-?>
+		endif; ?>
+			
+	</div><!-- / hero-slider -->
+</div>
