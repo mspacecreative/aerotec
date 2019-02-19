@@ -238,6 +238,7 @@
 					<span class="logo_helper"></span>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/ae-logo.svg" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/ae-logo-blue.svg" class="alt-logo" />
 					</a>
 				</div>
 			<?php

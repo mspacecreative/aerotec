@@ -289,6 +289,28 @@ function my_acf_init() {
 			'keywords'			=> array( 'google map', 'service centres' ),
 		));
 		
+		// register 50/50 Text & Image block
+		acf_register_block(array(
+			'name'				=> 'text-image',
+			'title'				=> __('50/50 Text & Image'),
+			'description'		=> __('WYSIWYG editor and static image'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'text editor', 'static image' ),
+		));
+		
+		// register Photo Gallery
+		acf_register_block(array(
+			'name'				=> 'photo-gallery',
+			'title'				=> __('Photo Gallery'),
+			'description'		=> __('Touch enabled photo gallery'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'slider', 'photo gallery' ),
+		));
+		
 		// register hero slider block
 		acf_register_block(array(
 			'name'				=> 'heroslider',
