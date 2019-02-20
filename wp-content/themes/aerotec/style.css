@@ -652,11 +652,6 @@ h1,h2,h3,h4,h5,p {
 	margin-top: -75px;
 }
 
-/*.testimonials-container .inner {
-	max-width: 500px;
-	margin: auto;
-}*/
-
 .testimonials-slider {
 	padding: 50px 15% 40px;
 	text-align: center;
@@ -756,7 +751,7 @@ h1,h2,h3,h4,h5,p {
 	padding-right: 42px;
 }
 
-.one_half img {
+.one_half_col img {
 	width: 100%;
 }
 
@@ -767,12 +762,12 @@ h1,h2,h3,h4,h5,p {
 	.et_pb_gutters3 .footer-widget {
 		margin-right: 12.5%;
 	}
-	.one_half {
+	.one_half_col {
 		float: left;
-		width: 49%;
-		margin-right: 2%;
+		width: 48%;
+		margin-right: 4%;
 	}
-	.one_half:last-child {
+	.one_half_col:last-child {
 		margin-right: 0;
 	}
 }

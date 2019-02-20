@@ -178,6 +178,12 @@ function contentSlider() {
 		get_template_part('templates/blocks/content-slider');
 }
 
+// HOME PAGE SLIDER
+function serviceBuckets() {
+	ob_start();
+		get_template_part('templates/blocks/content-services-home');
+}
+
 function my_mce_before_init_insert_formats( $init_array ) {
  
     $style_formats = array(  
@@ -241,6 +247,17 @@ function my_acf_init() {
 			'keywords'			=> array( 'services', 'offerings' ),
 		));
 		
+		// register services section block
+		acf_register_block(array(
+			'name'				=> 'services-home',
+			'title'				=> __('Services Home Block'),
+			'description'		=> __('List of services'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'services', 'offerings' ),
+		));
+		
 		// register approved service centres map block
 		acf_register_block(array(
 			'name'				=> 'services-map',
@@ -263,7 +280,7 @@ function my_acf_init() {
 			'keywords'			=> array( 'text editor', 'static image' ),
 		));
 		
-		// register Photo Gallery
+		/// register Photo Gallery
 		acf_register_block(array(
 			'name'				=> 'photo-gallery',
 			'title'				=> __('Photo Gallery'),
@@ -318,17 +335,6 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'home page', 'content' ),
 		));
-		
-		// Photo Slider Block
-		acf_register_block(array(
-			'name'				=> 'slider',
-			'title'				=> __('Photo Gallery'),
-			'description'		=> __('Responsive photo gallery'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
-			'keywords'			=> array( 'home page', 'content' ),
-		));
 	}
 }
 
@@ -343,12 +349,17 @@ function my_acf_block_render_callback( $block ) {
 	}
 }
 
+function add_excerpts_to_cpt() {
+    add_post_type_support( 'services', 'excerpt' );
+}
+
 // ACTIONS, OPTIONS AND FILTERS
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 add_action('init', 'footer_scripts');
 add_option( 'my_default_pic', get_stylesheet_directory_uri() . '/img/wood-frame-bg.jpg', '', 'yes' );
 add_action( 'widgets_init', 'posts_sidebar' );
 add_action( 'widgets_init', 'remove_FooterArea6', 11 );
+add_action( 'init', 'add_excerpts_to_cpt' );
 
 // SHORTCODES
 add_shortcode( 'artists_list', 'artistsLoop' );
@@ -362,6 +373,7 @@ add_shortcode( 'hero_slider', 'heroSlider' );
 add_shortcode( 'service_centres_map', 'serviceCentresMap' );
 add_shortcode( 'testimonials_carousel', 'testimonialsHome' );
 add_shortcode( 'content_slider', 'contentSlider' );
+add_shortcode( 'service_buckets', 'serviceBuckets' );
 
 // CUSTOM THUMBNAIL IN BACKEND
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );

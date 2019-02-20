@@ -52,33 +52,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 															<h1 class="entry-title"><?php the_title(); ?></h1>
 								
 														<?php
-															if ( ! post_password_required() ) :
-								
-																$thumb = '';
-								
-																$width = (int) apply_filters( 'et_pb_index_blog_image_width', 1080 );
-								
-																$height = (int) apply_filters( 'et_pb_index_blog_image_height', 675 );
-																$classtext = 'et_featured_image';
-																$titletext = get_the_title();
-																$thumbnail = get_thumbnail( $width, $height, $classtext, $titletext, $titletext, false, 'Blogimage' );
-																$thumb = $thumbnail["thumb"];
-								
-																$post_format = et_pb_post_format();
-								
-																if ( 'video' === $post_format && false !== ( $first_video = et_get_first_video() ) ) {
-																	printf(
-																		'<div class="et_main_video_container">
-																			%1$s
-																		</div>',
-																		et_core_esc_previously( $first_video )
-																	);
-																} else if ( ! in_array( $post_format, array( 'gallery', 'link', 'quote' ) ) && 'on' === et_get_option( 'divi_thumbnails', 'on' ) && '' !== $thumb ) {
-																	print_thumbnail( $thumb, $thumbnail["use_timthumb"], $titletext, $width, $height );
-																} else if ( 'gallery' === $post_format ) {
-																	et_pb_gallery_images();
-																}
-															?>
+															if ( ! post_password_required() ) : ?>
 								
 															<?php
 																$text_color_class = et_divi_get_post_text_color();
