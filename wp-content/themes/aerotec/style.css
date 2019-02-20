@@ -239,6 +239,57 @@ h1,h2,h3,h4,h5,p {
 	padding-bottom: 0;
 }
 
+.pgwSlider a {
+	height: 100%;
+	width: 100%;
+}
+
+.ps-current img {
+	opacity: 0;
+}
+
+.pgwSlider>.ps-list>li span, .pgwSlider .ps-caption {
+	display: none!important;
+}
+
+.pgwSlider .ps-current ul, .pgwSlider .ps-current li {
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.pgwSlider .ps-current {
+	width: 84.25%;
+}
+
+.pgwSlider ul {
+	width: 15%;
+}
+
+.pgwSlider .ps-current img {
+	margin-top: 0!important;
+}
+
+/*.pgwSlider .ps-current ul {
+	height: 100%;
+}
+
+.pgwSlider.narrow .ps-current img, .pgwSlider.wide .ps-current img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 105%;
+	height: 105%;
+	max-width: none;
+	max-height: none;
+}
+
+.ps-current li {
+	position: relative;
+	height: 100%;
+}
+
 /*------------------------------
 ----------CONTACT BAR-----------
 -------------------------------*/

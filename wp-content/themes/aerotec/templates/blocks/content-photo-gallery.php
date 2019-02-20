@@ -1,15 +1,15 @@
 <div class="section_container gallery-block">
-	<div class="row_container">
-		<div class="photo-gallery">
+	<div class="row_container clearfix">
+		<ul class="pgwSlider">
 			<?php 
 			$images = get_field('photo_gallery');
 			$size = 'full';
 						
 			if( $images ):
 			foreach( $images as $image ): ?>
-			<div>
+			<li>
 				<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-			</div> 
+			</li> 
 			<?php endforeach;
 			endif; ?>
 		</div>

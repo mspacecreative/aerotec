@@ -40,6 +40,12 @@ function my_theme_enqueue_styles() {
 	wp_enqueue_style( 'slick-style', get_stylesheet_directory_uri() . '/css/slick.css', array(), null );
 	wp_enqueue_style('slick-style');
 	
+	wp_enqueue_style( 'pgw-style', get_stylesheet_directory_uri() . '/css/pgwslider.min.css', array(), null );
+	wp_enqueue_style('pgw-style');
+	
+	wp_enqueue_script( 'pgw-script', get_stylesheet_directory_uri() . '/js/pgwslider.min.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script('pgw-script');
+	
 	wp_enqueue_style( 'slick-theme', get_stylesheet_directory_uri() . '/css/slick-theme.css', array(), null );
 	wp_enqueue_style('slick-theme');
 	
@@ -166,6 +172,12 @@ function heroSlider() {
 	return ob_get_clean();
 }
 
+// HOME PAGE SLIDER
+function contentSlider() {
+	ob_start();
+		get_template_part('templates/blocks/content-slider');
+}
+
 function my_mce_before_init_insert_formats( $init_array ) {
  
     $style_formats = array(  
@@ -195,55 +207,6 @@ function my_acf_init() {
 	
 	// check function exists
 	if( function_exists('acf_register_block') ) {
-		
-		/*// register hero slider block
-		acf_register_block(array(
-			'name'				=> 'heroslider',
-			'title'				=> __('Hero Slider'),
-			'description'		=> __('Home page carousel'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'formatting',
-			'icon'				=> '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="792px" height="612px" viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
-			<path d="M625.5,497.25v19.125c0,31.688-25.688,57.375-57.375,57.375h-459c-31.688,0-57.375-25.688-57.375-57.375v-306  c0-31.688,25.688-57.375,57.375-57.375h19.125v57.375h-11.953c-3.961,0-7.172,3.211-7.172,7.172v291.656  c0,3.961,3.211,7.172,7.172,7.172h444.656c3.961,0,7.172-3.211,7.172-7.172V497.25H625.5z M675.703,95.625H231.047  c-3.961,0-7.172,3.211-7.172,7.172v291.656c0,3.961,3.211,7.172,7.172,7.172h444.656c3.961,0,7.172-3.211,7.172-7.172V102.797  C682.875,98.836,679.664,95.625,675.703,95.625z M682.875,38.25c31.688,0,57.375,25.688,57.375,57.375v306  c0,31.688-25.688,57.375-57.375,57.375h-459c-31.688,0-57.375-25.688-57.375-57.375v-306c0-31.688,25.688-57.375,57.375-57.375  H682.875z M367.312,172.125c0,26.406-21.407,47.812-47.812,47.812s-47.812-21.407-47.812-47.812s21.407-47.812,47.812-47.812  S367.312,145.719,367.312,172.125z M281.25,286.875l47.233-47.233c5.601-5.601,14.683-5.601,20.286,0L396,286.875l123.732-123.733  c5.602-5.601,14.684-5.601,20.286,0l85.481,85.483v95.625H281.25V286.875z"/>
-			</svg>',
-			'keywords'			=> array( 'heroslider', 'carousel' ),
-		));
-		
-		// register contact box block
-		acf_register_block(array(
-			'name'				=> 'contact-bar',
-			'title'				=> __('Contact Bar'),
-			'description'		=> __('Social media and contact buttons'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'formatting',
-			'icon'				=> '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="792px" height="612px" viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
-			<path d="M687.656,461.63c32.871-32.394,52.594-73.034,52.594-117.38c0-95.625-91.441-174.635-210.614-188.74
-				C491.983,86.66,403.53,38.25,300.375,38.25C163.034,38.25,51.75,123.834,51.75,229.5c0,44.227,19.723,84.867,52.594,117.38
-				c-18.288,36.696-44.585,65.145-45.063,65.622c-7.53,8.009-9.682,19.723-5.259,29.883c4.303,10.16,14.344,16.734,25.341,16.734
-				c63.949,0,115.586-24.145,149.653-46.378c10.997,2.511,22.353,4.423,33.947,5.857C300.495,487.209,388.589,535.5,491.625,535.5
-				c24.862,0,48.769-2.869,71.479-8.128c34.066,22.113,85.585,46.378,149.653,46.378c10.997,0,20.918-6.574,25.341-16.734
-				c4.303-10.16,2.271-21.874-5.26-29.883C732.361,526.774,705.944,498.326,687.656,461.63z M218.138,351.303l-20.44,13.268
-				c-16.854,10.877-34.066,19.483-51.518,25.58c3.228-5.618,6.455-11.595,9.562-17.691l18.527-37.174L144.626,306
-				c-16.137-16.017-35.501-42.194-35.501-76.5c0-72.556,87.616-133.875,191.25-133.875s191.25,61.319,191.25,133.875
-				s-87.616,133.875-191.25,133.875c-19.723,0-39.445-2.271-58.57-6.693L218.138,351.303L218.138,351.303z M647.374,420.75
-				l-29.524,29.166l18.527,37.174c3.108,6.096,6.336,12.072,9.562,17.69c-17.451-6.096-34.664-14.702-51.518-25.579l-20.439-13.269
-				l-23.787,5.499c-19.125,4.422-38.848,6.693-58.57,6.693c-64.547,0-122.161-24.025-156.944-59.407
-				C455.766,405.809,549,326.201,549,229.5c0-4.064-0.479-8.009-0.837-11.953c76.979,17.332,134.712,67.894,134.712,126.703
-				C682.875,378.556,663.511,404.732,647.374,420.75z"/>
-			</svg>',
-			'keywords'			=> array( 'contact', 'social media' ),
-		));
-		
-		// register services section block
-		acf_register_block(array(
-			'name'				=> 'services',
-			'title'				=> __('Services Block'),
-			'description'		=> __('List of services'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
-			'keywords'			=> array( 'services', 'offerings' ),
-		));*/
 		
 		// register approved service centres map block
 		acf_register_block(array(
@@ -345,10 +308,22 @@ function my_acf_init() {
 			'keywords'			=> array( 'home page', 'content' ),
 		));
 		
+		// Affiliations Block
 		acf_register_block(array(
 			'name'				=> 'affiliations',
 			'title'				=> __('Affiliations Block'),
 			'description'		=> __('Add affiliation logos and links'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'home page', 'content' ),
+		));
+		
+		// Photo Slider Block
+		acf_register_block(array(
+			'name'				=> 'slider',
+			'title'				=> __('Photo Gallery'),
+			'description'		=> __('Responsive photo gallery'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
@@ -386,6 +361,7 @@ add_shortcode( 'sponsor_logos_footer', 'sponsorLogosFooter' );
 add_shortcode( 'hero_slider', 'heroSlider' );
 add_shortcode( 'service_centres_map', 'serviceCentresMap' );
 add_shortcode( 'testimonials_carousel', 'testimonialsHome' );
+add_shortcode( 'content_slider', 'contentSlider' );
 
 // CUSTOM THUMBNAIL IN BACKEND
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
