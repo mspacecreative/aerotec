@@ -30,12 +30,27 @@
 			});
 		}
 		
+		function checkSize() {
+			if ($('.testimonials-container').css('margin-top') == 0) {
+				$('.ps-current li').each(function () {
+				    var $container = $(this),
+				        imgUrl = $container.find('img').prop('src');
+				    if (imgUrl) {
+				      $container
+				        .css('backgroundImage', 'url(' + imgUrl + ')')
+				        .addClass('compat-object-fit');
+				    }
+				});
+			}
+		}
+		
 		$(document).ready(function() {
 			sliderHeight();
 			mapOffset();
 			bgImageContainer();
 			pageContainerClear();
 			pgwGallery();
+			checkSize();
 			
 			/*if ($('body').hasClass('home')) {
 				$('.alt-logo').css('display', 'none');
@@ -50,6 +65,7 @@
 			mapOffset();
 			bgImageContainer();
 			pageContainerClear();
+			checkSize();
 		});
 		
 		$(window).load(function() {
@@ -58,26 +74,6 @@
 				dots: true,
 				adaptiveHeight: true,
 			});
-			
-			/*$(".ps-current img").each(function(i, elem) {
-			  var img = $(elem);
-			  var div = $('.ps-current img').parent().css({
-			    background: "url(" + img.attr("src") + ") no-repeat"
-			  });
-			  img.replaceWith(div);
-			});*/
-			
-			if ($('.testimonials-container').css('margin-top') == 0) {
-				$('.ps-current li').each(function () {
-				    var $container = $(this),
-				        imgUrl = $container.find('img').prop('src');
-				    if (imgUrl) {
-				      $container
-				        .css('backgroundImage', 'url(' + imgUrl + ')')
-				        .addClass('compat-object-fit');
-				    }
-				});
-			}
 		});
 		
 	});
