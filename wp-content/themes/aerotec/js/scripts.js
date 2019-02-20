@@ -31,17 +31,15 @@
 		}
 		
 		function checkSize() {
-			if ($('.testimonials-container').css('margin-top') == 0) {
-				$('.ps-current li').each(function () {
-				    var $container = $(this),
-				        imgUrl = $container.find('img').prop('src');
-				    if (imgUrl) {
-				      $container
-				        .css('backgroundImage', 'url(' + imgUrl + ')')
-				        .addClass('compat-object-fit');
-				    }
-				});
-			}
+			$('.ps-current li').each(function () {
+			    var $container = $(this),
+			        imgUrl = $container.find('img').prop('src');
+			    if (imgUrl) {
+			      $container
+			        .css('backgroundImage', 'url(' + imgUrl + ')')
+			        .addClass('compat-object-fit');
+			    }
+			});
 		}
 		
 		$(document).ready(function() {
