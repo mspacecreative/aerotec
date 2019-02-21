@@ -42,10 +42,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 					<div class="entry-content">
 					
-					<?php if ( get_field('text_editor') ): ?>
-						<?php the_field('text_editor'); ?>
-					<?php endif; ?>
-					
 					<?php
 						the_content();
 
