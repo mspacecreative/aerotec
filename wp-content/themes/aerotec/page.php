@@ -41,6 +41,11 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 				<?php endif; ?>
 
 					<div class="entry-content">
+					
+					<?php if ( get_field('text_editor') ): ?>
+						<?php the_field('text_editor'); ?>
+					<?php endif; ?>
+					
 					<?php
 						the_content();
 
@@ -52,10 +57,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 				<?php
 					if ( ! $is_page_builder_used && comments_open() && 'on' === et_get_option( 'divi_show_pagescomments', 'false' ) ) comments_template( '', true );
 				?>
-				
-				<?php if ( get_field('text_editor') ): ?>
-					<?php the_field('text_editor'); ?>
-				<?php endif; ?>
 
 				</article> <!-- .et_pb_post -->
 
