@@ -12,7 +12,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 	<div class="container fullwidth">
 		<div id="content-area" class="clearfix">
-			<div id="left-area">
 
 <?php endif; ?>
 
@@ -59,8 +58,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 			<?php endwhile; ?>
 
 <?php if ( ! $is_page_builder_used ) : ?>
-
-			</div> <!-- #left-area -->
 		</div> <!-- #content-area -->
 	</div> <!-- .container -->
 

@@ -739,11 +739,6 @@ h1,h2,h3,h4,h5,p {
 	padding-bottom: 50px;
 }
 
-.full-width #left-area {
-	width: 100%;
-	float: none;
-}
-
 #main-footer:before {
 	top: -5px;
 }
