@@ -167,6 +167,10 @@ body .hero-slider .slick-dots {
 	right: 50px;
 }
 
+.main_title {
+	margin-bottom: 0;
+}
+
 .slick-prev {
 	left: 50px;
 }
