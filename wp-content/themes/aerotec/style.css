@@ -737,6 +737,7 @@ h1,h2,h3,h4,h5,p {
 
 .container.fullwidth {
 	padding-bottom: 50px;
+	padding-top: 0;
 }
 
 .et_right_sidebar #main-content .container.fullwidth:before {

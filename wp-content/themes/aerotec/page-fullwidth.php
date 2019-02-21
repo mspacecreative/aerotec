@@ -25,7 +25,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 				<?php if ( ! $is_page_builder_used ) : ?>
 
-					<div class="section_container">
+					<div class="section_container" style="padding-bottom: 0;">
 						<div class="row_container">
 							<h1 class="entry-title main_title"><?php the_title(); ?></h1>
 						</div>
