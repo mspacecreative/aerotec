@@ -179,7 +179,7 @@ body .hero-slider .slick-dots {
 	position: relative;
 }
 
-h1,h2,h3,h4,h5,p {
+h1,h2,h3,h5,p {
 	padding: 0;
 	margin: 0 0 15px;
 }
@@ -188,7 +188,12 @@ h3 {
 	margin-top: 30px;
 }
 
-.section_container .row_container:first-of-type h3:first-of-type {
+h4 {
+	font-weight: 900;
+	margin: 30px 0 0;
+}
+
+.section_container .row_container:first-of-type h3:first-of-type, .section_container .row_container:first-of-type h4:first-of-type {
 	margin-top: 0;
 }
 
