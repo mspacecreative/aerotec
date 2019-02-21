@@ -167,6 +167,10 @@ body .hero-slider .slick-dots {
 	right: 50px;
 }
 
+.service-blurb h3 {
+	margin-top: 0;
+}
+
 .main_title {
 	margin-bottom: 0;
 }
