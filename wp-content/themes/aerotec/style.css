@@ -735,7 +735,11 @@ h1,h2,h3,h4,h5,p {
 	top: -5px;
 }
 
-#left-area.full-width {
+.container.full-width {
+	padding-bottom: 50px;
+}
+
+.full-width #left-area {
 	width: 100%;
 	float: none;
 }
