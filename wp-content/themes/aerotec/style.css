@@ -184,7 +184,7 @@ h3 {
 	margin-top: 30px;
 }
 
-.section_container .row_container:first-child h3 {
+.section_container .row_container:first-of-type h3:first-of-type {
 	margin-top: 0;
 }
 
