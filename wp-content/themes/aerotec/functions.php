@@ -335,6 +335,17 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'home page', 'content' ),
 		));
+		
+		// Text Block
+		acf_register_block(array(
+			'name'				=> 'text',
+			'title'				=> __('WYSIWYG Block'),
+			'description'		=> __('Basic text editor'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'home page', 'content' ),
+		));
 	}
 }
 
