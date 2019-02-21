@@ -209,7 +209,7 @@ h1,h2,h3,h4,h5,p {
 	padding: 0;
 }
 
-.single-services #main-content .container {
+.single-services #main-content .container, .container.fullwidth {
 	max-width: 100%;
 	width: 100%;
 	padding: 0;
