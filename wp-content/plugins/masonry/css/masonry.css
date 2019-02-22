@@ -3,6 +3,14 @@
 	height: auto;
 	display: block;
 	max-width: 100%;
+	position: absolute;
+	width: 70px;
+	top: -35px;
+	z-index: 999999;
+	left: 50%;
+	margin-left: -35px;
+	background: #fff;
+	padding: 10px;
 }
 
 #instafeed {
@@ -97,6 +105,8 @@
 	background: #fff;
 	padding: 20px;
 	text-align: left;
+	position: relative;
+	border: 1px solid #B07336;
 }
 
 .entry-content .card-content h3 {
