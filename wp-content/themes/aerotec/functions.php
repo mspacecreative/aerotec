@@ -52,12 +52,6 @@ function my_theme_enqueue_styles() {
 	wp_enqueue_script( 'slick-script', get_stylesheet_directory_uri() . '/js/slick.min.js', array( 'jquery' ), '1.0', true );
 	wp_enqueue_script('slick-script');
 	
-	wp_register_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
-	wp_enqueue_script('scripts');
-	
-	/*wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto', array(), '1.0', 'all');
-	wp_enqueue_style('google-fonts');*/
-	
 	wp_register_style('typekit', 'https://use.typekit.net/gfo2vxu.css', array(), '1.0', 'all');
 	wp_enqueue_style('typekit');
 	
@@ -79,9 +73,6 @@ function footer_scripts() {
 	
 	wp_register_script('para-script', get_stylesheet_directory_uri() . '/js/dzsparallaxer/dzsparallaxer.js', array('jquery'), null, true);
 	wp_enqueue_script('para-script');
-	
-	wp_register_script('polyclip', get_stylesheet_directory_uri() . '/js/polyclip.js', array('jquery'), null, true);
-	wp_enqueue_script('polyclip');
 }
 
 /* ACF OPTIONS PAGE */

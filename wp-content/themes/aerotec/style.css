@@ -171,6 +171,10 @@ body .hero-slider .slick-dots {
 	margin-top: 0;
 }
 
+.thumbnail-container img {
+	width: 50px;
+}
+
 .main_title {
 	margin-bottom: 0;
 }
@@ -761,7 +765,7 @@ h4 {
 	padding-top: 0;
 }
 
-.et_right_sidebar #main-content .container.fullwidth:before {
+.et_right_sidebar #main-content .container.fullwidth:before, .archive #main-content .container:before {
 	display: none;
 }
 
