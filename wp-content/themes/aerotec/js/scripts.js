@@ -31,7 +31,7 @@
 		}
 		
 		function checkSize() {
-			$('.ps-current li').each(function () {
+			$('.ps-current li, .ps-list li').each(function () {
 			    var $container = $(this),
 			        imgUrl = $container.find('img').prop('src');
 			    if (imgUrl) {

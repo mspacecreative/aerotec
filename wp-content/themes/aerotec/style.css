@@ -299,24 +299,10 @@ h4 {
 	object-fit: cover;
 }
 
-/*.pgwSlider .ps-current ul {
+.pgwSlider>ul>li img {
+	width: 100%;
 	height: 100%;
-}
-
-.pgwSlider.narrow .ps-current img, .pgwSlider.wide .ps-current img {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 105%;
-	height: 105%;
-	max-width: none;
-	max-height: none;
-}
-
-.ps-current li {
-	position: relative;
-	height: 100%;
+	object-fit: cover;
 }
 
 /*------------------------------
@@ -659,7 +645,7 @@ h4 {
 		background-size: 100%;
 	}
 	
-	.pgwSlider .ps-current img {
+	.pgwSlider .ps-current img, .pgwSlider>ul>li img {
 		opacity: 0;
 	}
 }
