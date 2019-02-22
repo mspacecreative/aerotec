@@ -2,9 +2,10 @@
 	<div class="grid-sizer"></div>
 	<div class="gutter-sizer"></div>
 	
-	<?php 
-	if ( have_posts() ) : 
-		while ( have_posts() ) : the_post(); ?>
+	<?php
+	$args = 'numberposts=-1'; 
+	if ( have_posts($args) ) : 
+		while ( have_posts($args) ) : the_post($args); ?>
 		<div class="grid-item">
 			<div class="grid-inner">
 				<div class="card-content">
