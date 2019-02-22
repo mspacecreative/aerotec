@@ -129,6 +129,10 @@
 	line-height: 17px;
 }
 
+.grid-item {
+	margin-bottom: 6%;
+}
+
 @media (min-width: 800px) {
 
 .grid-sizer,
@@ -141,33 +145,13 @@
 .grid-sizer, .grid-item {
 	width: 100%;
 }
-.grid-item {
- margin-bottom: 5%;
-}
 }
 
 @media (min-width: 540px) and (max-width: 800px) {
 .grid-sizer, .grid-item {
 	width: 48.5%;
 }
-.grid-item {
- margin-bottom: 3%;
 }
-}
-
-@media (min-width: 541px) {
-.grid-item {
- margin-bottom: 3%;
-}
-}
-
-/*@media (min-width: 1080px) {
-
-.grid-sizer,
-.grid-item {
-  width: 22.75%;
-}
-}*/
 
 #sidebar .grid-sizer, #sidebar .grid-item, .sidebar-cards .grid-sizer, .sidebar-cards .grid-item {
 	width: 100%;
