@@ -425,6 +425,10 @@ h4 {
 	overflow: hidden;
 }
 
+.section-title-container.boxed {
+	padding-bottom: 50px;
+}
+
 .landing-area {
 	position: relative;
 }
@@ -727,7 +731,7 @@ h4 {
 	position: relative;
 }
 
-#main-footer:before, #main-footer:after {
+#main-footer:before {
 	height: 2px;
 	background-color: #f5f5f5;
 	width: 100%;
