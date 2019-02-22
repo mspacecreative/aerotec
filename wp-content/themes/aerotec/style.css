@@ -273,7 +273,7 @@ h4 {
 	display: none!important;
 }
 
-.pgwSlider .ps-current ul, .pgwSlider .ps-current li {
+.pgwSlider .ps-current ul, .pgwSlider .ps-current li, .pgwSlider .ps-list li {
 	height: 100%;
 	background-size: cover;
 	background-position: center;
