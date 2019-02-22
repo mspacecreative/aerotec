@@ -192,6 +192,10 @@ h1,h2,h3,h5,p {
 	margin: 0 0 15px;
 }
 
+h1.section-title {
+	margin-bottom: 0;
+}
+
 h3 {
 	margin-top: 30px;
 }
@@ -425,7 +429,7 @@ h4 {
 	overflow: hidden;
 }
 
-.section-title-container.boxed {
+.archive .section-title-container.boxed {
 	padding-bottom: 50px;
 }
 

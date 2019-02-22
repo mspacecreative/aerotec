@@ -49,7 +49,9 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 							<div class="row_container">
 								<?php if ( ( 'off' !== $show_default_title && $is_page_builder_used ) || ! $is_page_builder_used ) { ?>
 														<div class="et_post_meta_wrapper">
-															<h1 class="entry-title"><?php the_title(); ?></h1>
+															<div class="section-title-container boxed">
+																<h1 class="section-title"><?php echo the_title(); ?></h1>
+															</div>
 								
 														<?php
 															if ( ! post_password_required() ) : ?>
