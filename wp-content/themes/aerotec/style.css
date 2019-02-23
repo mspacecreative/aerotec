@@ -428,7 +428,7 @@ span.wpcf7-list-item {
 	width: 100%;
 }
 
-.wpcf7 input[type=text] {
+.wpcf7 input[type=text], .wpcf7 input[type=tel], .wpcf7 input[type=email] {
 	font-size: 14px;
 	padding: 5px 10px;
 }
