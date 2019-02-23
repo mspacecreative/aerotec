@@ -420,6 +420,13 @@ h4 {
 	color: #B07336;
 }
 
+.cta-buttons.light a {
+	margin: 20px 0 0;
+	border: 2px solid #fff;
+	display: inline-block;
+	color: #fff;
+}
+
 .cta-buttons li a, .cta-buttons {
 	display: block;
 }
