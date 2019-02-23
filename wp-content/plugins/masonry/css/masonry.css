@@ -10,6 +10,7 @@
 	margin-left: -35px;
 	background: #fff;
 	padding: 10px;
+	z-index: 1;
 }
 
 #instafeed {
