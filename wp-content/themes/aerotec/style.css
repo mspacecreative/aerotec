@@ -428,8 +428,8 @@ span.wpcf7-list-item {
 	width: 100%;
 }
 
-.inline-form-fields input {
-	font-size: 16px;
+.wpcf7 input {
+	font-size: 14px;
 }
 
 .cta-buttons a {
