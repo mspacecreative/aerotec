@@ -424,6 +424,10 @@ span.wpcf7-list-item {
 	margin-right: 0;
 }
 
+.wpcf7 textarea {
+	width: 100%;
+}
+
 .inline-form-fields input {
 	font-size: 16px;
 }
