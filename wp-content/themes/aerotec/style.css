@@ -413,6 +413,16 @@ span.wpcf7-list-item {
 	margin: 0;
 }
 
+.inline-form-fields p {
+	display: inline-block;
+	width: 50%;
+	font-size: 0;
+}
+
+.inline-form-fields input {
+	font-size: 16px;
+}
+
 .cta-buttons a {
 	color: #fff;
 }
