@@ -18,7 +18,9 @@
 								the_excerpt(); 
 							}
 							?>
-							<a class="cta-buttons" href="<?php the_permalink(); ?>"><?php _e(' More...'); ?></a>
+							<div class="cta-buttons">
+								<a href="<?php the_permalink(); ?>"><?php _e(' More...'); ?></a>
+							</div>
 						</div>
 				</div>
 			</div>
