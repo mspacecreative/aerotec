@@ -409,12 +409,21 @@ h4 {
 	font-size: 20px;
 }
 
+.cta-buttons {
+	color: #B07336;
+}
+
+.cta-buttons li a {
+	color: #fff;
+}
+
 .grid-item .cta-buttons {
 	margin: 20px 0 0;
 	border: 2px solid #B07336;
+	display: inline-block;
 }
 
-.cta-buttons li a, .cta-buttons {
+.cta-buttons li a {
 	display: block;
 }
 
