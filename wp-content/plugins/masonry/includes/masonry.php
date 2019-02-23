@@ -15,17 +15,9 @@
 						<?php
 						if( has_excerpt() ) { 
 							the_excerpt(); 
-						} else {
-							the_content();
 						}
 						?>
-						<?php if ( get_field( 'custom_link' ) ): ?>
-						<a class="read-more-link" href="<?php the_field('custom_link'); ?>"><?php _e(' More...'); ?></a>
-						<?php elseif ( get_field( 'external_link' ) ): ?>
-						<a class="read-more-link" href="<?php the_field('external_link'); ?>"><?php _e(' More...'); ?></a>
-						<?php else: ?>
-						<a class="read-more-link" href="<?php the_permalink(); ?>"><?php _e(' More...'); ?></a>
-					<?php endif; ?>
+						<a class="cta-buttons" href="<?php the_permalink(); ?>"><?php _e(' More...'); ?></a>
 					</div>
 			</div>
 		</div>
