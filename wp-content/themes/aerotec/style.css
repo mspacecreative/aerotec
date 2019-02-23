@@ -413,7 +413,7 @@ span.wpcf7-list-item {
 	margin: 0;
 }
 
-.inline-form-fields p {
+.inline-form-fields label {
 	display: inline-block;
 	width: 50%;
 	font-size: 0;
