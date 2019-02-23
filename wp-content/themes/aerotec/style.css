@@ -420,7 +420,7 @@ span.wpcf7-list-item {
 	font-size: 0;
 }
 
-.inline-form-fields input:nth-child(even) {
+.inline-form-fields label:nth-child(even) input {
 	margin-right: 0;
 }
 
