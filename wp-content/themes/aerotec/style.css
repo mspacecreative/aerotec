@@ -404,7 +404,6 @@ h4 {
 
 .cta-buttons a {
 	padding: 5px 15px;
-	color: #fff;
 	text-transform: uppercase;
 	font-size: 16px;
 }
@@ -425,6 +424,7 @@ h4 {
 	border: 2px solid #fff;
 	display: inline-block;
 	color: #fff;
+	padding: 15px 25px;
 }
 
 .cta-buttons li a, .cta-buttons {
