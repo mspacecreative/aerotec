@@ -6,7 +6,9 @@
 		<h1 class="section-title light"><?php echo esc_html_e('Testimonials'); ?></h1>
 		<?php echo do_shortcode('[testimonials_carousel]'); ?>
 		<div class="cta-buttons">
-			<a href="#"><?php echo esc_html_e('View all testimonials'); ?></a>
+			<?php if ( get_field('test_link') ): ?>
+				<a href="<?php the_field('test_link'); ?>"><?php echo esc_html_e('View all testimonials'); ?></a>
+			<?php endif; ?>
 		</div>
 	</div>
 </div>
