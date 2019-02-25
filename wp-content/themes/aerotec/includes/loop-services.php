@@ -7,7 +7,11 @@
 	    if ( $loop->have_posts() ) :
 	        while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div class="grid-item">
+				<?php if ( get_field('horizontal_icon') ): ?>
+				<div class="grid-inner horizontal">
+				<?php else : ?>
 				<div class="grid-inner">
+				<?php endif; ?>
 					<?php if ( has_post_thumbnail() ) { ?>
 					    <?php echo the_post_thumbnail(); ?>
 					<?php } ?>

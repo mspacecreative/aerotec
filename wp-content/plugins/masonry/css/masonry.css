@@ -13,6 +13,12 @@
 	z-index: 1;
 }
 
+#instafeed .horizontal img {
+	top: -30px;
+	width: 90px;
+	margin-left: -45px;
+}
+
 #instafeed {
 	width: 100%;
 	margin: auto;
