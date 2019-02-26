@@ -51,6 +51,10 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 	position: absolute;
 }
 
+.home #main-content:before {
+	display: none;
+}
+
 #logo {
 	display: none;
 }
