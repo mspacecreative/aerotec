@@ -950,6 +950,9 @@ span.wpcf7-list-item {
 	.outer-container {
 		display: none;
 	}
+	.services-section {
+		padding-top: 50px;
+	}
 	.warranty-badge {
 		position: absolute;
 		max-width: 130px;
@@ -977,6 +980,9 @@ span.wpcf7-list-item {
 @media (max-width: 812px) and (orientation: landscape) {
 	.slick-next {
 		right: 20px;
+	}
+	.services-section {
+		padding-top: 50px;
 	}
 	.slick-prev {
 		left: 20px;
