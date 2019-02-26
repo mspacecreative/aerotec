@@ -979,11 +979,23 @@ span.wpcf7-list-item {
 	.approved-centres .title-container {
 		padding-top: 50px;
 	}
+	.testimonials-container {
+		padding: 80px 0 50px;
+	}
+	.affiliations-section {
+		padding: 50px 0;
+	}
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
 	.slick-next {
 		right: 20px;
+	}
+	.testimonials-container {
+		padding: 80px 0 50px;
+	}
+	.affiliations-section {
+		padding: 50px 0;
 	}
 	.approved-centres .title-container {
 		padding-top: 50px;
