@@ -865,7 +865,7 @@ span.wpcf7-list-item {
 		margin-bottom: 25px;
 	}
 	.one-half {
-		padding: 50px 0;
+		padding: 50px 5%;
 	}
 }
 
@@ -921,9 +921,12 @@ span.wpcf7-list-item {
 		top: 50%;
 		margin-top: -30px;
 	}
-	
 	.warranty-badge img {
 		width: 130px;
+	}
+	.warranty-blurb-container {
+		padding-left: 0;
+		border: none;
 	}
 }
 
@@ -952,8 +955,11 @@ span.wpcf7-list-item {
 		top: 50%;
 		margin-top: -30px;
 	}
-	
 	.warranty-badge img {
 		width: 130px;
+	}
+	.warranty-blurb-container {
+		padding-left: 0;
+		border: none;
 	}
 }
