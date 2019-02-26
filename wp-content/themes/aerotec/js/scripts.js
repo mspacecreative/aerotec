@@ -11,7 +11,7 @@
 		}
 		
 		function changeHeader() {
-			if ($('.stickymenu').hasClass('reveal')) {
+			if ($('.home .stickymenu').hasClass('reveal')) {
 				$('.home #logo').css('display', 'none');
 				$('.alt-logo').css('display', 'inline-block');
 			} else {
