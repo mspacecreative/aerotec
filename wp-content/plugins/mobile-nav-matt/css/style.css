@@ -105,13 +105,6 @@ button.hamburger:hover {
 	transition: 0.5s ease-in-out;
 }
 
-/*.mobile-nav-container {
-	position: relative;
-	max-width: 1280px;
-	margin: auto;
-	width: 90%;
-}*/
-
 #page-container {
 	transition: 0.5s ease-in-out;
 }
@@ -168,6 +161,8 @@ body.et_fixed_nav #main-header {
 	background: #fff;
 }
 
+
+
 body .hamburger-box {
 	display: table-cell;
 	vertical-align: middle;
@@ -186,6 +181,10 @@ body .hamburger-inner, body .hamburger-inner:after, body .hamburger-inner:before
 	background: #005695;
 	width: 30px;
 	border-radius: 0;
+}
+
+body.home .hamburger-inner, body.home .hamburger-inner:after, body.home .hamburger-inner:before {
+	background: #fff;
 }
 
 body .hamburger-box {
