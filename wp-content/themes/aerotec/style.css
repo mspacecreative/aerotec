@@ -421,6 +421,8 @@ h4 {
 .gm-ui-hover-effect, .gm-ui-hover-effect img {
 	width: 40px!important;
 	height: 40px!important;
+	top: 0!important;
+	right: 0!important;
 }
 
 .gm-ui-hover-effect img {
