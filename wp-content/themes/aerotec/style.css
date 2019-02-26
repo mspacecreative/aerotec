@@ -160,8 +160,12 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 	visibility: visible;
 }
 
-#main-header {
+.home #main-header {
 	background-color: transparent;
+}
+
+#main-header {
+	background-color: #fff;
 	box-shadow: none;
 	position: absolute;
 }
