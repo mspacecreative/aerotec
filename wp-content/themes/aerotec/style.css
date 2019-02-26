@@ -991,6 +991,9 @@ span.wpcf7-list-item {
 	.testimonials-slider .slick-next {
 		right: 0;
 	}
+	.logo-container li .square-logo img {
+		padding: 20px 50px;
+	}
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
@@ -1050,6 +1053,9 @@ span.wpcf7-list-item {
 	.home #logo, .alt-logo {
 		width: 150px;
 		height: 44px;
+	}
+	.logo-container li .square-logo img {
+		padding: 20px 50px;
 	}
 }
 
