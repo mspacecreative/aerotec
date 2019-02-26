@@ -222,6 +222,17 @@ function my_acf_init() {
 			'keywords'			=> array( 'google map', 'service centres' ),
 		));
 		
+		// register testimonials loop block
+		acf_register_block(array(
+			'name'				=> 'testimonials-loop',
+			'title'				=> __('Testimonials Loop Block'),
+			'description'		=> __('Shows all testimonials in a masonry layout'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'google map', 'service centres' ),
+		));
+		
 		// register approved service centres map block
 		acf_register_block(array(
 			'name'				=> 'request-a-quote',
