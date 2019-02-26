@@ -26,6 +26,10 @@ body {
 	display: none;
 }
 
+#et-top-navigation a {
+	text-transform: uppercase;
+}
+
 .home.et_header_style_left #et-top-navigation nav>ul>li>a, .et_header_style_split #et-top-navigation nav>ul>li>a {
 	color: #fff;
 }
