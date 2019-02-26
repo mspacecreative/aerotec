@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <?php
-$narrow =  get_field('narrow_column', 'options');
+$narrow =  get_field('narrow_column', 'options') && get_field('no_drawing', 'options');
 $nodrawing = get_field('no_drawing', 'options');
-if ( $narrow, $nodrawing ): ?>
+if ( $narrow ): ?>
 <div id="main-content" class="narrow no-drawing">
 <?php elseif ( $nodrawing ): ?>
 <div id="main-content" class="no-drawing">
