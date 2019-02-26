@@ -146,13 +146,13 @@ body .hamburger:hover {
   font-size: 20px;
 }
 
-.hamburger.is-active, body.is-active.et_fixed_nav #main-header {
+.hamburger.is-active, body.is-active.et_non_fixed_nav #main-header {
 	transform: translateX(-250px);
 	transition: 0.5s ease-in-out;
 	
 }
 
-body.et_fixed_nav #main-header {
+body.et_non_fixed_nav #main-header {
 	transform: translateX(0);
 	transition: 0.5s ease-in-out;
 }
