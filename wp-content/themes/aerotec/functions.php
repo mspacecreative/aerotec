@@ -79,7 +79,7 @@ function footer_scripts() {
 if( function_exists('acf_add_options_sub_page') ) {
 
 	acf_add_options_sub_page('Footer');
-	acf_add_options_sub_page('Call-out Box');
+	acf_add_options_sub_page('Services Archive');
 	acf_add_options_sub_page('Contact Box');
 	
 }
