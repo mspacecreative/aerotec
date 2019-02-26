@@ -32,6 +32,16 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 	display: none;
 }
 
+#main-content:before {
+	content: '';
+	background-image: url(img/engine-illustration.gif);
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: bottom right;
+	opacity: .5;
+	transform: rotate(20deg);
+}
+
 #logo {
 	display: none;
 }
