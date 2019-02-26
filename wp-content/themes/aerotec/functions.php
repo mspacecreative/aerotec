@@ -282,6 +282,17 @@ function my_acf_init() {
 			'keywords'			=> array( 'text editor', 'static image' ),
 		));
 		
+		// register 50/50 Image & Text block
+		acf_register_block(array(
+			'name'				=> 'image-text',
+			'title'				=> __('50/50 Image & Text'),
+			'description'		=> __('WYSIWYG editor and static image'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'text editor', 'static image' ),
+		));
+		
 		/// register Photo Gallery
 		acf_register_block(array(
 			'name'				=> 'photo-gallery',
