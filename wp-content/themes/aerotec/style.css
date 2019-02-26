@@ -691,12 +691,6 @@ span.wpcf7-list-item {
 	right: 100%;
 }
 
-.one-half {
-	float: left;
-	width: 50%;
-	padding: 10% 15% 10% 10%;
-}
-
 .one-half.bg-img {
 	padding: 0;
 	background-repeat: no-repeat;
@@ -870,6 +864,9 @@ span.wpcf7-list-item {
 	.service {
 		margin-bottom: 25px;
 	}
+	.one-half {
+		padding: 25px 0;
+	}
 }
 
 @media (min-width: 981px) {
@@ -891,6 +888,11 @@ span.wpcf7-list-item {
 		float: left;
 		width: 30%;
 		margin-right: 5%;
+	}
+	.one-half {
+		float: left;
+		width: 50%;
+		padding: 10% 15% 10% 10%;
 	}
 }
 
