@@ -596,8 +596,16 @@ span.wpcf7-list-item {
 .services-section {
 	position: relative;
 	padding: 100px 0 150px 0;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+	-webkit-clip-path: polygon(
+		0 0,
+	    100% 0,
+	    100% 100%,
+	    0 calc(100% - 6vw);
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 100%,
+		0 calc(100% - 6vw);
 	z-index: 2;
 }
 
