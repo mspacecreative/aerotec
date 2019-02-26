@@ -36,6 +36,10 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 	position: relative;
 }
 
+.row_container .one_half_col:first-of-type {
+	margin-bottom: 25px;
+}
+
 #main-content:before {
 	content: '';
 	background-image: url(img/engine-illustration.gif);
