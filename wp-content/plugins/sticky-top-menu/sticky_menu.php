@@ -18,7 +18,9 @@
  <div class="stickymenu">
  	<div class="stickymenu-inner clearfix">
  		<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
- 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/ae-logo.svg" />
+ 		<a href="<?php echo home_url(); ?>">
+ 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/ae-logo.svg" />
+ 		</a>
  		<ul class="contact-menu">
  			<?php if ( get_field('phone_number', 'options') ): ?>
  			<li><a class="click-number" href="tel:+1<?php the_field('phone_number', 'options'); ?>"><span><?php the_field('phone_number', 'options'); ?></span></a></li>
