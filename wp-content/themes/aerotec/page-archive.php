@@ -14,17 +14,17 @@ if ( $narrow ): ?>
 <?php endif; ?>
 	<div class="container">
 		<div id="content-area" class="clearfix">
-			<div class="section-title-container boxed">
-				<?php 
-				if ( have_posts() ) {
-					while ( have_posts() ) {
-						the_post(); 
-
-						the_content();
-
-					}
+			<?php 
+			if ( have_posts() ) {
+				while ( have_posts() ) {
+				the_post(); 
+			
+				the_content();
+			
 				}
-				?>
+			}
+			?>
+			
 		</div> <!-- #content-area -->
 	</div> <!-- .container -->
 </div> <!-- #main-content -->
