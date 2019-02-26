@@ -177,7 +177,7 @@ body .hamburger:after {
 	bottom: -8px;
 }
 
-body .hamburger-inner, body .hamburger-inner:after, body .hamburger-inner:before {
+body .hamburger-inner, body .hamburger-inner:after, body .hamburger-inner:before, body .hamburger-inner.change, body .hamburger-inner.change:after, body .hamburger-inner.change:before {
 	background: #005695;
 	width: 30px;
 	border-radius: 0;
