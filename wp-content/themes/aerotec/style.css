@@ -952,6 +952,7 @@ span.wpcf7-list-item {
 	}
 	.services-section {
 		padding-top: 50px;
+		padding-bottom: 80px;
 	}
 	.warranty-badge {
 		position: absolute;
@@ -975,14 +976,21 @@ span.wpcf7-list-item {
 		width: 150px;
 		height: 44px;
 	}
+	.approved-centres .title-container {
+		padding-top: 50px;
+	}
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
 	.slick-next {
 		right: 20px;
 	}
+	.approved-centres .title-container {
+		padding-top: 50px;
+	}
 	.services-section {
 		padding-top: 50px;
+		padding-bottom: 80px;
 	}
 	.slick-prev {
 		left: 20px;
