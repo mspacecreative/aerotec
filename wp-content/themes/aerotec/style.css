@@ -48,7 +48,7 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 	background-position: bottom left;
 	opacity: .1;
 	width: 50%;
-	height: 50%;
+	height: 100%;
 	transform: rotate(-20deg);
 	left: -100px;
 	bottom: 0;
