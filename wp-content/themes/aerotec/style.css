@@ -24,6 +24,10 @@ body {
 	margin-top: 50px;
 }
 
+body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_sidebar .one_third, body.et_left_sidebar .three_fourth, body.et_left_sidebar .two_third, body.et_right_sidebar .one_fourth, body.et_right_sidebar .one_half, body.et_right_sidebar .one_third, body.et_right_sidebar .three_fourth, body.et_right_sidebar .two_third {
+	margin-bottom: 0;
+}
+
 .home .alt-logo {
 	display: none;
 }
