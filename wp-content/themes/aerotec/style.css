@@ -1052,3 +1052,13 @@ span.wpcf7-list-item {
 		height: 44px;
 	}
 }
+
+@media (max-width: 450px) {
+	.logo-container li:nth-child(4n+1):nth-last-child(-n+4), .logo-container li:nth-child(4n+1):nth-last-child(-n+4) ~ li, .logo-container li {
+		width: 50%;
+		margin-right: 0;
+	}
+	.logo-container li img {
+		padding: 20px;
+	}
+}
