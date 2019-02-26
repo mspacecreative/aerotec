@@ -19,11 +19,6 @@ $('.body-overlay').on('click touch', function() {
 	$('.hamburger, body, #page-container').toggleClass('is-active');
 });
 
-// CLOSE PANEL UPON LINK CLICK
-$('.mobile-nav li > a').click(function() {
-	$('.hamburger, body, #page-container').toggleClass('is-active');
-});
-
 // HAMBURGER VERTICAL ALIGN
 function hamburgerIcon() {
 	$('.hamburger').css('height', $('#logo-container').height());
