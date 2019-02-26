@@ -928,6 +928,9 @@ span.wpcf7-list-item {
 		padding-left: 0;
 		border: none;
 	}
+	.warranty-blurb-container:before {
+		display: none;
+	}
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
@@ -961,5 +964,8 @@ span.wpcf7-list-item {
 	.warranty-blurb-container {
 		padding-left: 0;
 		border: none;
+	}
+	.warranty-blurb-container:before {
+		display: none;
 	}
 }
