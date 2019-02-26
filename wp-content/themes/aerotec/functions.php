@@ -192,6 +192,12 @@ function my_mce_before_init_insert_formats( $init_array ) {
             'classes' => 'cta_button',
             'wrapper' => true,
         ),
+        array(  
+            'title' => 'H3 with top line rule',  
+            'block' => 'h3',  
+            'classes' => 'h3_linerule',
+            'wrapper' => true,
+        ),
     );  
     $init_array['style_formats'] = json_encode( $style_formats );  
      
