@@ -615,13 +615,6 @@ span.wpcf7-list-item {
 	position: relative;
 }
 
-.service {
-	float: left;
-	width: 30%;
-	margin-right: 5%;
-	display: flex;
-}
-
 .service-block-container {
 	padding: 25px 0;
 }
@@ -882,5 +875,11 @@ span.wpcf7-list-item {
 	}
 	.one_half_col:last-child {
 		margin-right: 0;
+	}
+	.service {
+		float: left;
+		width: 30%;
+		margin-right: 5%;
+		display: flex;
 	}
 }
