@@ -600,13 +600,13 @@ span.wpcf7-list-item {
 		0 0,
 	    100% 0,
 	    100% 100%,
-	    0 calc(100% - 6vw)
+	    0 calc(100% - 10vw)
 		);
 	clip-path: polygon(
 		0 0,
 		100% 0,
 		100% 100%,
-		0 calc(100% - 6vw)
+		0 calc(100% - 10vw)
 		);
 	z-index: 2;
 }
@@ -753,8 +753,18 @@ span.wpcf7-list-item {
 	position: relative;
 	text-align: center;
 	padding: 150px 0 80px;
-	-webkit-clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
-	clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(
+		0 calc(100% - 10vw),
+		100% 0%, 
+		100% 100%,
+		0% 100%
+		);
+	clip-path: polygon(
+		0 calc(100% - 10vw),
+		100% 0%, 
+		100% 100%,
+		0% 100%
+		);
 	margin-top: -75px;
 }
 
