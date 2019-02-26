@@ -1058,7 +1058,7 @@ span.wpcf7-list-item {
 		width: 50%;
 		margin-right: 0;
 	}
-	.logo-container li img {
+	.logo-container li img, .logo-container li:nth-child(4n) img {
 		padding: 20px;
 	}
 }
