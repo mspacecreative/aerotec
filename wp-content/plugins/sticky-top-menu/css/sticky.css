@@ -27,10 +27,6 @@
 	text-transform: uppercase;
 }
 
-.menu-sample-nav-container {
-	float: left;
-}
-
 .contact-menu {
 	float: right;
 }
@@ -66,5 +62,11 @@
 @media (max-width: 1080px) {
 	.stickymenu {
 		display: none!important;
+	}
+}
+
+@media (min-width: 1081px) {
+	.menu-sample-nav-container {
+		float: left;
 	}
 }
