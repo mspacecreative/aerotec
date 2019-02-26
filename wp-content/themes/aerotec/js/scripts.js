@@ -16,12 +16,12 @@
 					$('.home #logo').css('display', 'none');
 					$('.alt-logo').css('display', 'inline-block');
 					$('#main-header').css('background-color', '#fff');
-					$('.body .hamburger-inner, body .hamburger-inner:after, body .hamburger-inner:before').css('background', '#005695');
+					$('.hamburger-inner').addClass('change');
 				} else {
 					$('.home #logo').css('display', 'inline-block');
 					$('.alt-logo').css('display', 'none');
 					$('#main-header').css('background-color', 'transparent');
-					$('.body .hamburger-inner, body .hamburger-inner:after, body .hamburger-inner:before').css('background', '#fff');
+					$('.hamburger-inner').removeClass('change');
 				}
 			}
 		}
