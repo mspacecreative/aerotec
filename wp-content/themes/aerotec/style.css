@@ -865,7 +865,7 @@ span.wpcf7-list-item {
 		margin-bottom: 25px;
 	}
 	.one-half {
-		padding: 25px 0;
+		padding: 50px 0;
 	}
 }
 
@@ -913,6 +913,18 @@ span.wpcf7-list-item {
 	.contact-bar {
 		display: none;
 	}
+	.warranty-badge {
+		position: absolute;
+		max-width: 130px;
+		left: 50%;
+		margin-left: -65px;
+		top: 50%;
+		margin-top: -30px;
+	}
+	
+	.warranty-badge img {
+		width: 130px;
+	}
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
@@ -931,5 +943,17 @@ span.wpcf7-list-item {
 	}
 	.contact-bar {
 		display: none;
+	}
+	.warranty-badge {
+		position: absolute;
+		max-width: 130px;
+		left: 50%;
+		margin-left: -65px;
+		top: 50%;
+		margin-top: -30px;
+	}
+	
+	.warranty-badge img {
+		width: 130px;
 	}
 }
