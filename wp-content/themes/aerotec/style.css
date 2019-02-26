@@ -212,7 +212,7 @@ body .hero-slider .slick-dots {
 	right: 50px;
 }
 
-.service-blurb h3 {
+.service-blurb h3, .post-type-archive-testimonials .grid-item h3 {
 	margin-top: 0;
 }
 
