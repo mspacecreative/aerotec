@@ -11,14 +11,16 @@
 		}
 		
 		function changeHeader() {
-			if ($('.home .stickymenu').hasClass('reveal')) {
-				$('.home #logo').css('display', 'none');
-				$('.alt-logo').css('display', 'inline-block');
-				$('#main-header').css('background-color', '#fff');
-			} else {
-				$('.home #logo').css('display', 'inline-block');
-				$('.alt-logo').css('display', 'none');
-				$('#main-header').css('background-color', 'transparent');
+			if ( window.location.pathname == '/' ) {
+				if ($('.home .stickymenu').hasClass('reveal')) {
+					$('.home #logo').css('display', 'none');
+					$('.alt-logo').css('display', 'inline-block');
+					$('#main-header').css('background-color', '#fff');
+				} else {
+					$('.home #logo').css('display', 'inline-block');
+					$('.alt-logo').css('display', 'none');
+					$('#main-header').css('background-color', 'transparent');
+				}
 			}
 		}
 		
