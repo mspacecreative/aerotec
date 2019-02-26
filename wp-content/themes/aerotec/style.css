@@ -985,6 +985,12 @@ span.wpcf7-list-item {
 	.affiliations-section {
 		padding: 50px 0;
 	}
+	.testimonials-slider .slick-prev {
+		left: 0;
+	}
+	.testimonials-slider .slick-next {
+		right: 0;
+	}
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
@@ -1006,6 +1012,12 @@ span.wpcf7-list-item {
 	}
 	.slick-prev {
 		left: 20px;
+	}
+	.testimonials-slider .slick-prev {
+		left: 0;
+	}
+	.testimonials-slider .slick-next {
+		right: 0;
 	}
 	.entry-content .hero-slider h1 {
 		font-size: 30px;
