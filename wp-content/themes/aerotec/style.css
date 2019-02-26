@@ -745,6 +745,14 @@ span.wpcf7-list-item {
 	}
 }
 
+.gm-style-iw-d {
+	max-width: 100%!important;
+}
+
+.gm-style-iw {
+	max-width: 300px!important;
+}
+
 /* ---------------------------------
 -----------TESTIMONIALS-------------
 -----------------------------------*/
