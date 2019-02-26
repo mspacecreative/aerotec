@@ -893,3 +893,27 @@ span.wpcf7-list-item {
 		margin-right: 5%;
 	}
 }
+
+@media (max-width: 767px) {
+	.slick-next {
+		right: 20px;
+	}
+	.slick-prev {
+		left: 20px;
+	}
+	.entry-content .hero-slider h1 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+	.slick-next {
+		right: 20px;
+	}
+	.slick-prev {
+		left: 20px;
+	}
+	.entry-content .hero-slider h1 {
+		font-size: 30px;
+	}
+}
