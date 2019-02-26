@@ -32,6 +32,10 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 	display: none;
 }
 
+#main-content {
+	position: relative;
+}
+
 #main-content:before {
 	content: '';
 	background-image: url(img/engine-illustration.gif);
