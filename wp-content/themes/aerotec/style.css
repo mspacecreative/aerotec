@@ -947,10 +947,6 @@ span.wpcf7-list-item {
 	.entry-content .hero-slider h1 {
 		font-size: 30px;
 	}
-	.slick-next:before, .slick-prev:before {
-		height: 60px;
-		width: 25px;
-	}
 	.contact-bar {
 		display: none;
 	}
