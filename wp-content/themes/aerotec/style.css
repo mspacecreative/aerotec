@@ -36,10 +36,15 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 	content: '';
 	background-image: url(img/engine-illustration.gif);
 	background-repeat: no-repeat;
-	background-size: 50%;
-	background-position: bottom right;
-	opacity: .5;
+	background-size: 100%;
+	background-position: bottom left;
+	opacity: .1;
+	width: 50%;
+	height: 50%;
 	transform: rotate(20deg);
+	left: -100px;
+	bottom: 0;
+	position: absolute;
 }
 
 #logo {
