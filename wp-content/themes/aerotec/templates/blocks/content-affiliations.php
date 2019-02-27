@@ -15,7 +15,7 @@
 				$externallink = get_field('external_link', $image['ID']);
 				$squarelogo = get_field('square_logo', $image['ID']);
 				if ( $externallink == 'true' && $squarelogo == 'true' ): ?>
-				<a class="square-logo" href="<?php the_field('external_link', $image['ID']); ?>" target="_blank"><?php echo wp_get_attachment_image( $image['ID'], $size, ["class" => "square-logo"] ); ?></a>
+				<a href="<?php the_field('external_link', $image['ID']); ?>" target="_blank"><?php echo wp_get_attachment_image( $image['ID'], $size, 'class' => 'square-logo' ); ?></a>
 				<?php elseif ( $externallink ): ?>
 				<a href="<?php the_field('external_link', $image['ID']); ?>" target="_blank"><?php echo wp_get_attachment_image( $image['ID'], $size ); ?></a>
 				<?php else : ?>
