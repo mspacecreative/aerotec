@@ -115,7 +115,6 @@ button.hamburger:hover {
 
 body .hamburger {
 	position: fixed;
-	top: 40px;
 	right: 25px;
 	padding: 0 0 0 10px;
 	display: table;
@@ -124,7 +123,6 @@ body .hamburger {
 	border-radius: 10px 0 0 10px;
 	outline: none;
 	width: 40px;
-	height: 30px;
 }
 
 body .hamburger:hover {
@@ -202,10 +200,6 @@ body .hamburger-box {
 
 #et-top-navigation {
 	display: none!important;
-}
-
-html body .hamburger {
-	top: 13px;
 }
 
 #page-container {

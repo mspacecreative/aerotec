@@ -21,7 +21,7 @@ $('.body-overlay').on('click touch', function() {
 
 // HAMBURGER VERTICAL ALIGN
 function hamburgerIcon() {
-	$('.hamburger').css('height', $('#logo-container').height());
+	$('.hamburger').css('height', $('#main-header').height());
 }
 
 $(document).ready(function () {
