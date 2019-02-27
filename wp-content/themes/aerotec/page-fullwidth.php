@@ -9,7 +9,9 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 <?php
 $narrow =  get_field('narrow_column');
 $nodrawing = get_field('no_drawing');
-if ( $narrow ): ?>
+if ( $narrow == 'true' && $nodrawing == 'true' ): ?>
+<div id="main-content" class="narrow no-drawing">
+<?php elseif ( $narrow ): ?>
 <div id="main-content" class="narrow">
 <?php elseif ( $nodrawing ): ?>
 <div id="main-content" class="no-drawing">
