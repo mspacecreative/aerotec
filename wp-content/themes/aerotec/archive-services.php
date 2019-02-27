@@ -1,12 +1,14 @@
 <?php get_header(); ?>
 
 <?php
-$narrow =  get_field('narrow_column', 'options') && get_field('no_drawing', 'options');
+$narrow =  get_field('narrow_column', 'options');
 $nodrawing = get_field('no_drawing', 'options');
-if ( $narrow ): ?>
+$combine = array_merge(
+$narrow,
+$nodrawing
+);
+if ( $combine ): ?>
 <div id="main-content" class="narrow no-drawing">
-<?php elseif ( $nodrawing ): ?>
-<div id="main-content" class="no-drawing">
 <?php else : ?>
 <div id="main-content">
 <?php endif; ?>
