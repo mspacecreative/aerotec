@@ -299,6 +299,7 @@ h4 {
 
 .entry-content .section_container:first-of-type {
 	padding-bottom: 0;
+	padding-top: 0;
 }
 
 .section_container {
