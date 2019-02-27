@@ -1111,3 +1111,34 @@ span.wpcf7-list-item {
 		left: -20px;
 	}
 }
+
+@media (min-width: 1441px) {
+	.services-section {
+		-webkit-clip-path: polygon(
+			0 0,
+		    100% 0,
+		    100% 100%,
+		    0 calc(100% - 5vw)
+			);
+		clip-path: polygon(
+			0 0,
+			100% 0,
+			100% 100%,
+			0 calc(100% - 5vw)
+			);
+	}
+	.testimonials-container {
+		-webkit-clip-path: polygon(
+			0 5vw,
+			100% 0%, 
+			100% 100%,
+			0% 100%
+			);
+		clip-path: polygon(
+			0 5vw,
+			100% 0%, 
+			100% 100%,
+			0% 100%
+			);
+	}
+}
