@@ -1,4 +1,4 @@
-<div class="services-section clearfix" style="background: url(<?php the_field('background_image'); ?>);">
+<div class="services-section clearfix" style="background-image: url(<?php the_field('background_image'); ?>);">
 	
 	<div class="section-title-container">
 		<h1 class="section-title light"><?php the_field('section_title'); ?></h1>
