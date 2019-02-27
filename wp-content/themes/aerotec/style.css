@@ -465,6 +465,10 @@ span.wpcf7-list-item {
 	font-size: 16px;
 }
 
+.fullwidth-input input {
+	width: 100%;
+}
+
 .inline-form-fields input {
 	float: left;
 	width: 49%;
