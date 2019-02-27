@@ -10,7 +10,7 @@
 				<div class="grid-inner">
 					<div class="card-content">
 						<i class="fa fa-quote-left" aria-hidden="true"></i>
-						<h3><?php the_title(); ?></h3>
+						<h3 style="margin-top: 0;"><?php the_title(); ?></h3>
 						<?php the_content(); ?>
 					</div>
 				</div>
