@@ -7,9 +7,9 @@
 	    if ( $loop->have_posts() ) :
 	        while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div class="grid-item">
-				<i class="fa fa-quote-left"></i>
 				<div class="grid-inner">
 					<div class="card-content">
+						<i class="fa fa-quote-left"></i>
 						<h3><?php the_title(); ?></h3>
 						<?php the_content(); ?>
 					</div>
