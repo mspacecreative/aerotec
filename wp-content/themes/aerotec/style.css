@@ -846,7 +846,7 @@ span.wpcf7-list-item {
 	vertical-align: middle;
 }
 
-.logo-container li:nth-child(4n+1):nth-last-child(-n+4),
+/*.logo-container li:nth-child(4n+1):nth-last-child(-n+4),
   .logo-container li:nth-child(4n+1):nth-last-child(-n+4) ~ li {
     width: 15%;
 	margin-right: 5%;
@@ -854,6 +854,11 @@ span.wpcf7-list-item {
 
 .logo-container li:nth-child(4n+1):nth-last-child(-n+4) ~ li:last-child {
 	margin-right: 0;
+}*/
+
+.logo-container li img.square-logo {
+    width: 15%;
+	margin-right: 5%;
 }
 
 .logo-container li:nth-child(4n) img {
