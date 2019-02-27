@@ -854,16 +854,16 @@ span.wpcf7-list-item {
 
 .logo-container li:nth-child(4n+1):nth-last-child(-n+4) ~ li:last-child {
 	margin-right: 0;
+}
+
+.logo-container li:nth-child(4n) img {
+	padding: 40px 65px;
 }*/
 
 .logo-container li img.square-logo {
     width: 33.33%;
 	margin: auto;
 	padding: 0;
-}
-
-.logo-container li:nth-child(4n) img {
-	padding: 40px 65px;
 }
 
 .logo-container li img {
