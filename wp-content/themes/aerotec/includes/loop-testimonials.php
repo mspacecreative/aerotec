@@ -9,7 +9,7 @@
 			<div class="grid-item">
 				<div class="grid-inner">
 					<div class="card-content">
-						<h3><?php the_title(); ?></h3>
+						<h3 style="margin-top: 0;"><?php the_title(); ?></h3>
 						<?php the_content(); ?>
 					</div>
 				</div>
