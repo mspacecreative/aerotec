@@ -6,14 +6,14 @@
 		<?php 
 		$images = get_field('affiliate_logos');
 		$size = 'full';
-		$externallink = get_field('external_link', $image['ID']);
-		$squarelogo = get_field('square_logo', $image['ID']);
 					
 		if( $images ): ?>
 		<ul>
 			<?php foreach( $images as $image ): ?>
 			<li>
 				<?php
+				$externallink = get_field('external_link', $image['ID']);
+				$squarelogo = get_field('square_logo', $image['ID']);
 				if ( $externallink == 'true' && $squarelogo == 'true' ): ?>
 				<a href="<?php the_field('external_link', $image['ID']); ?>" target="_blank"><?php echo wp_get_attachment_image( $image['ID'], $size, "", ["class" => "square-logo"] ); ?></a>
 				<?php elseif ( $externallink ): ?>
