@@ -621,6 +621,7 @@ span.wpcf7-list-item {
 		0 calc(100% - 10vw)
 		);
 	z-index: 2;
+	background-size: cover;
 }
 
 .services-section:before, .testimonials-container:before {
@@ -786,6 +787,7 @@ span.wpcf7-list-item {
 		0% 100%
 		);
 	margin-top: -75px;
+	background-size: cover;
 }
 
 .testimonials-slider {
