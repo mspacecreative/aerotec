@@ -3,8 +3,8 @@
 <?php
 $narrow =  get_field('narrow_column', 'options');
 $nodrawing = get_field('no_drawing', 'options');
-if ( $narrow ): ?>
-<div id="main-content" class="narrow">
+if ( $narrow == 'true' && $nodrawing == 'true' ): ?>
+<div id="main-content" class="narrow no-drawing">
 <?php elseif ( $nodrawing ): ?>
 <div id="main-content" class="no-drawing">
 <?php else : ?>
