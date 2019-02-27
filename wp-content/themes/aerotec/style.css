@@ -991,7 +991,7 @@ span.wpcf7-list-item {
 	.testimonials-slider .slick-next {
 		right: 0;
 	}
-	.logo-container li .square-logo img {
+	img.square-logo {
 		padding: 20px 50px;
 	}
 }
