@@ -841,7 +841,7 @@ span.wpcf7-list-item {
 }
 
 .logo-container li {
-	width: 25%;
+	width: 33.333%;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -861,7 +861,7 @@ span.wpcf7-list-item {
 }*/
 
 .logo-container li img.square-logo {
-    width: 33.33%;
+    width: 25%;
 	margin: auto;
 	padding: 0;
 }
