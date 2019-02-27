@@ -963,14 +963,14 @@ span.wpcf7-list-item {
 	}
 	.warranty-badge {
 		position: absolute;
-		max-width: 130px;
+		max-width: 200px;
 		left: 50%;
-		margin-left: -65px;
+		margin-left: -100px;
 		top: 50%;
-		margin-top: -30px;
+		margin-top: -50px;
 	}
 	.warranty-badge img {
-		width: 130px;
+		width: 200px;
 	}
 	.warranty-blurb-container {
 		padding-left: 0;
