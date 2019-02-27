@@ -13,13 +13,16 @@
 			<li>
 				<?php
 				$externallink = get_field('external_link', $image['ID']);
-				$squarelogo = get_field('square_logo', $image['ID']);
-				if ( $externallink == 'true' && $squarelogo == 'true' ): ?>
-				<a href="<?php the_field('external_link', $image['ID']); ?>" target="_blank"><?php echo wp_get_attachment_image( $image['ID'], $size, "", ["class" => "square-logo"] ); ?></a>
-				<?php elseif ( $externallink ): ?>
-				<a href="<?php the_field('external_link', $image['ID']); ?>" target="_blank"><?php echo wp_get_attachment_image( $image['ID'], $size ); ?></a>
-				<?php else : ?>
-				<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+				if ( $externallink ): ?>
+				<a href="<?php the_field('external_link', $image['ID']); ?>" target="_blank">
+					<?php
+					$squarelogo = get_field('square_logo', $image['ID']);
+					if ( $squarelogo ): ?>
+					<?php echo wp_get_attachment_image( $image['ID'], $size, "", ["class" => "square-logo"] ); ?>
+					<?php else : ?>
+					<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+					<?php endif; ?>
+				</a>
 				<?php endif; ?>
 			</li>
 			<?php endforeach; ?>
