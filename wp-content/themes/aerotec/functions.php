@@ -394,6 +394,11 @@ function add_excerpts_to_cpt() {
     add_post_type_support( 'services', 'excerpt' );
 }
 
+function gutenberg_editor_styles() {
+	add_theme_support('editor-styles');
+	add_editor_style( 'css/gutenberg.css' );
+}
+
 // ACTIONS, OPTIONS AND FILTERS
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 add_action('init', 'footer_scripts');
@@ -401,6 +406,7 @@ add_option( 'my_default_pic', get_stylesheet_directory_uri() . '/img/wood-frame-
 add_action( 'widgets_init', 'posts_sidebar' );
 add_action( 'widgets_init', 'remove_FooterArea6', 11 );
 add_action( 'init', 'add_excerpts_to_cpt' );
+add_action('init','gutenberg_editor_styles');
 
 // SHORTCODES
 add_shortcode( 'artists_list', 'artistsLoop' );
