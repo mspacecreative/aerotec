@@ -8,6 +8,8 @@
  Version:      1.0
 */
 
+@import "css/style.css";
+
 body {
 	font-family: proxima-nova, sans-serif;
 }
