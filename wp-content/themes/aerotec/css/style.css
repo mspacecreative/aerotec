@@ -5,3 +5,13 @@
 .footer-widget h4 {
 	margin-top: 0;
 }
+
+.footer p:not(.has-background):last-of-type {
+	margin-bottom: 0;
+}
+
+@media (min-width: 981px) {
+	.et_pb_gutters3 .footer-widget {
+		margin-bottom: 50px;
+	}
+}
