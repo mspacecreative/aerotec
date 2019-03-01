@@ -973,7 +973,11 @@ span.wpcf7-list-item {
 @media (max-width: 1024px) {
 	
 	.logo-container li img, .logo-container li:nth-child(4n) img {
-		padding: 20px;
+		padding: 30px;
+	}
+	.logo-container li img.square-logo {
+		padding: 0;
+		width: 35%;
 	}
 }
 

@@ -364,6 +364,7 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'home page', 'content' ),
+			'supports'			=> array( 'mode' => false, 'anchor' => true ),
 		));
 		
 		// Text Block
