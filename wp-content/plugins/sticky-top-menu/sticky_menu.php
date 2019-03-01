@@ -46,11 +46,11 @@ function stickymenuPluginBottom() {
  <div class="stickymenu bottom">
  	<ul>
  		<?php if ( get_field('phone_number', 'options') ): ?>
- 		<li><a class="click-number" href="tel:+1<?php the_field('phone_number', 'options'); ?>"><span id="phoneNumber"><?php the_field('phone_number', 'options'); ?></span></a></li>
+ 		<li><a class="click-number" href="tel:+1<?php the_field('phone_number', 'options'); ?>"><span id="phoneNumber"><?php esc_html_e('Call'); ?></span></a></li>
  		<?php endif; ?>
  		<?php if ( get_field('email_button', 'options') ): ?>
  		<li>
- 			<a href="mailto:<?php the_field('email_button', 'options'); ?>"><?php echo esc_html_e('Email Us'); ?></a>
+ 			<a href="mailto:<?php the_field('email_button', 'options'); ?>"><?php echo esc_html_e('Email'); ?></a>
  		</li>
  		<?php endif; ?>
  		<?php if ( get_field('quote_button', 'options') ): ?>

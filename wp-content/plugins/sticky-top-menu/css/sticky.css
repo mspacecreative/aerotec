@@ -59,6 +59,9 @@
 	.stickymenu {
 		display: none!important;
 	}
+	.stickymenu.bottom {
+		display: block;
+	}
 }
 
 @media (min-width: 1081px) {
