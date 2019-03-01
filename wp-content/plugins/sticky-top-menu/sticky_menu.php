@@ -61,9 +61,8 @@ function stickymenuPluginBottom() {
  	</ul>
  </div>
  <?php echo ob_get_clean();
- }*
+ }
  
- add_action( 'wp_head', 'stickymenuPlugin' );
-// add_action( 'wp_head', 'stickymenuPluginBottom' );
- add_action( 'wp_enqueue_scripts', 'sticky_menu' );
- ?>
+add_action( 'wp_head', 'stickymenuPlugin' );
+add_action( 'wp_head', 'stickymenuPluginBottom' );
+add_action( 'wp_enqueue_scripts', 'sticky_menu' );
