@@ -38,7 +38,7 @@
 	top: auto;
 	position: fixed;
 	padding: 15px;
-	background: rgba(255, 255, 255, .85);
+	background: #233D95;
 	text-align: center;
 	z-index: 99;
 	transform: translateY(0);
