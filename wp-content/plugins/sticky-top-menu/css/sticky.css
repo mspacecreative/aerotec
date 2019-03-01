@@ -55,10 +55,6 @@
 	transition: 0.25s ease-in-out;
 }
 
-.stickymenu ul li {
-	display: inline-block;
-}
-
 @media (max-width: 1080px) {
 	.stickymenu {
 		display: none!important;
