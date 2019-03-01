@@ -41,19 +41,10 @@
  <?php echo ob_get_clean();
  }
  
-/* function stickymenuPluginBottom() {
+function stickymenuPluginBottom() {
  	ob_start(); ?>
  <div class="stickymenu bottom">
  	<ul>
- 		<?php if ( get_field('linkedin', 'options') ): ?>
- 		<li><a href="<?php the_field('linkedin', 'options'); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
- 		<?php endif; ?>
- 		<?php if ( get_field('twitter', 'options') ): ?>
- 		<li><a href="<?php the_field('twitter', 'options'); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
- 		<?php endif; ?>
- 		<?php if ( get_field('facebook', 'options') ): ?>
- 		<li><a href="<?php the_field('facebook', 'options'); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
- 		<?php endif; ?>
  		<?php if ( get_field('phone_number', 'options') ): ?>
  		<li><a class="click-number" href="tel:+1<?php the_field('phone_number', 'options'); ?>"><span id="phoneNumber"><?php the_field('phone_number', 'options'); ?></span></a></li>
  		<?php endif; ?>
@@ -70,7 +61,7 @@
  	</ul>
  </div>
  <?php echo ob_get_clean();
- }*/
+ }*
  
  add_action( 'wp_head', 'stickymenuPlugin' );
 // add_action( 'wp_head', 'stickymenuPluginBottom' );
