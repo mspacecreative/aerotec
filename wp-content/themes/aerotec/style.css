@@ -828,7 +828,7 @@ span.wpcf7-list-item {
 
 .affiliations-section {
 	text-align: center;
-	padding: 80px 0 0;
+	padding: 80px 0 40px;
 }
 
 #left-area .logo-container ul {
@@ -848,20 +848,6 @@ span.wpcf7-list-item {
 	display: inline-block;
 	vertical-align: middle;
 }
-
-/*.logo-container li:nth-child(4n+1):nth-last-child(-n+4),
-  .logo-container li:nth-child(4n+1):nth-last-child(-n+4) ~ li {
-    width: 15%;
-	margin-right: 5%;
-}
-
-.logo-container li:nth-child(4n+1):nth-last-child(-n+4) ~ li:last-child {
-	margin-right: 0;
-}
-
-.logo-container li:nth-child(4n) img {
-	padding: 40px 65px;
-}*/
 
 .logo-container li img.square-logo {
     width: 25%;
