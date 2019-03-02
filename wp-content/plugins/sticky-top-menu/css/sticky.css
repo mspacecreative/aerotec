@@ -50,6 +50,12 @@
 	display: none;
 }
 
+.stickymenu-mobile li a {
+	color: #fff;
+	padding: 0 15px;
+	font-size: 20px;
+}
+
 .stickymenu.reveal {
 	transform: translateY(0);
 	transition: 0.25s ease-in-out;
