@@ -47,6 +47,7 @@
 	z-index: 99;
 	transform: translateY(0);
 	transition: 0.25s ease-in-out;
+	display: none;
 }
 
 .stickymenu.reveal {
