@@ -1104,6 +1104,9 @@ span.wpcf7-list-item {
 		height: 186px;
 		left: -20px;
 	}
+	.section-title {
+		border: none;
+	}
 }
 
 @media (min-width: 1441px) {
