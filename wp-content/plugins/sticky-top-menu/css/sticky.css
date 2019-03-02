@@ -59,7 +59,7 @@
 	.stickymenu {
 		display: none;
 	}
-	.stickymenu.bottom {
+	.stickymenu-mobile {
 		display: block;
 	}
 }
