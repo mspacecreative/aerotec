@@ -60,7 +60,7 @@
 	transition: 0.25s ease-in-out;
 }
 
-@media (max-width: 1080px) {
+@media (max-device-width: 1080px) {
 	.stickymenu {
 		display: none;
 	}
