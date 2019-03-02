@@ -31,7 +31,7 @@
 	float: right;
 }
 
-.stickymenu.bottom {
+.stickymenu-mobile {
 	width: 100%;
 	bottom: -53px;
 	left: 0;

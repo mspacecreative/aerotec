@@ -43,7 +43,7 @@
  
 function stickymenuPluginBottom() {
  	ob_start(); ?>
- <div class="stickymenu bottom">
+ <div class="stickymenu-mobile">
  	<ul>
  		<?php if ( get_field('phone_number', 'options') ): ?>
  		<li><a class="click-number" href="tel:+1<?php the_field('phone_number', 'options'); ?>"><span id="phoneNumber"><?php esc_html_e('Call'); ?></span></a></li>
