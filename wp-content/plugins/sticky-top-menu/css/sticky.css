@@ -50,6 +50,24 @@
 	display: none;
 }
 
+.stickymenu-mobile ul {
+	font-size: 0;
+}
+
+.stickymenu-mobile ul li {
+	vertical-align: middle;
+	padding: 10px 0;
+}
+
+.stickymenu-mobile li:nth-child(2), .stickymenu-mobile li:nth-child(1) {
+	width: 25%;
+	border-right: 1px solid rgba(255,255,255,.15);
+}
+
+.stickymenu-mobile li:nth-child(3) {
+	width: 50%;
+}
+
 .stickymenu-mobile li a {
 	color: #fff;
 	padding: 0 10px;
