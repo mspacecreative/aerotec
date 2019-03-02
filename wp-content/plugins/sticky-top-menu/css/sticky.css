@@ -10,6 +10,10 @@
 	transition: 0.25s ease-in-out;
 }
 
+.stickymenu ul li, .stickymenu-mobile ul li {
+	display: inline-block;
+}
+
 .stickymenu-inner {
 	max-width: 980px;
 	margin: auto;
@@ -50,7 +54,7 @@
 	transition: 0.25s ease-in-out;
 }
 
-.stickymenu.bottom.reveal {
+.stickymenu-mobile.reveal {
 	transform: translateY(-53px);
 	transition: 0.25s ease-in-out;
 }
