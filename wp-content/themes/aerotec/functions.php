@@ -70,9 +70,6 @@ function footer_scripts() {
 	
 	wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), null, true);
 	wp_enqueue_script('fontawesome');
-	
-	wp_register_script('para-script', get_stylesheet_directory_uri() . '/js/dzsparallaxer/dzsparallaxer.js', array('jquery'), null, true);
-	wp_enqueue_script('para-script');
 }
 
 /* ACF OPTIONS PAGE */
