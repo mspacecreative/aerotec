@@ -937,6 +937,9 @@ span.wpcf7-list-item {
 	.et_pb_gutters3.et_pb_footer_columns3 .footer-widget {
 		width: 25%;
 	}
+	.featured-engines {
+		padding-top: 80px;
+	}
 	.et_pb_gutters3 .footer-widget {
 		margin-right: 12.5%;
 	}
