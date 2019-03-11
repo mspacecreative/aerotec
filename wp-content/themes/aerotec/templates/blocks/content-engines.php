@@ -11,10 +11,8 @@
 			$lycomingengine = get_sub_field('lycoming_engine');
 			$size = 'medium'; ?>
 	
-			<div class="one_half_col">
-				<?php echo wp_get_attachment_image( $lycominglogo, $size ); ?>
-				<?php echo wp_get_attachment_image( $lycomingengine, $size ); ?>
-			</div>
+			<?php echo wp_get_attachment_image( $lycominglogo, $size ); ?>
+			<?php echo wp_get_attachment_image( $lycomingengine, $size ); ?>
 			
 			<?php endwhile; ?>
 			
@@ -31,10 +29,8 @@
 			$continentalengine = get_sub_field('continental_engine');
 			$size = 'medium'; ?>
 			
-			<div class="one_half_col">
-				<?php echo wp_get_attachment_image( $continentallogo, $size ); ?>
-				<?php echo wp_get_attachment_image( $continentalengine, $size ); ?>
-			</div>
+			<?php echo wp_get_attachment_image( $continentallogo, $size ); ?>
+			<?php echo wp_get_attachment_image( $continentalengine, $size ); ?>
 			
 			<?php endwhile; ?>
 			
