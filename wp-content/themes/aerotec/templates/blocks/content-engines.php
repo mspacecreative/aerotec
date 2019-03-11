@@ -1,41 +1,46 @@
 <div class="section_container">
 	<div class="row_container clearfix">
-		<?php if( have_rows('lycoming') ):
-		while( have_rows('lycoming') ): the_row(); ?>
+		
+		<?php if( have_rows('lycoming') ): ?>
+		
 		<div class="one_half_col">
-			<?php
+			
+			<?php while( have_rows('lycoming') ): the_row();
+			
 			$lycominglogo = get_sub_field('lycoming_logo');
 			$lycomingengine = get_sub_field('lycoming_engine');
-			$size = 'medium'; 
-			
-			if( $lycominglogo == 'true' && $lycomingengine == 'true' ) { ?>
+			$size = 'medium'; ?>
+	
 			<div class="one_half_col">
 				<?php echo wp_get_attachment_image( $lycominglogo, $size ); ?>
 				<?php echo wp_get_attachment_image( $lycomingengine, $size ); ?>
 			</div>
-			<?php } ?>
+			
+			<?php endwhile; ?>
+			
 		</div>
-		<?php 
-		endwhile;
-		endif; ?>
 		
-		<?php if( have_rows('continental') ):
-		while( have_rows('continental') ): the_row(); ?>
+		<?php endif; ?>
+		
+		<?php if( have_rows('continental') ): ?>
+		
 		<div class="one_half_col">
-			<?php
+			<?php while( have_rows('continental') ): the_row();
+			
 			$continentallogo = get_sub_field('continental_logo');
 			$continentalengine = get_sub_field('continental_engine');
-			$size = 'medium'; 
+			$size = 'medium'; ?>
 			
-			if( $continentallogo == 'true' && $continentalengine == 'true' ) { ?>
 			<div class="one_half_col">
 				<?php echo wp_get_attachment_image( $continentallogo, $size ); ?>
 				<?php echo wp_get_attachment_image( $continentalengine, $size ); ?>
 			</div>
-			<?php } ?>
+			
+			<?php endwhile; ?>
+			
 		</div>
-		<?php 
-		endwhile;
-		endif; ?>
+		
+		<?php endif; ?>
+		
 	</div>
 </div>
