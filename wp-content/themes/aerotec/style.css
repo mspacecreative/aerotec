@@ -38,7 +38,7 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 	position: relative;
 }
 
-.featured-engines .one_half_col img {
+.featured-engines .one_half_col img:nth-child(odd) {
 	padding: 0 20%;
 }
 
@@ -947,6 +947,10 @@ span.wpcf7-list-item {
 		float: left;
 		width: 48%;
 		margin-right: 4%;
+	}
+	.featured-engines .one_half_col {
+		margin-right: 0;
+		border-right: 2px solid #e9e9e9;
 	}
 	.one_half_col:last-child {
 		margin-right: 0;
