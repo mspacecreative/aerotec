@@ -958,6 +958,7 @@ span.wpcf7-list-item {
 	}
 	.one_half_col:last-child {
 		margin-right: 0;
+		border-right: none;
 	}
 	.service {
 		float: left;
