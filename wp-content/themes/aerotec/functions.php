@@ -208,7 +208,7 @@ function my_acf_init() {
 		// register engines block
 		acf_register_block(array(
 			'name'				=> 'engines',
-			'title'				=> __('Lycoming and Continental Engines'),
+			'title'				=> __('Featured Engines'),
 			'description'		=> __('Lycoming and Continental Engines Section'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
