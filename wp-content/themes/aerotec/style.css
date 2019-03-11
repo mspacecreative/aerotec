@@ -39,7 +39,11 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 }
 
 .featured-engines .one_half_col img:nth-child(odd) {
-	padding: 0 20%;
+	padding: 0 30%;
+}
+
+.featured-engines .one_half_col img:nth-child(even) {
+	padding: 0 10%;
 }
 
 .row_container .one_half_col:first-of-type {
