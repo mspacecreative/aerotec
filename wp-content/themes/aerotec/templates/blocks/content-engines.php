@@ -1,4 +1,4 @@
-<div class="section_container">
+<div class="section_container featured-engines">
 	<div class="row_container clearfix">
 		
 		<?php if( have_rows('lycoming') ): ?>

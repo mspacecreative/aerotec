@@ -38,6 +38,10 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 	position: relative;
 }
 
+.featured-engines .one_half_col img {
+	padding: 0 20%;
+}
+
 .row_container .one_half_col:first-of-type {
 	margin-bottom: 25px;
 }
