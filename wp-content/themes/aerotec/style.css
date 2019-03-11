@@ -40,6 +40,7 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 
 .featured-engines .one_half_col img:nth-child(odd) {
 	padding: 0 30%;
+	margin-bottom: 50px;
 }
 
 .featured-engines .one_half_col img:nth-child(even) {
