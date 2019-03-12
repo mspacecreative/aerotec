@@ -7,17 +7,24 @@
 			
 			<?php while( have_rows('lycoming') ): the_row();
 			
-			$lycominglogo = get_sub_field('lycoming_logo');
+			$companylogos = get_sub_field('lycoming_logo');
 			$lycomingengine = get_sub_field('lycoming_engine');
 			$size = 'medium';
 	
-			$externallink = get_sub_field('external_link', $lycominglogo['ID']);
-			if ( $externallink ):
-			echo wp_get_attachment_image( $lycominglogo['ID'], $size );
-			endif;
-			echo wp_get_attachment_image( $lycomingengine, $size ); ?>
+			if ( $companylogos ) :
+			foreach( $companylogos as $companylogo ):
 			
-			<?php endwhile; ?>
+			$externallink = get_sub_field('external_link', $companylogo['ID']);
+			if ( $externallink ):
+			echo wp_get_attachment_image( $companylogo['ID'], $size );
+			endif;
+			
+			endforeach;
+			endif;
+			
+			echo wp_get_attachment_image( $lycomingengine, $size );
+			
+			endwhile; ?>
 			
 		</div>
 		
