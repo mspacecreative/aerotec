@@ -14,9 +14,9 @@
 			if ( $companylogos ) :
 			foreach( $companylogos as $companylogo ):
 			
-			$externallink = get_field('external_link', $companylogo['ID']);
+			$externallink = get_sub_field('external_link', $companylogo['ID']);
 			if ( $externallink ): ?>
-			<a href="<?php the_field('external_link', $companylogo['ID']); ?>" target="_blank">
+			<a href="<?php the_sub_field('external_link', $companylogo['ID']); ?>" target="_blank">
 			<?php echo wp_get_attachment_image( $companylogo['ID'], $size ); ?>
 			</a>
 			<?php endif; ?>
