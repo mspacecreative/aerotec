@@ -12,7 +12,7 @@
 			$size = 'medium'; ?>
 	
 			<a href="<?php the_field('external_link', $lycominglogo['ID']); ?>" target="_blank">
-				<?php echo wp_get_attachment_image( $lycominglogo, $size ); ?>
+				<?php echo wp_get_attachment_image( $lycominglogo['ID'], $size ); ?>
 			</a>
 			<?php echo wp_get_attachment_image( $lycomingengine, $size ); ?>
 			
