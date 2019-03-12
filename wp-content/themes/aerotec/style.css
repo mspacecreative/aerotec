@@ -942,6 +942,14 @@ span.wpcf7-list-item {
 	#main-header {
 		position: fixed;
 	}
+	.featured-engines .row_container .one_half_col:first-of-type {
+		margin-bottom: 50px;
+		padding-bottom: 25px;
+		border-bottom: 2px solid #AE7331;
+	}
+	.featured-engines .row_container {
+		padding: 0 5%;
+	}
 }
 
 @media (min-width: 981px) {
