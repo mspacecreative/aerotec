@@ -9,11 +9,11 @@
 			
 			$lycominglogo = get_sub_field('lycoming_logo');
 			$lycomingengine = get_sub_field('lycoming_engine');
-			$externallink = get_field('external_link', $lycominglogo['ID']);
+			$externallink = get_field('external_link', $lycominglogo);
 			$size = 'medium'; ?>
 	
 			<?php if ( $externallink ): ?>
-			<a href="<?php the_field('external_link', $lycominglogo['ID']); ?>" target="_blank">
+			<a href="<?php the_field('external_link', $lycominglogo); ?>" target="_blank">
 				<?php echo wp_get_attachment_image( $lycominglogo, $size ); ?>
 			</a>
 			<?php endif; ?>
