@@ -10,7 +10,7 @@
 			$lycominglogo = get_sub_field('lycoming_logo');
 			$lycomingengine = get_sub_field('lycoming_engine');
 			$externallink = get_field('external_link', $lycominglogo);
-			$size = 'medium'; ?>
+			$size = 'full'; ?>
 	
 			<?php if ( $externallink ): ?>
 			<a href="<?php the_field('external_link', $lycominglogo); ?>" target="_blank">
