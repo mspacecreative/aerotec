@@ -83,7 +83,7 @@
 	transition: 0.25s ease-in-out;
 }
 
-@media (max-device-width: 1080px) {
+@media (max-width: 980px) {
 	.stickymenu {
 		display: none;
 	}
@@ -92,7 +92,7 @@
 	}
 }
 
-@media (min-width: 1081px) {
+@media (min-width: 981px) {
 	.menu-sample-nav-container {
 		float: left;
 	}
