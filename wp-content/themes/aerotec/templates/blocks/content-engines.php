@@ -9,7 +9,7 @@
 			
 			$lycominglogo = get_sub_field('lycoming_logo');
 			$lycomingengine = get_sub_field('lycoming_engine');
-			$lycominglink = get_field('external_link', $lycominglogo['ID']);
+			$lycominglink = get_sub_field('external_link', $lycominglogo['ID']);
 			$size = 'medium';
 	
 			if ( $lycominglink ): ?>
@@ -32,7 +32,7 @@
 			
 			$continentallogo = get_sub_field('continental_logo');
 			$continentalengine = get_sub_field('continental_engine');
-			$continentallink = get_field('external_link', $continentallogo['ID']);
+			$continentallink = get_sub_field('external_link', $continentallogo['ID']);
 			$size = 'medium';
 			
 			if ( $externallink ): ?>
