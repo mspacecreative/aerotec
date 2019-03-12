@@ -11,7 +11,7 @@
 			$lycomingengine = get_sub_field('lycoming_engine');
 			$size = 'medium'; ?>
 	
-			<a href="<?php the_field('external_link', $lycominglogo['ID']); ?>" target="_blank">
+			<a href="<?php the_field('external_link'); ?>" target="_blank">
 				<?php echo wp_get_attachment_image( $lycominglogo, $size ); ?>
 			</a>
 			<?php endif; ?>
