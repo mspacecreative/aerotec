@@ -66,7 +66,7 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 	position: absolute;
 }
 
-.featured-engines:before {
+.featured-engines:before, .services-section:after {
 	content: '';
 	background-image: url(img/textures/white_carbon.png);
 	opacity: .5;
