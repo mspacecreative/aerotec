@@ -68,16 +68,10 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 
 .featured-engines:before {
 	content: '';
-	background-image: url(img/engine-illustration.gif);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: bottom left;
-	opacity: .1;
-	width: 1000px;
-	height: 621px;
-	transform: rotate(-20deg);
-	left: -100px;
-	bottom: 0;
+	background-image: url(img/textures/white_carbon.png);
+	opacity: .5;
+	left: 0;
+	top: 0;
 	position: absolute;
 }
 
@@ -335,6 +329,7 @@ h4 {
 .section_container.featured-engines {
 	padding-right: 0;
 	padding-left: 0;
+	position: relative;
 }
 
 .row_container {
