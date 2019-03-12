@@ -9,11 +9,11 @@
 			
 			$lycominglogo = get_sub_field('lycoming_logo');
 			$lycomingengine = get_sub_field('lycoming_engine');
-			$externallink = get_field('external_link', $lycominglogo['ID']);
+			$lycominglink = get_field('external_link', $lycominglogo['ID']);
 			$size = 'medium';
 	
-			if ( $externallink ): ?>
-			<a href="<?php the_field('external_link', $image['ID']); ?>" target="_blank">
+			if ( $lycominglink ): ?>
+			<a href="<?php the_field('external_link', $lycominglogo['ID']); ?>" target="_blank">
 				<?php echo wp_get_attachment_image( $lycominglogo, $size ); ?>
 			</a>
 			<?php endif; ?>
@@ -32,11 +32,11 @@
 			
 			$continentallogo = get_sub_field('continental_logo');
 			$continentalengine = get_sub_field('continental_engine');
-			$externallink = get_field('external_link', $continentallogo['ID']);
+			$continentallink = get_field('external_link', $continentallogo['ID']);
 			$size = 'medium';
 			
 			if ( $externallink ): ?>
-			<a href="<?php the_field('external_link', $image['ID']); ?>" target="_blank">
+			<a href="<?php the_field('external_link', $continentallink['ID']); ?>" target="_blank">
 				<?php echo wp_get_attachment_image( $continentallogo, $size ); ?>
 			</a>
 			<?php endif; ?>
