@@ -12,9 +12,9 @@
 			$size = 'medium'; ?>
 	
 			<?php
-			$externallink = get_sub_field('external_link', $lycominglogo['ID']);
+			$externallink = get_field('external_link', $lycominglogo['ID']);
 			if ( $externallink ): ?>
-			<a href="<?php the_sub_field('external_link', $lycominglogo['ID']); ?>" target="_blank">
+			<a href="<?php the_field('external_link', $lycominglogo['ID']); ?>" target="_blank">
 				<?php echo wp_get_attachment_image( $lycominglogo['ID'], $size ); ?>
 			</a>
 			<?php endif; ?>
