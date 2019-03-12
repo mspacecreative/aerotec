@@ -1,6 +1,11 @@
 <div class="section_container featured-engines">
 	<div class="row_container clearfix">
 		
+		<?php 
+		$externallink = get_field('external_link', $lycominglogo['ID']);
+		if ( $externallink ): 
+		?>
+		
 		<?php if( have_rows('lycoming') ): ?>
 		
 		<div class="one_half_col">
@@ -11,11 +16,8 @@
 			$lycomingengine = get_sub_field('lycoming_engine');
 			$size = 'medium'; ?>
 	
-			<?php
-			$externallink = get_field('external_link', $lycominglogo['ID']);
-			if ( $externallink ): ?>
 			<a href="<?php the_field('external_link', $lycominglogo['ID']); ?>" target="_blank">
-				<?php echo wp_get_attachment_image( $lycominglogo['ID'], $size ); ?>
+				<?php echo wp_get_attachment_image( $lycominglogo, $size ); ?>
 			</a>
 			<?php endif; ?>
 			<?php echo wp_get_attachment_image( $lycomingengine, $size ); ?>
@@ -42,7 +44,9 @@
 			
 		</div>
 		
-		<?php endif; ?>
+		<?php endif;
+		
+		endif; ?>
 		
 	</div>
 </div>
