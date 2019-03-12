@@ -32,7 +32,7 @@
 			
 			$continentallogo = get_sub_field('continental_logo');
 			$continentalengine = get_sub_field('continental_engine');
-			$externallink = get_field('external_link', $lycominglogo['ID']);
+			$externallink = get_field('external_link', $continentallogo['ID']);
 			$size = 'medium';
 			
 			if ( $externallink ): ?>
