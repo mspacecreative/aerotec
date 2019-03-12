@@ -32,9 +32,14 @@
 			
 			$continentallogo = get_sub_field('continental_logo');
 			$continentalengine = get_sub_field('continental_engine');
+			$externallink = get_field('external_link', $continentallogo);
 			$size = 'medium'; ?>
 			
-			<?php echo wp_get_attachment_image( $continentallogo, $size ); ?>
+			<?php if ( $externallink ): ?>
+			<a href="<?php the_field('external_link', $continentallogo); ?>" target="_blank">
+				<?php echo wp_get_attachment_image( $continentallogo, $size ); ?>
+			</a>
+			<?php endif; ?>
 			<?php echo wp_get_attachment_image( $continentalengine, $size ); ?>
 			
 			<?php endwhile; ?>
