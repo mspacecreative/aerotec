@@ -950,6 +950,9 @@ span.wpcf7-list-item {
 	.featured-engines .row_container {
 		padding: 0 5%;
 	}
+	.featured-engines .one_half_col img:nth-child(odd) {
+		margin-bottom: 25px;
+	}
 }
 
 @media (min-width: 981px) {
