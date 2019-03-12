@@ -13,7 +13,7 @@
 			$size = 'medium';
 	
 			if ( $lycominglink ): ?>
-			<a href="<?php the_sub_field('external_link', $lycominglogo['ID']); ?>" target="_blank">
+			<a href="<?php the_sub_field( $lycominglink; ); ?>" target="_blank">
 				<?php echo wp_get_attachment_image( $lycominglogo, $size ); ?>
 			</a>
 			<?php endif; ?>
@@ -35,8 +35,8 @@
 			$continentallink = get_sub_field('external_link', $continentallogo['ID']);
 			$size = 'medium';
 			
-			if ( $externallink ): ?>
-			<a href="<?php the_sub_field('external_link', $continentallink['ID']); ?>" target="_blank">
+			if ( $continentallink ): ?>
+			<a href="<?php the_sub_field( $continentallink; ); ?>" target="_blank">
 				<?php echo wp_get_attachment_image( $continentallogo, $size ); ?>
 			</a>
 			<?php endif; ?>
