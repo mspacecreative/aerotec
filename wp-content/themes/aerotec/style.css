@@ -970,6 +970,7 @@ span.wpcf7-list-item {
 	.featured-engines .one_half_col {
 		margin-right: 0;
 		border-right: 2px solid #AE7331;
+		width: 50%;
 	}
 	.one_half_col:last-child {
 		margin-right: 0;
