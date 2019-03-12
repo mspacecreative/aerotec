@@ -14,7 +14,7 @@
 			if ( $companylogos ) :
 			foreach( $companylogos as $companylogo ):
 			
-			$externallink = get_sub_field('external_link', $companylogo['ID']);
+			$externallink = get_field('external_link', $companylogo['ID']);
 			if ( $externallink ):
 			echo wp_get_attachment_image( $companylogo['ID'], $size );
 			endif;
