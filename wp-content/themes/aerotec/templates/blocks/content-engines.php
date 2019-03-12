@@ -15,11 +15,13 @@
 			foreach( $companylogos as $companylogo ):
 			
 			$externallink = get_field('external_link', $companylogo['ID']);
-			if ( $externallink ):
-			echo wp_get_attachment_image( $companylogo['ID'], $size );
-			endif;
+			if ( $externallink ): ?>
+			<a href="<?php the_field('external_link', $companylogo['ID']); ?>" target="_blank">
+			<?php echo wp_get_attachment_image( $companylogo['ID'], $size );
+			endif; ?>
+			</a>
 			
-			endforeach;
+			<?php endforeach;
 			endif;
 			
 			echo wp_get_attachment_image( $lycomingengine, $size );
