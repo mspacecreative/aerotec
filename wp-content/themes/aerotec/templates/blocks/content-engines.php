@@ -14,7 +14,6 @@
 			<a href="<?php the_field('external_link'); ?>" target="_blank">
 				<?php echo wp_get_attachment_image( $lycominglogo, $size ); ?>
 			</a>
-			<?php endif; ?>
 			<?php echo wp_get_attachment_image( $lycomingengine, $size ); ?>
 			
 			<?php endwhile; ?>
