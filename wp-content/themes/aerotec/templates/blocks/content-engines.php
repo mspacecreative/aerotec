@@ -9,10 +9,13 @@
 			
 			$lycominglogo = get_sub_field('lycoming_logo');
 			$lycomingengine = get_sub_field('lycoming_engine');
-			$size = 'medium'; ?>
+			$size = 'medium';
 	
-			<?php echo wp_get_attachment_image( $lycominglogo, $size ); ?>
-			<?php echo wp_get_attachment_image( $lycomingengine, $size ); ?>
+			$externallink = get_field('external_link', $lycominglogo['ID']);
+			if ( $externallink ):
+			echo wp_get_attachment_image( $lycominglogo['ID'], $size );
+			endif;
+			echo wp_get_attachment_image( $lycomingengine, $size ); ?>
 			
 			<?php endwhile; ?>
 			
