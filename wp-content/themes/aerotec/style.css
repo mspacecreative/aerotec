@@ -66,15 +66,6 @@ body.et_left_sidebar .one_fourth, body.et_left_sidebar .one_half, body.et_left_s
 	position: absolute;
 }
 
-.featured-engines:before, .services-section:after {
-	content: '';
-	background-image: url(img/textures/white_carbon.png);
-	opacity: .5;
-	left: 0;
-	top: 0;
-	position: absolute;
-}
-
 .single #main-content:before {
 	display: none;
 }
