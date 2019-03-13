@@ -322,7 +322,7 @@ function my_acf_init() {
 			'description'		=> __('Touch enabled photo gallery'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
+			'icon'				=> 'dashicons-format-gallery',
 			'keywords'			=> array( 'slider', 'photo gallery' ),
 		));
 		
