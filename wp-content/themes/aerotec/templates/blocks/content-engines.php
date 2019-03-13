@@ -33,7 +33,7 @@
 			$continentallogo = get_sub_field('continental_logo');
 			$continentalengine = get_sub_field('continental_engine');
 			$externallink = get_field('external_link', $continentallogo);
-			$size = 'medium'; ?>
+			$size = 'full'; ?>
 			
 			<?php if ( $externallink ): ?>
 			<a href="<?php the_field('external_link', $continentallogo); ?>" target="_blank">
