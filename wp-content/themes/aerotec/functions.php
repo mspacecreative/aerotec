@@ -212,7 +212,7 @@ function my_acf_init() {
 			'description'		=> __('Lycoming and Continental Engines Section'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
+			'icon'				=> 'screenoptions',
 			'keywords'			=> array( 'google map', 'service centres' ),
 		));
 		
@@ -223,7 +223,7 @@ function my_acf_init() {
 			'description'		=> __('Shows map of approved service centres'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
+			'icon'				=> 'location-alt',
 			'keywords'			=> array( 'google map', 'service centres' ),
 		));
 		
@@ -234,7 +234,7 @@ function my_acf_init() {
 			'description'		=> __('Shows all testimonials in a masonry layout'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
+			'icon'				=> 'testimonial',
 			'keywords'			=> array( 'google map', 'service centres' ),
 		));
 		
@@ -245,7 +245,7 @@ function my_acf_init() {
 			'description'		=> __('Request a Quote form'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
+			'icon'				=> 'list-view',
 			'keywords'			=> array( 'google map', 'service centres' ),
 		));
 		
@@ -256,7 +256,7 @@ function my_acf_init() {
 			'description'		=> __('Covers information on Aerotec&#8319;a Warranty'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
+			'icon'				=> 'shield-alt',
 			'keywords'			=> array( 'google map', 'service centres' ),
 		));
 		
@@ -267,7 +267,7 @@ function my_acf_init() {
 			'description'		=> __('List of services'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
+			'icon'				=> 'admin-tools',
 			'keywords'			=> array( 'services', 'offerings' ),
 		));
 		
@@ -278,7 +278,7 @@ function my_acf_init() {
 			'description'		=> __('List of services'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
+			'icon'				=> 'admin-tools',
 			'keywords'			=> array( 'services', 'offerings' ),
 		));
 		
@@ -289,7 +289,7 @@ function my_acf_init() {
 			'description'		=> __('Shows map of approved service centres'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
+			'icon'				=> 'location-alt',
 			'keywords'			=> array( 'google map', 'service centres' ),
 		));
 		
