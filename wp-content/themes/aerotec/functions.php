@@ -311,7 +311,7 @@ function my_acf_init() {
 			'description'		=> __('WYSIWYG editor and static image'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
+			'icon'				=> 'screenoptions',
 			'keywords'			=> array( 'text editor', 'static image' ),
 		));
 		
