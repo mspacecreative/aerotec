@@ -34,4 +34,4 @@
 		hamburgerIcon();
 		//bodyOverlayHeight();
 	});
-});
+})(jQuery);

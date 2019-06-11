@@ -8,4 +8,4 @@
 	    $('.stickymenu, .stickymenu-mobile').removeClass('reveal');
 	  }
 	});
-});
+})(jQuery);
