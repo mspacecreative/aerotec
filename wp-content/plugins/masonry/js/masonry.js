@@ -7,4 +7,4 @@
 		  percentPosition: true
 		});
 	});
-});
+})(jQuery);
