@@ -6,9 +6,21 @@
 	margin-left: auto;
 }
 
-.grid-item .cta-buttons a:hover, .single .card-content .cta-buttons a:hover, .archive .card-content .cta-buttons a:hover, .services-section ul.inline li a:hover, .cta-buttons.light a:hover {
+.grid-item .cta-buttons a:hover, .single .card-content .cta-buttons a:hover, .archive .card-content .cta-buttons a:hover, .services-section ul.inline li a:hover, .cta-buttons.light a:hover, .button:hover {
 	background-color: #b07335;
 	color: #fff;
+	transition: 0.25s ease-in-out;
+}
+
+#phoneNumber {
+	margin-bottom: 20px;
+	display: block;
+}
+
+.button {
+	text-transform: uppercase;
+	display: block;
+	padding: 15px 25px;
 	transition: 0.25s ease-in-out;
 }
 
