@@ -43,30 +43,26 @@ function my_theme_enqueue_styles() {
 	wp_enqueue_style( 'pgw-style', get_stylesheet_directory_uri() . '/css/pgwslider.min.css', array(), null );
 	wp_enqueue_style('pgw-style');
 	
-	wp_enqueue_script( 'pgw-script', get_stylesheet_directory_uri() . '/js/pgwslider.min.js', array( 'jquery' ), '1.0', true );
-	wp_enqueue_script('pgw-script');
-	
 	wp_enqueue_style( 'slick-theme', get_stylesheet_directory_uri() . '/css/slick-theme.css', array(), null );
 	wp_enqueue_style('slick-theme');
 	
-	wp_enqueue_script( 'slick-script', get_stylesheet_directory_uri() . '/js/slick.min.js', array( 'jquery' ), '1.0', true );
-	wp_enqueue_script('slick-script');
-	
 	wp_register_style('typekit', 'https://use.typekit.net/gfo2vxu.css', array(), '1.0', 'all');
 	wp_enqueue_style('typekit');
-	
-	
-	wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), null, true);
-	wp_enqueue_script('fontawesome');
 }
 
 function footer_scripts() {
 	
-	wp_register_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
-	wp_enqueue_script('scripts');
+	wp_enqueue_script( 'slick-script', get_stylesheet_directory_uri() . '/js/slick.min.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script('slick-script');
+	
+	wp_enqueue_script( 'pgw-script', get_stylesheet_directory_uri() . '/js/pgwslider.min.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script('pgw-script');
 	
 	wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), null, true);
 	wp_enqueue_script('fontawesome');
+	
+	wp_register_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
+	wp_enqueue_script('scripts');
 }
 
 /* ACF OPTIONS PAGE */
@@ -204,6 +200,32 @@ function my_acf_init() {
 	
 	// check function exists
 	if( function_exists('acf_register_block') ) {
+		
+		// register two third one third block
+		acf_register_block(array(
+			'name'				=> 'two-third-one-third',
+			'title'				=> __('2/3 1/3 Section'),
+			'description'		=> __('Displays a two third one third layout'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'images-alt',
+			'keywords'			=> array( 'layout', 'grid' ),
+			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
+		));
+		
+		// register flexbox block
+		acf_register_block(array(
+			'name'				=> 'columns',
+			'title'				=> __('Variable Columns Block'),
+			'description'		=> __('Displays content in variable columns'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'images-alt',
+			'keywords'			=> array( 'layout', 'grid' ),
+			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
+		));
 		
 		// register engines block
 		acf_register_block(array(
@@ -435,3 +457,7 @@ add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 // CUSTOM STYLES IN TINY MCE
 add_filter('mce_buttons_2', 'wpb_mce_buttons_2');
 add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+
+include 'functions/shortcodes.php';
+include 'functions/upload-size.php';
+include 'functions/gutenberg-block-edits.php';

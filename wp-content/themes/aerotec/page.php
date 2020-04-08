@@ -4,11 +4,19 @@ get_header();
 
 $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
-?>
-
+$narrow =  get_field('narrow_column');
+$nodrawing = get_field('no_drawing');
+if ( $narrow && $nodrawing ): ?>
+<div id="main-content" class="narrow no-drawing">
+<?php elseif ( $narrow ): ?>
+<div id="main-content" class="narrow">
+<?php elseif ( $nodrawing ): ?>
+<div id="main-content" class="no-drawing">
+<?php else : ?>
 <div id="main-content">
+<?php endif;
 
-<?php if ( ! $is_page_builder_used ) : ?>
+if ( ! $is_page_builder_used ) : ?>
 
 	<div class="container">
 		<div id="content-area" class="clearfix">
@@ -22,7 +30,13 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 				<?php if ( ! $is_page_builder_used ) : ?>
 
-					<h1 class="entry-title main_title"><?php the_title(); ?></h1>
+					<div class="section_container" style="padding-bottom: 0;">
+						<div class="row_container">
+							<div class="section-title-container boxed">
+								<h1 class="section-title"><?php the_title(); ?></h1>
+							</div>
+						</div>
+					</div>
 				<?php
 					$thumb = '';
 

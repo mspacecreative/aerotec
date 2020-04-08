@@ -112,6 +112,8 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 						do_action( 'et_before_content' );
 
 						the_content();
+						
+						echo do_shortcode('[services_single_loop]');
 
 						wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
 					?>

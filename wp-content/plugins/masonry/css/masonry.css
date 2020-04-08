@@ -1,4 +1,4 @@
-#instafeed img {
+#instafeed img, #services-grid-container img {
 	width: 100%;
 	height: auto;
 	display: block;
@@ -38,6 +38,14 @@
 
 .card-content p {
 	display: inline;
+}
+
+.single .card-content, .single .grid-inner, .archive .card-content, .archive .grid-inner {
+	height: 100%;
+}
+
+#services-grid-container .column-container {
+	margin-bottom: 3em;
 }
 
 .read-more-link {
@@ -118,8 +126,9 @@
 	font-weight: 900;
 	font-size: 24px;
 	padding-bottom: 3px;
-	margin: 0;
+	margin: 0 0 10px;
 	color: #000;
+	line-height: 1.25em;
 }
 
 .entry-content h4.card_subtitle {
@@ -136,7 +145,7 @@
 }
 
 .grid-item {
-	margin-bottom: 6%;
+	margin-bottom: 4%;
 }
 
 @media (min-width: 800px) {

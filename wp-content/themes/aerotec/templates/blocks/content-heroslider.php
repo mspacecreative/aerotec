@@ -44,6 +44,19 @@
 					<h1><?php the_sub_field('slide_content'); ?></h1>
 						
 					<?php endif; ?>
+					
+					<?php if ( have_rows('button') ):
+					while( have_rows('button') ): the_row();
+					
+					$label = get_sub_field('label');
+					$link = get_sub_field('link');
+					
+					if ( $link ) {
+						echo '<a class="button light" target="_blank" href="' . $link . '">' . $label . '</a>';
+					}
+					
+					endwhile;
+					endif; ?>
 						
 				</div><!-- / inner-content -->
 			</div>

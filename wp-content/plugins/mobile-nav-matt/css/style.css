@@ -115,7 +115,7 @@ button.hamburger:hover {
 
 body .hamburger {
 	position: fixed;
-	right: 25px;
+	right: 10%;
 	padding: 0 0 0 10px;
 	display: table;
 	z-index: 999999;

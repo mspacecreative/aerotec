@@ -78,10 +78,15 @@
 	});
 	
 	$(window).load(function() {
-		$('.hero-slider,.testimonials-slider, .photo-gallery').slick({
-		    //autoplay: true,
+		$('.testimonials-slider, .photo-gallery').slick({
+		    dots: true,
+			adaptiveHeight: true,
+		});
+		$('.hero-slider').slick({
+		    autoplay: true,
 			dots: true,
 			adaptiveHeight: true,
+			autoplaySpeed: 4000,
 		});
 	});
 	

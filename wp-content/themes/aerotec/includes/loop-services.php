@@ -3,9 +3,13 @@
 	<div class="gutter-sizer"></div>
 	
 	<?php 
-	$loop = new WP_Query( array( 'post_type' => 'services', 'posts_per_page' => -1 ) );
-	    if ( $loop->have_posts() ) :
-	        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+	$args = array(
+	'numberposts'	=> -1,
+	'post_type'		=> 'services',
+	);
+	$the_query = new WP_Query( $args );
+	    if ( $the_query->have_posts() ) :
+	        while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			<div class="grid-item">
 				<?php if ( get_field('horizontal_icon') ): ?>
 				<div class="grid-inner horizontal">
@@ -21,15 +25,34 @@
 							if( has_excerpt() ) { 
 								the_excerpt(); 
 							}
-							?>
+							
+							$buttontype = get_field('button_type');
+							if ( $buttontype == 'page-link' ):
+							
+							if ( have_rows('button') ): 
+							while ( have_rows('button') ): the_row();
+							$label = get_sub_field('label');
+							$link = get_sub_field('link'); ?>
+							
 							<div class="cta-buttons">
-								<a href="<?php the_permalink(); ?>"><?php _e(' More...'); ?></a>
+								<a href="<?php echo $link ?>"><?php echo $label ?></a>
 							</div>
+							
+							<?php 
+							endwhile;
+							endif; ?>
+								
+							<?php elseif ( $buttontype == 'permalink' ): ?>
+							<div class="cta-buttons">
+								<a href="<?php the_permalink(); ?>"><?php  _e(' Learn more'); ?></a>
+							 </div>
+								
+							<?php endif; ?>
 						</div>
 				</div>
 			</div>
 			<?php endwhile; 
-		endif; wp_reset_postdata();
+		endif; wp_reset_query();
 	?>
 	
 </div>

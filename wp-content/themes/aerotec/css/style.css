@@ -1,9 +1,264 @@
+@charset "UTF-8";
+@import url(flexboxgrid.min.css);
+.max-width-800, .row_container.max-width-800 {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.grid-item .cta-buttons a:hover, .single .card-content .cta-buttons a:hover, .archive .card-content .cta-buttons a:hover, .services-section ul.inline li a:hover, .cta-buttons.light a:hover {
+	background-color: #b07335;
+	color: #fff;
+	transition: 0.25s ease-in-out;
+}
+
+html {
+	height: 100%;
+	background-color: #f5f5f5;
+}
+
+.light_grey_bg {
+	background-color: #f5f5f5;
+}
+
+.section_container.extra-top-bottom-padding {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.max-width-1280, .row_container {
+	max-width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+}
+
+.flex-box > div > img, .column-container > div > img {
+	width: 100%;
+	height: auto;
+}
+
 #footer-widgets {
 	padding-top: 50px;
 }
 
+/* BOXED COLUMN */
+
+.boxed-content {
+	padding: 1.5em 2em 1.75em 2em;
+	border: 1px solid #000;
+}
+
+#services-grid-container .grid-inner.horizontal img {
+	width: 95px;
+	top: -30px;
+	margin-left: -47.5px;
+}
+
+.flex-box h2:first-of-type, .entry-content .boxed-content h3:first-of-type, .entry-content .column-container h2:first-of-type, .entry-content .row_container h3:first-of-type, .entry-content .row_container h2:first-of-type {
+	margin-top: 0;
+}
+
+.entry-content .row_container .card-content h3:first-of-type {
+	margin-top: 15px;
+}
+
+.entry-content .table-style ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.entry-content .table-style ul li {
+	padding: 10px 15px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 0;
+}
+
+.flex-box p:last-of-type, .entry-content p:last-of-type {
+	margin-bottom: 0;
+}
+
+.table-style .flex-box {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.table-style .row {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.table-style .flex-box:nth-child(odd) {
+	background-color: #f5f5f5;
+}
+
+.table-style .flex-box:nth-child(even) {
+	background-color: rgba(176, 115, 53, 0.15);
+}
+
+.entry-content img {
+	display: block;
+}
+
+.section_container.top-padding {
+	padding-top: 50px;
+	padding-bottom: 0;
+}
+
+.section_container.bottom-padding {
+	padding-bottom: 50px;
+	padding-top: 0;
+}
+
+.section-title-container.bottom-padding {
+	padding-bottom: 4em;
+}
+
+.section_container.no-padding {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.section_container.no-bottom-padding {
+	padding-bottom: 0;
+}
+
+.section_container.full_width {
+	overflow: hidden;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.5em;
+}
+
+.section_container.full_width.right {
+	background-position: right center;
+}
+
+.section_container.full_width.left {
+	background-position: left center;
+}
+
+.single .container {
+	max-width: 1280px;
+	width: 80%;
+}
+
+.entry-content ul li {
+	margin-bottom: 10px;
+}
+
+.entry-content ul li:last-of-type {
+	margin-bottom: 0;
+}
+
+.section_container.full_width > .row {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1280px;
+	width: 80%;
+}
+
+.static-img {
+	margin-top: 10px;
+}
+
+.section_container.full_width .row .flex-box {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.section_container.full_width .flex-box > .inner.left {
+	padding: 4em 4em 4em 0;
+}
+
+.section_container.full_width .flex-box > .inner.right {
+	padding: 4em 0 4em 4em;
+}
+
+#sidebar {
+	padding-top: 75px;
+}
+
+#main-content .container:before {
+	display: none;
+}
+
+.image-borders img {
+	border: 1px solid #c9c9c9;
+}
+
+.careers-list {
+	margin: 50px 0;
+}
+
+#main-footer > .container, #main-header > .container, #footer-bottom > .container {
+	width: 80%;
+}
+
+#main-content > .container {
+	width: 100%;
+	max-width: none;
+}
+
+.bullet-container {
+	display: block;
+	padding-left: 15px;
+}
+
+.bullet-container:before {
+	content: '•';
+	position: absolute;
+	left: 15px;
+	font-size: 20px;
+	top: 2px;
+	color: #b07335;
+}
+
+.goldcolor {
+	color: #b07335;
+}
+
+.careers-list li {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.careers-list li:last-of-type {
+	margin-bottom: 0;
+}
+
 .footer-widget h4 {
 	margin-top: 0;
+}
+
+.row.gutter_space_2 {
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+#main-content .container ul.row.gutter_space_2, #left-area ul.row.gutter_space_2 {
+	padding: 0;
+	list-style: none;
+}
+
+.row.gutter_space_2 .flex-box, .row.gutter_space_2 .column-container {
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+
+.row.gutter_space_3 {
+	margin-left: -2rem;
+	margin-right: -2rem;
+}
+
+.row.gutter_space_3 .flex-box, .row.gutter_space_3 .column-container {
+	padding-left: 2rem !important;
+	padding-right: 2rem !important;
 }
 
 footer p:not(.has-background):last-of-type {
@@ -13,5 +268,96 @@ footer p:not(.has-background):last-of-type {
 @media (min-width: 981px) {
 	.et_pb_gutters3 .footer-widget {
 		margin-bottom: 50px;
+	}
+}
+
+body:not(.et-tb) #main-content .container, body:not(.et-tb-has-header) #main-content .container {
+	padding-top: 0;
+}
+
+.button {
+	padding: 15px 20px;
+	margin-top: 15px;
+	display: inline-block;
+}
+
+.button.light {
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+#et-top-navigation .sub-menu a {
+	color: #777;
+}
+
+#instafeed {
+	margin-top: 30px;
+}
+
+.stickymenu .sub-menu {
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.25s ease-in-out;
+	position: absolute;
+	background-color: #233d98;
+	text-align: left;
+	padding: 15px;
+}
+
+.stickymenu .sub-menu li {
+	display: block;
+}
+
+.stickymenu .sub-menu li a {
+	padding: 5px 10px;
+}
+
+.stickymenu .menu-item-has-children:hover > .sub-menu {
+	opacity: 1;
+	visibility: visible;
+	transition: 0.25s ease-in-out;
+}
+
+.entry-content h2, .entry-content h3 {
+	margin: 30px 0 15px;
+}
+
+img.alignright {
+	margin: 10px 0 20px 20px;
+}
+
+#main-content.narrow .row_container {
+	max-width: 850px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#et_search_icon:hover, #top-menu li.current-menu-ancestor > a, #top-menu li.current-menu-item > a, .bottom-nav li.current-menu-item > a, .comment-reply-link, .entry-summary p.price ins, .et-social-icon a:hover, .et_password_protected_form .et_submit_button, .footer-widget h4, .form-submit .et_pb_button, .mobile_menu_bar:after, .mobile_menu_bar:before, .nav-single a, .posted_in a, .woocommerce #content div.product p.price, .woocommerce #content div.product span.price, .woocommerce #content input.button, .woocommerce #content input.button.alt, .woocommerce #content input.button.alt:hover, .woocommerce #content input.button:hover, .woocommerce #respond input#submit, .woocommerce #respond input#submit.alt, .woocommerce #respond input#submit.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce-page #content div.product p.price, .woocommerce-page #content div.product span.price, .woocommerce-page #content input.button, .woocommerce-page #content input.button.alt, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit, .woocommerce-page #respond input#submit.alt, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page .star-rating span:before, .woocommerce-page a.button, .woocommerce-page a.button.alt, .woocommerce-page a.button.alt:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button, .woocommerce-page button.button.alt, .woocommerce-page button.button.alt.disabled, .woocommerce-page button.button.alt.disabled:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page button.button:hover, .woocommerce-page div.product p.price, .woocommerce-page div.product span.price, .woocommerce-page input.button, .woocommerce-page input.button.alt, .woocommerce-page input.button.alt:hover, .woocommerce-page input.button:hover, .woocommerce .star-rating span:before, .woocommerce a.button, .woocommerce a.button.alt, .woocommerce a.button.alt:hover, .woocommerce a.button:hover, .woocommerce button.button, .woocommerce button.button.alt, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:hover, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce input.button, .woocommerce input.button.alt, .woocommerce input.button.alt:hover, .woocommerce input.button:hover, .wp-pagenavi a:hover, .wp-pagenavi span.current, .stickymenu .sub-menu .current-menu-item a {
+	color: #b07335;
+}
+
+@media (max-width: 980px) {
+	.bottom-margin-25 {
+		margin-bottom: 25px;
+	}
+	
+	body {
+		margin-bottom: 40px;
+	}
+	
+	#footer-bottom p {
+		text-align: center;
+		margin: 15px 0;
+	}
+}
+
+@media (max-width: 450px) {
+	.section-title {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.section-title:before, .section-title:after {
+		display: none;
 	}
 }

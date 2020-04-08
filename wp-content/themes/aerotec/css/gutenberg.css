@@ -6,3 +6,6 @@
 	margin: 0 !important;
 	max-width: 1200px !important;
 }
+.editor-styles-wrapper .reusable-block-edit-panel iframe {
+	background-color: #f5f5f5!important;
+}
