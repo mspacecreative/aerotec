@@ -40,7 +40,7 @@ if ( $boxed ): ?>
 
 else : ?>
 
-<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 col-container">
+<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 col-container bottom-margin-25">
 	<?php the_field('two_third_column'); ?>
 </div>
 
