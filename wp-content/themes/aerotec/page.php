@@ -31,11 +31,9 @@ if ( ! $is_page_builder_used ) : ?>
 				<?php if ( ! $is_page_builder_used ) : ?>
 
 					<div class="section_container" style="padding-bottom: 0;">
-						<div class="row_container">
-							<div class="section-title-container boxed">
+						<div class="section-title-container boxed">
 								<h1 class="section-title"><?php the_title(); ?></h1>
 							</div>
-						</div>
 					</div>
 				<?php
 					$thumb = '';

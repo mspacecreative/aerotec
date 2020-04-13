@@ -46,7 +46,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 					<div class="entry-content">
 						<div class="section_container">
-							<div class="row_container">
 								<?php if ( ( 'off' !== $show_default_title && $is_page_builder_used ) || ! $is_page_builder_used ) { ?>
 														<div class="et_post_meta_wrapper">
 															<div class="section-title-container boxed">
@@ -106,7 +105,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 														?>
 													</div> <!-- .et_post_meta_wrapper -->
 												<?php  } ?>
-							</div>
 						</div>
 					<?php
 						do_action( 'et_before_content' );
