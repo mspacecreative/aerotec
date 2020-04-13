@@ -201,6 +201,32 @@ function my_acf_init() {
 	// check function exists
 	if( function_exists('acf_register_block') ) {
 		
+		// register flexbox block
+		acf_register_block(array(
+			'name'				=> 'carousel',
+			'title'				=> __('Carousel Block'),
+			'description'		=> __('Displays image carousel'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'images-alt',
+			'keywords'			=> array( 'carousel', 'photo gallery' ),
+			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
+		));
+		
+		// register three column layout block
+		acf_register_block(array(
+			'name'				=> 'half-and-half-img-text',
+			'title'				=> __('Two Column 50/50'),
+			'description'		=> __('Two column row with content and background image'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'images-alt',
+			'keywords'			=> array( 'two columns', 'row' ),
+			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
+		));
+		
 		// register two third one third block
 		acf_register_block(array(
 			'name'				=> 'two-third-one-third',
@@ -425,8 +451,7 @@ function add_excerpts_to_cpt() {
 }
 
 function gutenberg_editor_styles() {
-	add_theme_support('editor-styles');
-	add_editor_style( 'css/gutenberg.css' );
+	wp_enqueue_style( 'gutenberg-styles', get_stylesheet_directory_uri() . '/css/gutenberg.css', false );
 }
 
 // ACTIONS, OPTIONS AND FILTERS
@@ -436,7 +461,7 @@ add_option( 'my_default_pic', get_stylesheet_directory_uri() . '/img/wood-frame-
 add_action( 'widgets_init', 'posts_sidebar' );
 add_action( 'widgets_init', 'remove_FooterArea6', 11 );
 add_action( 'init', 'add_excerpts_to_cpt' );
-add_action('init','gutenberg_editor_styles');
+add_action( 'enqueue_block_editor_assets', 'gutenberg_editor_styles' );
 
 // SHORTCODES
 add_shortcode( 'artists_list', 'artistsLoop' );

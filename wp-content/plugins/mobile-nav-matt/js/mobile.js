@@ -12,7 +12,7 @@
 	}*/
 	
 	// HAMBURGER ICON ANIMATION
-	$('.hamburger').on('click touch', function() {
+	$('.hamburger.mobile').on('click touch', function() {
 		$('.hamburger, body, #page-container').toggleClass('is-active');
 	});
 	

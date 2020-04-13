@@ -18,7 +18,7 @@
  <!--<div class="body-overlay"></div>-->	
  	
  <div class="mobile-nav-container">
- 	<button class="hamburger hamburger--squeeze" type="button">
+ 	<button class="hamburger mobile hamburger--squeeze" type="button">
  		 <span class="hamburger-box">
  		    <span class="hamburger-inner"></span>
  		 </span>

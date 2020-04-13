@@ -2,6 +2,8 @@
 $imgborder = get_field('image_border');
 $tablestyle = get_field('convert_grid_to_table');
 $padding = get_field('padding');
+$readmore = get_field('read_more');
+$hiddencontenttype = get_field('hidden_content_type');
 
 if ( $imgborder && $padding == 'top' ): ?>
 <div class="section_container image-borders top-padding">
@@ -48,9 +50,13 @@ if ( $imgborder && $padding == 'top' ): ?>
 <?php else : ?>
 <div class="section_container">
 	
-<?php endif; ?>
-	
+<?php endif;
+
+	if ( $readmore ): ?>
+	<div class="row_container read-more-container">
+	<?php else : ?>
 	<div class="row_container">
+	<?php endif; ?>
 		
 		<?php 
 		$headerstyle = get_field('header_style');
@@ -101,10 +107,10 @@ if ( $imgborder && $padding == 'top' ): ?>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 flex-box">
 				
 			<?php elseif ( $columncount == 'three' ): ?>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flex-box">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 flex-box">
 				
 			<?php elseif ( $columncount == 'four' ): ?>
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 flex-box">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 flex-box">
 				
 			<?php endif; ?>
 				
@@ -115,19 +121,42 @@ if ( $imgborder && $padding == 'top' ): ?>
 					$body = get_sub_field('body');
 					$image = get_sub_field('image');
 					$heading = get_sub_field('heading');
+					$colheadingstyle = get_field('column_header_style');
 					
-					if ( $heading ) {
+					if ( $heading && $colheadingstyle == 'h2' ) {
+						echo '<h2>' . $heading . '</h2>';
+					} elseif ( $heading && $colheadingstyle == 'h3' ) {
+						echo '<h3>' . $heading . '</h3>';
+					} elseif ( $heading ) {
 						echo '<h3>' . $heading . '</h3>';
 					}
 					
-					if ( $contenttype == 'text' ) {
-						echo $body;
-					} elseif ( $contenttype == 'image' ) {
-						if( !empty( $image ) ): ?>
-							<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-						<?php endif;
+					if ( $readmore && $hiddencontenttype == 'accordion' ) {
+						if ( $contenttype == 'text' ) {
+							echo '<div class="hidden-content">' . $body . '</div>
+								  <a href="javascript:void(0)" class="button read-more accordion">Read more</a>';
+						} else {
+							echo '<div class="hidden-content">' . $body . '</div>
+								  <a href="javascript:void(0)" class="button read-more accordion">Read more</a>';
+						}
+					} elseif ( $readmore && $hiddencontenttype == 'lightbox' ) {
+						if ( $contenttype == 'text' ) {
+							echo '<div class="panel-overlay"></div><button class="hamburger close-panel hamburger--squeeze is-active" type="button" style="height: 74px;"><span class="hamburger-box"> <span class="hamburger-inner close"></span></span></button><div class="hidden-content panel">' . $body . '</div>
+								  <a href="javascript:void(0)" class="button read-more lightbox">Read more</a>';
+						} else {
+							echo '<div class="hidden-content">' . $body . '</div>
+								  <a href="javascript:void(0)" class="button read-more lightbox">Read more</a>';
+						}
 					} else {
-						echo $body;
+						if ( $contenttype == 'text' ) {
+							echo $body;
+						} elseif ( $contenttype == 'image' ) {
+							if( !empty( $image ) ): ?>
+								<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+							<?php endif;
+						} else {
+							echo $body;
+						}
 					}
 					
 					if( have_rows('button') ): ?>

@@ -3,7 +3,7 @@ $boxed = get_field('boxed_column');
 
 if ( $boxed ): ?>
 
-<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 column-container bottom-margin-25">
+<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 col-container bottom-margin-25">
 	<?php the_field('two_third_column'); ?>
 </div>
 
@@ -11,14 +11,14 @@ if ( $boxed ): ?>
 <?php while( have_rows('one_third_column') ): the_row(); ?>
 
 	<?php if ( get_sub_field('content_type') == 'text' ): ?>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-container">
 		<div class="boxed-content">
 			<?php the_sub_field('text_editor'); ?>
 		</div>
 	</div>
 	
 	<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-container">
 		<?php 
 		$image = get_sub_field('image_upload');
 		$size = 'large';
@@ -30,7 +30,7 @@ if ( $boxed ): ?>
 	</div>
 	
 	<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-container">
 		<?php the_sub_field('video_upload'); ?>
 	</div>
 	<?php endif; ?>
@@ -40,7 +40,7 @@ if ( $boxed ): ?>
 
 else : ?>
 
-<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 column-container">
+<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 col-container">
 	<?php the_field('two_third_column'); ?>
 </div>
 
@@ -48,12 +48,12 @@ else : ?>
 <?php while( have_rows('one_third_column') ): the_row(); ?>
 
 	<?php if ( get_sub_field('content_type') == 'text' ): ?>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-container">
 		<?php the_sub_field('text_editor'); ?>
 	</div>
 	
 	<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-container">
 		<?php 
 		$image = get_sub_field('image_upload');
 		$size = 'large';
@@ -65,7 +65,7 @@ else : ?>
 	</div>
 	
 	<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-container">
 		<?php the_sub_field('video_upload'); ?>
 	</div>
 	<?php endif; ?>
