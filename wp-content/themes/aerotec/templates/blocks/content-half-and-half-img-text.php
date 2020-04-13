@@ -70,7 +70,7 @@ if ( $bgcolor == 'lightgrey' && $textcolor == 'light' ): ?>
 	 		$contenttype = get_sub_field('content_type'); ?>
 			
 			<?php if ( $contenttype == 'carousel' ): ?>
-			<div class="col-lg-6 col-md-6 col-md-12 col-sm-12 col-xs-12 col-container">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-container">
 				<div class="carousel who_we_are">
 					
 					<?php
