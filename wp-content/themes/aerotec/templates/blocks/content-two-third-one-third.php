@@ -4,6 +4,8 @@ if ( $bgcolor == 'lightgrey' ): ?>
 <div class="section_container light_grey_bg extra-top-bottom-padding">
 <?php elseif ( $bgcolor == 'lightgold' ): ?>
 <div class="section_container light_gold_bg extra-top-bottom-padding">
+<?php elseif ( $bgcolor == 'lightblue' ): ?>
+<div class="section_container light_blue_bg extra-top-bottom-padding">
 <?php else : ?>
 <div class="section_container">
 <?php endif;

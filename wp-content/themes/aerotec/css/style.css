@@ -190,6 +190,10 @@ html {
 	border: 1px solid #000;
 }
 
+.light_blue_bg {
+	background-color: rgba(100, 220, 235, 0.15);
+}
+
 #services-grid-container .grid-inner.horizontal img {
 	width: 95px;
 	top: -30px;
