@@ -12,6 +12,10 @@
 	transition: 0.25s ease-in-out;
 }
 
+.light_gold_bg {
+	background-color: rgba(176, 115, 53, 0.15);
+}
+
 #phoneNumber {
 	margin-bottom: 20px;
 	display: block;
