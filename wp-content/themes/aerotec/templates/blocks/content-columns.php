@@ -122,6 +122,7 @@ if ( $imgborder && $padding == 'top' ): ?>
 					$image = get_sub_field('image');
 					$heading = get_sub_field('heading');
 					$colheadingstyle = get_field('column_header_style');
+					$trimmed = wp_trim_words( get_sub_field('body'), 15 );
 					
 					if ( $heading && $colheadingstyle == 'h2' ) {
 						echo '<h2>' . $heading . '</h2>';
@@ -141,7 +142,7 @@ if ( $imgborder && $padding == 'top' ): ?>
 						}
 					} elseif ( $readmore && $hiddencontenttype == 'lightbox' ) {
 						if ( $contenttype == 'text' ) {
-							echo '<div class="panel-overlay"></div><button class="hamburger close-panel hamburger--squeeze is-active" type="button" style="height: 74px;"><span class="hamburger-box"> <span class="hamburger-inner close"></span></span></button><div class="hidden-content panel">' . $body . '</div>
+							echo '<p style="margin-bottom: 20px;">' . $trimmed . '</p><div class="panel-overlay"></div><button class="hamburger close-panel hamburger--squeeze is-active" type="button" style="height: 74px;"><span class="hamburger-box"> <span class="hamburger-inner close"></span></span></button><div class="hidden-content panel">' . $body . '</div>
 								  <a href="javascript:void(0)" class="button read-more lightbox">Read more</a>';
 						} else {
 							echo '<div class="hidden-content">' . $body . '</div>

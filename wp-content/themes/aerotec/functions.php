@@ -486,3 +486,4 @@ add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 include 'functions/shortcodes.php';
 include 'functions/upload-size.php';
 include 'functions/gutenberg-block-edits.php';
+include 'functions/excerpt.php';
