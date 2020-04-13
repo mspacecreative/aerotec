@@ -16,6 +16,8 @@ add_filter( 'render_block', 'wrap_classic_block', 10, 2 );
 function wrap_heading_block( $block_content, $block ) {
   if ( 'core/heading' === $block['blockName'] ) {
     $block_content = '<div class="row_container">' . $block_content . '</div>';
+  } elseif ( 'core/paragraph' === $block['blockName'] ) {
+    $block_content = '<div class="row_container">' . $block_content . '</div>';
   }
   return $block_content;
 }
