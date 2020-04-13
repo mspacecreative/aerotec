@@ -15,10 +15,8 @@ if ( $narrow == 'true' && $nodrawing == 'true' ): ?>
 	<div class="container">
 		<div id="content-area" class="clearfix entry-content">
 			<div class="section_container" style="padding-bottom: 0;">
-				<div class="row_container">
-					<div class="section-title-container boxed">
-						<h1 class="section-title"><?php echo post_type_archive_title( '', false ); ?></h1>
-					</div>
+				<div class="section-title-container boxed">
+					<h1 class="section-title"><?php echo post_type_archive_title( '', false ); ?></h1>
 				</div>
 			</div>
 			<div class="section_container">
