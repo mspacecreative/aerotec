@@ -597,6 +597,10 @@ img.alignright {
 		padding-right: 0;
 	}
 	
+	.section-title-container {
+		border-bottom: 2px solid #AE7331;
+	}
+	
 	.section-title:before, .section-title:after {
 		display: none;
 	}
