@@ -69,6 +69,10 @@ body #top-menu li li {
 	text-align: right;
 }*/
 
+.nav li ul {
+	padding: 10px 0;
+}
+
 .nav li ul ul {
 	left: 0;
 	display: none;
