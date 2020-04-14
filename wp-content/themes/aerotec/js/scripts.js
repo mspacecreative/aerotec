@@ -134,9 +134,10 @@
 	
 	$(window).load(function() {
 		// HIDE ALL TESTIMONIALS BUTTON IF ONLY ONE TESTIMONIAL
-		var testimonialNumber = $('.testimonials-slider .slick-slide').length;
+		var testimonialNumber = $('.slick-track').children().length,
+		var testimonialSlider = $('.testimonials-slider');
 		if ( testimonialNumber < 2 ) {
-			testimonialNumber.parent().parent().parent().next().hide();
+			testimonialSlider.next().hide();
 		}
 	});
 	
