@@ -9,6 +9,10 @@
 		});
 	});
 	
+	$('.inline-links-wrap').each(function() {
+		$(this).parent().css('display', 'inline-block');
+	});
+	
 	$('.panel-overlay').click(function() {
 		$(this).fadeToggle();
 		$(this).next().fadeToggle();
