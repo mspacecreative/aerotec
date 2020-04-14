@@ -13,6 +13,7 @@
 		$(this).parent().css({
 			'display': 'inline-block',
 			'font-size': '0',
+			'margin-bottom': '0',
 		});
 	});
 	

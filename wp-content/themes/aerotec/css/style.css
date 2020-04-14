@@ -22,6 +22,12 @@
 	margin-top: 15px;
 	padding: 10px 15px;
 	font-size: 17px;
+	transition: 0.25s ease-in-out;
+}
+
+.inline-links-wrap > a:hover {
+	background-color: #b07335;
+	transition: 0.25s ease-in-out;
 }
 
 .grid-item .cta-buttons a:hover, .single .card-content .cta-buttons a:hover, .archive .card-content .cta-buttons a:hover, .services-section ul.inline li a:hover, .cta-buttons.light a:hover, .button:hover {
