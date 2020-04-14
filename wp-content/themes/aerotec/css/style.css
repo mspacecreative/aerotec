@@ -56,7 +56,7 @@
 }
 
 .light_gold_bg {
-	background-color: rgba(176, 115, 53, 0.15);
+	background-color: rgba(130, 115, 80, 0.1);
 }
 
 #phoneNumber {
@@ -234,7 +234,7 @@ html {
 }
 
 .light_blue_bg {
-	background-color: rgba(130, 115, 80, 0.1);
+	background-color: rgba(100, 220, 235, 0.15);
 }
 
 #services-grid-container .grid-inner.horizontal img {
@@ -285,7 +285,7 @@ html {
 }
 
 .table-style .flex-box:nth-child(even) {
-	background-color: rgba(176, 115, 53, 0.15);
+	background-color: rgba(130, 115, 80, 0.1);
 }
 
 .entry-content img {
