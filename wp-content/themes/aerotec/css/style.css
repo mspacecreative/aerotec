@@ -17,10 +17,17 @@
 	position: relative;
 	display: inline-block;
 	line-height: 1.5em;
-	margin-top: 15px;
 	padding: 10px 15px;
 	font-size: 17px;
 	transition: 0.25s ease-in-out;
+}
+
+.inline-links-wrap > a {
+	margin-top: 15px;
+}
+
+.links-wrap > a {
+	margin-bottom: 10px;
 }
 
 .links-wrap > a {
