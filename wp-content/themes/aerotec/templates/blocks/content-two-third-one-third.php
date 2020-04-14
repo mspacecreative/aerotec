@@ -60,6 +60,9 @@ if ( $flex == 'bottom' ): ?>
 		<?php elseif ( $padding == 'none' ): ?>
 		<div class="row gutter_space_3 clear bottom-lg bottom-md no-padding">
 		
+		<?php else : ?>
+		<div class="row gutter_space_3 clear bottom-lg bottom-md top-bottom-padding">
+		
 		<?php endif; ?>
 		
 			<?php include('includes/two-third-one-third-loop.php'); ?>
@@ -100,16 +103,19 @@ if ( $flex == 'bottom' ): ?>
 		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear middle-lg middle-md no-padding">
 		
 		<?php elseif ( $padding == 'top' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md top-padding">
+		<div class="row gutter_space_3 clear middle-lg middle-md top-padding">
 		
 		<?php elseif ( $padding == 'bottom' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md bottom-padding">
+		<div class="row gutter_space_3 clear middle-lg middle-md bottom-padding">
 		
 		<?php elseif ( $padding == 'both' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md top-bottom-padding">
+		<div class="row gutter_space_3 clear middle-lg middle-md top-bottom-padding">
 		
 		<?php elseif ( $padding == 'none' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md no-padding">
+		<div class="row gutter_space_3 clear middle-lg middle-md no-padding">
+		
+		<?php else : ?>
+		<div class="row gutter_space_3 clear middle-lg middle-md top-bottom-padding">
 		
 		<?php endif; ?>
 		
@@ -151,16 +157,19 @@ if ( $flex == 'bottom' ): ?>
 		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear no-padding">
 		
 		<?php elseif ( $padding == 'top' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md top-padding">
+		<div class="row gutter_space_3 clear top-padding">
 		
 		<?php elseif ( $padding == 'bottom' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md bottom-padding">
+		<div class="row gutter_space_3 clear bottom-padding">
 		
 		<?php elseif ( $padding == 'both' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md top-bottom-padding">
+		<div class="row gutter_space_3 clear top-bottom-padding">
 		
 		<?php elseif ( $padding == 'none' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md no-padding">
+		<div class="row gutter_space_3 clear no-padding">
+		
+		<?php else : ?>
+		<div class="row gutter_space_3 clear top-bottom-padding">
 		
 		<?php endif; ?>
 		
@@ -202,16 +211,19 @@ if ( $flex == 'bottom' ): ?>
 		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear no-padding">
 		
 		<?php elseif ( $padding == 'top' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md top-padding">
+		<div class="row gutter_space_3 clear top-padding">
 		
 		<?php elseif ( $padding == 'bottom' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md bottom-padding">
+		<div class="row gutter_space_3 clear bottom-padding">
 		
 		<?php elseif ( $padding == 'both' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md top-bottom-padding">
+		<div class="row gutter_space_3 clear top-bottom-padding">
 		
 		<?php elseif ( $padding == 'none' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md no-padding">
+		<div class="row gutter_space_3 clear  no-padding">
+		
+		<?php else : ?>
+		<div class="row gutter_space_3 clear top-bottom-padding">
 		
 		<?php endif; ?>
 		
