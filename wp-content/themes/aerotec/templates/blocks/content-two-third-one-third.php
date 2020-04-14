@@ -102,6 +102,27 @@ if ( $flex == 'bottom' ): ?>
 		<?php elseif ( $blockanchor && $padding == 'none' ): ?>
 		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear middle-lg middle-md no-padding">
 		
+		<?php elseif ( $reverse && $padding == 'top' ): ?>
+		<div class="row gutter_space_3 clear middle-lg middle-md top-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'bottom' ): ?>
+		<div class="row gutter_space_3 clear middle-lg middle-md bottom-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'both' ): ?>
+		<div class="row gutter_space_3 clear middle-lg middle-md top-bottom-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'none' ): ?>
+		<div class="row gutter_space_3 clear middle-lg middle-md no-padding">
+		
+		<?php elseif ( $reverse && $blockanchor ): ?>
+		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear middle-lg middle-md reverse">
+		
+		<?php elseif ( $reverse ): ?>
+		<div class="row gutter_space_3 clear middle-lg middle-md reverse">
+		
+		<?php elseif ( $blockanchor ): ?>
+		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear middle-lg middle-md">
+		
 		<?php elseif ( $padding == 'top' ): ?>
 		<div class="row gutter_space_3 clear middle-lg middle-md top-padding">
 		
