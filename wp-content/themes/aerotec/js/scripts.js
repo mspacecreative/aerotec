@@ -10,7 +10,9 @@
 	});
 	
 	$('.inline-links-wrap').each(function() {
-		$(this).parent().css('display', 'inline-block');
+		$(this).parent().css({
+			'display': 'inline-block',
+			'font-size': '0',
 	});
 	
 	$('.panel-overlay').click(function() {

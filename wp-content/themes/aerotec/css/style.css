@@ -9,6 +9,7 @@
 .inline-links, .inline-links-wrap {
 	display: inline-block;
 	margin-top: 0;
+	margin-right: 15px;
 }
 
 .inline-links-wrap > a {
@@ -20,6 +21,7 @@
 	border: 2px solid #fff;
 	margin-top: 15px;
 	padding: 10px 15px;
+	font-size: 17px;
 }
 
 .grid-item .cta-buttons a:hover, .single .card-content .cta-buttons a:hover, .archive .card-content .cta-buttons a:hover, .services-section ul.inline li a:hover, .cta-buttons.light a:hover, .button:hover {
