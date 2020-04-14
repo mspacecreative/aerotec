@@ -18,6 +18,12 @@ function my_custom_styles( $init_array ) {
             'wrapper' => true,
         ),  
         array(  
+            'title' => 'Light CTA Button',  
+            'block' => 'span',  
+            'classes' => 'links-wrap light',
+            'wrapper' => true,
+        ),  
+        array(  
             'title' => 'Light Inline CTA Button',  
             'block' => 'span',  
             'classes' => 'inline-links-wrap light',
