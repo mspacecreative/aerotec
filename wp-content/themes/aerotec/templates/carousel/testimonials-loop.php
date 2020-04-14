@@ -24,7 +24,7 @@ $loop = new WP_Query( array( 'post_type' => 'testimonials', 'posts_per_page', -1
 		 	<?php if ( $authorsposition ) : ?>
 		 	<h5 class="light"><?php the_title(); esc_html_e(', '); the_field('authors_position', $id); ?></h5>
 		 	<?php else : ?>
-		 	<h5><?php the_title(); ?></h5>
+		 	<h5 class="light"><?php the_title(); ?></h5>
 		 	<?php endif;
 		 	 ?>
 		</div>
