@@ -112,12 +112,6 @@
 		pgwGallery();
 		checkSize();
 		
-		// HIDE ALL TESTIMONIALS BUTTON IF ONLY ONE TESTIMONIAL
-		var testimonialNumber = $('.testimonials-slider .slick-slide').length;
-		if ( testimonialNumber < 2 ) {
-			testimonialNumber.parent().parent().parent().next().hide();
-		}
-		
 		$('.testimonials-slider, .photo-gallery').slick({
 		    dots: true,
 			adaptiveHeight: true,
@@ -136,6 +130,14 @@
 			adaptiveHeight: true,
 		});
 		// END CAROUSEL RENDERING
+	});
+	
+	$(window).load(function() {
+		// HIDE ALL TESTIMONIALS BUTTON IF ONLY ONE TESTIMONIAL
+		var testimonialNumber = $('.testimonials-slider .slick-slide').length;
+		if ( testimonialNumber < 2 ) {
+			testimonialNumber.parent().parent().parent().next().hide();
+		}
 	});
 	
 	$(window).resize(function() {
