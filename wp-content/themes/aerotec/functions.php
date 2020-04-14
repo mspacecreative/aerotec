@@ -165,7 +165,7 @@ function serviceBuckets() {
 		get_template_part('templates/blocks/content-services-home');
 }
 
-function my_mce_before_init_insert_formats( $init_array ) {
+/*function my_mce_before_init_insert_formats( $init_array ) {
  
     $style_formats = array(  
 
@@ -193,7 +193,7 @@ function my_mce_before_init_insert_formats( $init_array ) {
      
     return $init_array;  
    
-}
+}*/
 
 add_action('acf/init', 'my_acf_init');
 function my_acf_init() {
@@ -480,10 +480,11 @@ add_shortcode( 'service_buckets', 'serviceBuckets' );
 // CUSTOM THUMBNAIL IN BACKEND
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 // CUSTOM STYLES IN TINY MCE
-add_filter('mce_buttons_2', 'wpb_mce_buttons_2');
-add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+//add_filter('mce_buttons_2', 'wpb_mce_buttons_2');
+//add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 
 include 'functions/shortcodes.php';
 include 'functions/upload-size.php';
 include 'functions/gutenberg-block-edits.php';
 include 'functions/excerpt.php';
+include 'functions/tinymce.php';
