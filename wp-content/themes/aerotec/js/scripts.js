@@ -1,8 +1,8 @@
 (function($) {
 	
 	// HIDE ALL TESTIMONIALS BUTTON IF ONLY ONE TESTIMONIAL
-	var testimonialNumber = $('.testimonials-slider').find('.slick-slide');
-	if ( testimonialNumber.length < 2 ) {
+	var testimonialNumber = $('.testimonials-slider').children('.slick-slide').length;
+	if ( testimonialNumber < 2 ) {
 		testimonialNumber.parent().parent().parent().next().hide();
 	}
 	
