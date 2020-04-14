@@ -13,8 +13,8 @@ function my_custom_styles( $init_array ) {
         ),  
         array(  
             'title' => 'CTA Button',  
-            'block' => 'a',  
-            'classes' => 'button',
+            'block' => 'span',  
+            'classes' => 'button links-wrap',
             'wrapper' => true,
         ),  
         array(  

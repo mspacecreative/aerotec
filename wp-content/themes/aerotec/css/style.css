@@ -12,22 +12,34 @@
 	margin-right: 15px;
 }
 
-.inline-links-wrap > a {
+.inline-links-wrap > a, .links-wrap > a {
 	text-decoration: none;
 	position: relative;
 	display: inline-block;
 	line-height: 1.5em;
-	color: #fff;
-	border: 2px solid #fff;
 	margin-top: 15px;
 	padding: 10px 15px;
 	font-size: 17px;
 	transition: 0.25s ease-in-out;
 }
 
-.inline-links-wrap > a:hover {
+.links-wrap > a {
+	color: #b07335;
+	border: 2px solid #b07335;
+}
+
+.light.inline-links-wrap > a {
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.inline-links-wrap > a:hover, .links-wrap > a:hover {
 	background-color: #b07335;
 	transition: 0.25s ease-in-out;
+}
+
+.links-wrap > a:hover {
+	color: #fff;
 }
 
 .grid-item .cta-buttons a:hover, .single .card-content .cta-buttons a:hover, .archive .card-content .cta-buttons a:hover, .services-section ul.inline li a:hover, .cta-buttons.light a:hover, .button:hover {
