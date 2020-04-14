@@ -1,5 +1,11 @@
 (function($) {
 	
+	// HIDE ALL TESTIMONIALS BUTTON IF ONLY ONE TESTIMONIAL
+	var testimonialNumber = $('.testimonials-slider').find('.slick-slide');
+	if ( testimonialNumber.length < 2 ) {
+		testimonialNumber.parent().parent().parent().next().hide();
+	}
+	
 	// HIDDEN CONTENT
 	$('.read-more.lightbox').each(function() {
 		$(this).click(function() {
