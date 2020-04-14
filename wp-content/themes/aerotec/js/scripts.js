@@ -1,11 +1,5 @@
 (function($) {
 	
-	// HIDE ALL TESTIMONIALS BUTTON IF ONLY ONE TESTIMONIAL
-	var testimonialNumber = $('.testimonials-slider').children('.slick-slide').length;
-	if ( testimonialNumber < 2 ) {
-		testimonialNumber.parent().parent().parent().next().hide();
-	}
-	
 	// HIDDEN CONTENT
 	$('.read-more.lightbox').each(function() {
 		$(this).click(function() {
@@ -117,6 +111,12 @@
 		pageContainerClear();
 		pgwGallery();
 		checkSize();
+		
+		// HIDE ALL TESTIMONIALS BUTTON IF ONLY ONE TESTIMONIAL
+		var testimonialNumber = $('.testimonials-slider').children('.slick-slide').length;
+		if ( testimonialNumber < 2 ) {
+			testimonialNumber.parent().parent().parent().next().hide();
+		}
 		
 		$('.testimonials-slider, .photo-gallery').slick({
 		    dots: true,
