@@ -5,6 +5,7 @@ $aligncolumns = get_field('align_columns');
 $rowheading = get_field('row_heading');
 $textcolor = get_field('text_colour');
 $headingcolor = get_field('heading_colour');
+$reverse = get_field('reverse_columns');
 
 if ( $bgcolor == 'lightgrey' && $textcolor == 'light' ): ?>
 <div class="section light_grey_bg light">
@@ -40,7 +41,14 @@ if ( $bgcolor == 'lightgrey' && $textcolor == 'light' ): ?>
 			echo '<h2>' . $rowheading . '</h2>';
 		}
 		
-		if ( $aligncolumns == 'top' ): ?>
+		
+		if ( $aligncolumns == 'top' && $reverse ): ?>
+		<div class="row gutter_space_3 top-lg top-md reverse">
+		<?php elseif ( $aligncolumns == 'middle' && $reverse ): ?>
+		<div class="row gutter_space_3 middle-lg middle-md reverse">
+		<?php elseif ( $aligncolumns == 'bottom' && $reverse ): ?>
+		<div class="row gutter_space_3 bottom-lg bottom-md reverse">
+		<?php elseif ( $aligncolumns == 'top' ): ?>
 		<div class="row gutter_space_3 top-lg top-md">
 		<?php elseif ( $aligncolumns == 'middle' ): ?>
 		<div class="row gutter_space_3 middle-lg middle-md">
