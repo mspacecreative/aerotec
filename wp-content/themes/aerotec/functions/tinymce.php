@@ -14,7 +14,7 @@ function my_custom_styles( $init_array ) {
         array(  
             'title' => 'CTA Button',  
             'block' => 'span',  
-            'classes' => 'button links-wrap',
+            'classes' => 'links-wrap',
             'wrapper' => true,
         ),  
         array(  
