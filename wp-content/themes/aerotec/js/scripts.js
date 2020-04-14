@@ -132,15 +132,6 @@
 		// END CAROUSEL RENDERING
 	});
 	
-	$(window).load(function() {
-		// HIDE ALL TESTIMONIALS BUTTON IF ONLY ONE TESTIMONIAL
-		var testimonialNumber = $('.slick-track').children().length,
-		var testimonialSlider = $('.testimonials-slider');
-		if ( testimonialNumber < 2 ) {
-			testimonialSlider.next().hide();
-		}
-	});
-	
 	$(window).resize(function() {
 		sliderHeight();
 		mapOffset();
