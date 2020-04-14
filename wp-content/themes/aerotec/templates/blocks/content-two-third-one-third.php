@@ -48,11 +48,32 @@ if ( $flex == 'bottom' ): ?>
 		<?php elseif ( $blockanchor && $padding == 'none' ): ?>
 		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear bottom-lg bottom-md no-padding">
 		
+		<?php elseif ( $reverse && $padding == 'top' ): ?>
+		<div class="row gutter_space_3 clear bottom-lg bottom-md top-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'bottom' ): ?>
+		<div class="row gutter_space_3 clear bottom-lg bottom-md bottom-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'both' ): ?>
+		<div class="row gutter_space_3 clear bottom-lg bottom-md top-bottom-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'none' ): ?>
+		<div class="row gutter_space_3 clear bottom-lg bottom-md no-padding">
+		
+		<?php elseif ( $reverse && $blockanchor ): ?>
+		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear bottom-lg bottom-md reverse">
+		
+		<?php elseif ( $reverse ): ?>
+		<div class="row gutter_space_3 clear bottom-lg bottom-md reverse">
+		
+		<?php elseif ( $blockanchor ): ?>
+		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear bottom-lg bottom-md">
+		
 		<?php elseif ( $padding == 'top' ): ?>
 		<div class="row gutter_space_3 clear bottom-lg bottom-md top-padding">
 		
 		<?php elseif ( $padding == 'bottom' ): ?>
-		<div class="row gutter_space_3 clear bottom-lg bottom-md bottom-padding">
+		<div class="row gutter_space_3 clear middle-lg middle-md bottom-padding">
 		
 		<?php elseif ( $padding == 'both' ): ?>
 		<div class="row gutter_space_3 clear bottom-lg bottom-md top-bottom-padding">
@@ -177,6 +198,27 @@ if ( $flex == 'bottom' ): ?>
 		<?php elseif ( $blockanchor && $padding == 'none' ): ?>
 		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear no-padding">
 		
+		<?php elseif ( $reverse && $padding == 'top' ): ?>
+		<div class="row gutter_space_3 clear top-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'bottom' ): ?>
+		<div class="row gutter_space_3 clear bottom-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'both' ): ?>
+		<div class="row gutter_space_3 clear top-bottom-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'none' ): ?>
+		<div class="row gutter_space_3 clear no-padding">
+		
+		<?php elseif ( $reverse && $blockanchor ): ?>
+		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear reverse">
+		
+		<?php elseif ( $reverse ): ?>
+		<div class="row gutter_space_3 clear reverse">
+		
+		<?php elseif ( $blockanchor ): ?>
+		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear">
+		
 		<?php elseif ( $padding == 'top' ): ?>
 		<div class="row gutter_space_3 clear top-padding">
 		
@@ -231,6 +273,27 @@ if ( $flex == 'bottom' ): ?>
 		<?php elseif ( $blockanchor && $padding == 'none' ): ?>
 		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear no-padding">
 		
+		<?php elseif ( $reverse && $padding == 'top' ): ?>
+		<div class="row gutter_space_3 clear top-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'bottom' ): ?>
+		<div class="row gutter_space_3 clear bottom-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'both' ): ?>
+		<div class="row gutter_space_3 clear top-bottom-padding reverse">
+		
+		<?php elseif ( $reverse && $padding == 'none' ): ?>
+		<div class="row gutter_space_3 clear no-padding">
+		
+		<?php elseif ( $reverse && $blockanchor ): ?>
+		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear reverse">
+		
+		<?php elseif ( $reverse ): ?>
+		<div class="row gutter_space_3 clear reverse">
+		
+		<?php elseif ( $blockanchor ): ?>
+		<div id="<?php echo $blockanchor ?>" class="row gutter_space_3 clear">
+		
 		<?php elseif ( $padding == 'top' ): ?>
 		<div class="row gutter_space_3 clear top-padding">
 		
@@ -241,7 +304,7 @@ if ( $flex == 'bottom' ): ?>
 		<div class="row gutter_space_3 clear top-bottom-padding">
 		
 		<?php elseif ( $padding == 'none' ): ?>
-		<div class="row gutter_space_3 clear  no-padding">
+		<div class="row gutter_space_3 clear no-padding">
 		
 		<?php else : ?>
 		<div class="row gutter_space_3 clear top-bottom-padding">
