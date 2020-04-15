@@ -47,7 +47,7 @@
 	transition: 0.25s ease-in-out;
 }
 
-.links-wrap > a:hover {
+.links-wrap > a:hover, .inline-links-wrap > a:hover {
 	color: #fff;
 }
 
