@@ -85,8 +85,36 @@ if ( $imgborder && $padding == 'top' ): ?>
 		if( have_rows('flexbox') ):
 		
 		$gutterspace = get_field('gutter_space');
+		$verticalalign = get_field('vertical_alignment');
 		
-		if ( $gutterspace == 'one' ): ?>
+		if ( $gutterspace == 'one' && $verticalalign == 'middle' ): ?>
+		<div class="row clear middle-lg middle-md">
+		
+		<?php elseif ( $gutterspace == 'one' && $verticalalign == 'bottom' ): ?>
+		<div class="row clear bottom-lg bottom-md">
+		
+		<?php elseif ( $gutterspace == 'one' && $verticalalign == 'top' ): ?>
+		<div class="row clear">
+		
+		<?php elseif ( $gutterspace == 'two' && $verticalalign == 'middle' ): ?>
+		<div class="row gutter_space_2 clear middle-lg middle-md">
+		
+		<?php elseif ( $gutterspace == 'two' && $verticalalign == 'bottom' ): ?>
+		<div class="row gutter_space_2 clear bottom-lg bottom-md">
+		
+		<?php elseif ( $gutterspace == 'two' && $verticalalign == 'top' ): ?>
+		<div class="row gutter_space_2 clear">
+		
+		<?php elseif ( $gutterspace == 'three' && $verticalalign == 'middle' ): ?>
+		<div class="row gutter_space_3 clear middle-lg middle-md">
+		
+		<?php elseif ( $gutterspace == 'three' && $verticalalign == 'bottom' ): ?>
+		<div class="row gutter_space_3 clear bottom-lg bottom-md">
+		
+		<?php elseif ( $gutterspace == 'three' && $verticalalign == 'top' ): ?>
+		<div class="row gutter_space_3 clear">
+		
+		<?php elseif ( $gutterspace == 'one' ): ?>
 		<div class="row clear">
 		
 		<?php elseif ( $gutterspace == 'two' ): ?>
