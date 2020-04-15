@@ -23,7 +23,7 @@
 <?php endif; ?>
 <?php if ( 'on' === et_get_option( 'divi_show_instagram_icon', 'on' ) ) : ?>
 	<li class="et-social-icon et-social-instagram">
-		<a href="<?php echo esc_url( et_get_option( 'divi_instagram_url', '#' ) ); ?>" class="icon">
+		<a href="<?php echo esc_url( et_get_option( 'divi_instagram_url', '#' ) ); ?>" class="icon" target="_blank">
 			<span><?php esc_html_e( 'Instagram', 'Divi' ); ?></span>
 		</a>
 	</li>
