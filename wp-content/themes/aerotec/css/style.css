@@ -24,6 +24,8 @@
 
 .inline-links-wrap > a {
 	margin-top: 15px;
+	color: #b07335;
+	border: 2px solid #b07335;
 }
 
 .links-wrap > a {
