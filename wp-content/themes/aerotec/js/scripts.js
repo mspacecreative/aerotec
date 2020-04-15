@@ -10,7 +10,7 @@
 	});
 	
 	// TOP MARGIN ON HEADINGS
-	$('h3').each(function() {
+	/*$('h3').each(function() {
 		if ( $(this).prev().is('p') ) {
 			$(this).css({
 				'margin-top' : '30px',
@@ -20,7 +20,7 @@
 				'margin-top' : '0',
 			});
 		}
-	});
+	});*/
 	
 	$('.inline-links-wrap').each(function() {
 		$(this).parent().css({

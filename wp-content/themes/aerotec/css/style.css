@@ -6,6 +6,10 @@
 	margin-left: auto;
 }
 
+p ~ h3 {
+	margin-top: 30px;
+}
+
 .inline-links, .inline-links-wrap {
 	display: inline-block;
 	margin-top: 0;
