@@ -2,15 +2,34 @@
 	<div class="outer-container">
 		<div class="contact-bar">
 			<ul>
-				<?php if ( get_field('linkedin', 'options') ): ?>
-				<li><a href="<?php the_field('linkedin', 'options'); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-				<?php endif; ?>
-				<?php if ( get_field('twitter', 'options') ): ?>
-				<li><a href="<?php the_field('twitter', 'options'); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
-				<?php endif; ?>
-				<?php if ( get_field('facebook', 'options') ): ?>
-				<li><a href="<?php the_field('facebook', 'options'); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
-				<?php endif; ?>
+				<?php if ( 'on' === et_get_option( 'divi_show_linkedin_icon', 'on' ) ) : ?>
+	<li class="et-social-icon et-social-linkedin">
+		<a href="https://www.linkedin.com/company/aerotec-engines-ltd/" class="icon" target="_blank">
+			<span><?php esc_html_e( 'LinkedIn', 'Divi' ); ?></span>
+		</a>
+	</li>
+<?php endif; ?>
+<?php if ( 'on' === et_get_option( 'divi_show_twitter_icon', 'on' ) ) : ?>
+	<li class="et-social-icon et-social-twitter">
+		<a href="<?php echo esc_url( et_get_option( 'divi_twitter_url', '#' ) ); ?>" class="icon" target="_blank">
+			<span><?php esc_html_e( 'Twitter', 'Divi' ); ?></span>
+		</a>
+	</li>
+<?php endif; ?>
+<?php if ( 'on' === et_get_option( 'divi_show_facebook_icon', 'on' ) ) : ?>
+	<li class="et-social-icon et-social-facebook">
+		<a href="<?php echo esc_url( et_get_option( 'divi_facebook_url', '#' ) ); ?>" class="icon" target="_blank">
+			<span><?php esc_html_e( 'Facebook', 'Divi' ); ?></span>
+		</a>
+	</li>
+<?php endif; ?>
+<?php if ( 'on' === et_get_option( 'divi_show_instagram_icon', 'on' ) ) : ?>
+	<li class="et-social-icon et-social-instagram">
+		<a href="<?php echo esc_url( et_get_option( 'divi_instagram_url', '#' ) ); ?>" class="icon" target="_blank">
+			<span><?php esc_html_e( 'Instagram', 'Divi' ); ?></span>
+		</a>
+	</li>
+<?php endif; ?>
 			</ul>
 			<?php if ( get_field('phone_number', 'options') ): ?>
 			<p class="phone-number"><a class="click-number" href="tel:+1<?php the_field('phone_number', 'options'); ?>"><span id="phoneNumber"><?php the_field('phone_number', 'options'); ?></span></a></p>

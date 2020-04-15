@@ -201,6 +201,14 @@ html {
 	float: left;
 }
 
+.contact-bar .et-social-icon a {
+	color: #fff;
+}
+
+.contact-bar .et-social-icon a:hover {
+	color: #d9d9d9;
+}
+
 .carousel .slick-next, .carousel .slick-prev {
 	transform: none;
 	margin-top: calc(-44px);
