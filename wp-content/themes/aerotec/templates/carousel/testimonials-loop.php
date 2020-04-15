@@ -20,7 +20,7 @@ $loop = new WP_Query( array( 'post_type' => 'testimonials', 'posts_per_page', -1
 		 	<h4 class="light"><?php echo $companylocation ?></h4>
 		 	<?php endif; ?>
 		 	
-		 	<span class="light"><?php echo get_post_field('post_content', $post_id); ?></span>
+		 	<span class="light" style="font-style: italic;"><?php echo get_post_field('post_content', $post_id); ?></span>
 		 	<?php if ( $authorsposition ) : ?>
 		 	<h5 class="light"><?php the_title(); ?>, <?php echo $authorsposition ?></h5>
 		 	<?php else : ?>
