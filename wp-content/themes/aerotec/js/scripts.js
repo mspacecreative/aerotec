@@ -9,6 +9,19 @@
 		});
 	});
 	
+	// TOP MARGIN ON HEADINGS
+	$('h3').each(function() {
+		if ( $(this).prev().is('p') ) {
+			$(this).css({
+				'margin-top' : '30px',
+			});
+		} else {
+			$(this).css({
+				'margin-top' : '0',
+			});
+		}
+	});
+	
 	$('.inline-links-wrap').each(function() {
 		$(this).parent().css({
 			'display': 'inline-block',
