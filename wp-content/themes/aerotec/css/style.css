@@ -206,8 +206,11 @@ html {
 	margin-top: calc(-44px);
 }
 
-.carousel.shop-tour .slick-next, .carousel .slick-prev {
-	margin-top: calc(-44px);
+.carousel.shop-tour .slick-next, .carousel.shop-tour .slick-prev {
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	margin-top: 0;
 }
 
 .flex-box > div > img, .column-container > div > img {
