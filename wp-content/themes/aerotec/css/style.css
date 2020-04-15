@@ -247,7 +247,7 @@ html {
 	margin-bottom: 3em;
 }
 
-.flex-box h2:first-of-type, .entry-content .boxed-content h3:first-of-type, .entry-content .column-container h2:first-of-type, .entry-content .row_container h3:first-of-type, .entry-content .row_container h2:first-of-type, .col-container h2:first-of-type, .section h2:first-of-type {
+.flex-box h2:first-of-type, .entry-content .boxed-content h3:first-of-type, .entry-content .column-container h2:first-of-type, .entry-content .row_container h3:first-of-type, .entry-content .row_container h2:first-of-type, .col-container h2:first-of-type, .section h2:first-of-type, .flex-box h4:first-of-type {
 	margin-top: 0;
 }
 
