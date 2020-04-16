@@ -10,7 +10,7 @@
 	</div>
 	<?php endif; ?>
 	<?php if ( get_field('warranty_img') ): ?>
-	<div class="one-half bg-img" style="background-image: url(<?php the_field('warranty_img'); ?>);">
+	<a href="/resources/warranty/"><div class="one-half bg-img" style="background-image: url(<?php the_field('warranty_img'); ?>);"></div>
 		
 	</div>
 	<?php endif; ?>
