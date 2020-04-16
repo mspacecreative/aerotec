@@ -17,13 +17,21 @@ if ( $bgcolor == 'lightgrey' && $textcolor == 'light' ): ?>
 <div class="section blue_bg light">
 
 <?php elseif ( $bgcolor == 'lightblue' && $textcolor == 'dark' ): ?>
-<div class="section blue_bg dark">
+
+<?php elseif ( $bgcolor == 'lightgold' && $textcolor == 'light' ): ?>
+<div class="section light_gold_bg light">
+
+<?php elseif ( $bgcolor == 'lightgold' && $textcolor == 'dark' ): ?>
+<div class="section light_gold_bg dark">
 
 <?php elseif ( $bgcolor == 'lightblue' ): ?>
 <div class="section blue_bg dark">
 
 <?php elseif ( $bgcolor == 'lightgrey' ): ?>
 <div class="section light_grey_bg">
+
+<?php elseif ( $bgcolor == 'lightgold' ): ?>
+<div class="section light_gold_bg">
 
 <?php else : ?>
 <div class="section">
