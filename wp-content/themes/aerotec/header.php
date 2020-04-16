@@ -26,6 +26,9 @@
 
 	<?php wp_head(); ?>
 </head>
+
+<?php get_template_part('includes/google-analytics'); ?>
+
 <body <?php body_class(); ?>>
 
 <?php ob_start(); ?>

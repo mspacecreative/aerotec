@@ -233,10 +233,10 @@
                 '<p>7054-83rd Avenue, Lloydminster, AB T9V 3B3, Canada</p>' + '<a href="https://bordercityaviation.com" target="_blank">VISIT WEBSITE</a>' + '<a href="tel:+1780-875-5834">CALL</a>' + '</div>'],
                 ['<div class="info_content">' +
                 '<h3>Canadian Aviation Maintenance</h3>' +
-                '<p>20 Lindbergh Private, Ottawa, ON K1V 1H7</p>' + '<a href="tel:+1613-799-2568">CALL</a>' + '</div>'],
+                '<p>20 Lindbergh Private, Ottawa, ON K1V 1H7, Canada</p>' + '<a href="tel:+1613-799-2568">CALL</a>' + '</div>'],
 				['<div class="info_content">' +
 				'<h3>Kings Aero Tech</h3>' +
-				'<p>1670 Saxon Street,Hillaton,Nova Scotia, B0P 1T0, Canada</p>' + '<a href="https://kingsaero.com/kings-aerodrome/">VISIT WEBSITE</a>' + '<a href="tel:+1902-670-2118">CALL</a>' + '</div>'],
+				'<p>1670 Saxon Street, Hillaton, Nova Scotia, B0P 1T0, Canada</p>' + '<a href="https://kingsaero.com/kings-aerodrome/">VISIT WEBSITE</a>' + '<a href="tel:+1902-670-2118">CALL</a>' + '</div>'],
 				['<div class="info_content">' +
 				'<h3>Hampton Airfield</h3>' +
 				'<p>9A Lafayette Rd, North Hampton, NH 03862, USA</p>' + '<a href="http://hamptonairfield.com/" target="_blank">VISIT WEBSITE</a>' + '<a href="tel:+1603-964-6749">CALL</a>' + '</div>'],
