@@ -27,7 +27,15 @@
 	<?php wp_head(); ?>
 </head>
 
-<?php get_template_part('includes/google-analytics'); ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163806993-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163806993-1');
+</script>
 
 <body <?php body_class(); ?>>
 
