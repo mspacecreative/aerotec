@@ -1,4 +1,4 @@
-<div class="testimonials-slider">
+<div class="testimonials-slider" style="margin-bottom: 0;">
 <?php 
 $loop = new WP_Query( array( 'post_type' => 'testimonials', 'posts_per_page', -1 ) );
     if ( $loop->have_posts() ) : ?>
