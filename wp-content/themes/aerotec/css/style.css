@@ -6,6 +6,10 @@
 	margin-left: auto;
 }
 
+.error404 #main-content:before {
+	display: none;
+}
+
 p ~ h3 {
 	margin-top: 30px;
 }
