@@ -23,6 +23,8 @@
 	<script type="text/javascript">
 		document.documentElement.className = 'js';
 	</script>
+	
+	<meta name="google-site-verification" content="E4g0aOp_9ZJ3WtpVzSoFELlo-AL4w8AAF6Ff7EagbZ0" />
 
 	<?php wp_head(); ?>
 </head>
