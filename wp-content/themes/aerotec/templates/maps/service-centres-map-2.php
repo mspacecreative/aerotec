@@ -309,6 +309,12 @@ function centerMap( map ) {
     } else{
         map.fitBounds( bounds );
     }
+	
+	// Set zoom level
+    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+        this.setZoom(4);
+        google.maps.event.removeListener(boundsListener);
+    });
 }
 
 // Render maps on page load.
@@ -324,7 +330,7 @@ $(document).ready(function(){
 <?php 
 $loop = new WP_Query( array( 'post_type' => 'approved_centre', 'posts_per_page' => -1 ) );
 if ( $loop->have_posts() ) : ?>
-<div class="acf-map" data-zoom="16">
+<div class="acf-map" data-zoom="4">
 	<?php while ( $loop->have_posts() ) : $loop->the_post();
 	
 	// Load sub field values.
