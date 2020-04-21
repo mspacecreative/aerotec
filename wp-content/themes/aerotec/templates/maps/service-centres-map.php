@@ -292,8 +292,5 @@
         google.maps.event.addDomListener(window, 'load', initMap);
     
         </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4gZZuyh3LgDoqSqkoIwDTBnKar1h11cY&callback=initMap">
-    </script>
   </body>
 </html>
