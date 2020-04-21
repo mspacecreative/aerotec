@@ -101,7 +101,7 @@ function comediansLoopFull() {
 // SERVICES CENTRES MAP
 function serviceCentresMap() {
 	ob_start();
-		get_template_part('templates/maps/service-centres-map');
+		get_template_part('templates/maps/service-centres-map-2');
 	return ob_get_clean();
 }
 

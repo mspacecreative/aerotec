@@ -6,6 +6,10 @@
 	margin-left: auto;
 }
 
+.info_content .row_container {
+	width: 100%;
+}
+
 .error404 #main-content:before {
 	display: none;
 }

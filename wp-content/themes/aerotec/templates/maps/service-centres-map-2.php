@@ -238,6 +238,7 @@ function initMap( $el ) {
  * @param   object The map instance.
  * @return  object The marker instance.
  */
+var activeInfoWindow;
 function initMarker( $marker, map ) {
 
     // Get position from marker.
@@ -265,12 +266,16 @@ function initMarker( $marker, map ) {
             content: $marker.html()
         });
 
-        // Show info window when marker is clicked.
-        google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open( map, marker );
-			map.setCenter(marker.getPosition());
+	    // Show info window when marker is clicked.
+	    google.maps.event.addListener(marker, 'click', function() {
+	        map.setCenter(marker.getPosition());
 			map.panBy(0,-100);
-        });
+			if (activeInfoWindow) { 
+				activeInfoWindow.close();
+			}
+	        infowindow.open(map, marker);
+	        activeInfoWindow = infowindow;
+		});
     }
 }
 
@@ -316,56 +321,40 @@ $(document).ready(function(){
 })(jQuery);
 </script>
 
-<!--<?php if( have_rows('locations') ): ?>
-<div class="acf-map" data-zoom="16">
-	<?php while ( have_rows('locations') ) : the_row(); 
-
-    // Load sub field values.
-    $location = get_sub_field('location');
-    $title = get_sub_field('description');
-    $description = get_sub_field('description'); ?>
-    
-	<div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>">
-		<div class="info_content">
-			<h3><?php echo esc_html( $title ); ?></h3>
-	        <p><em><?php echo esc_html( $location['address'] ); ?></em></p>
-	        <p><?php echo esc_html( $description ); ?></p>
-	      </div>
-    </div>
-	
-    <?php endwhile; ?>
-</div>
-<?php endif; ?>-->
-
 <?php 
-$loop = new WP_Query( array( 'post_type' => 'approved_centres', 'posts_per_page' => -1 ) );
+$loop = new WP_Query( array( 'post_type' => 'approved_centre', 'posts_per_page' => -1 ) );
 if ( $loop->have_posts() ) : ?>
 <div class="acf-map" data-zoom="16">
 	<?php while ( $loop->have_posts() ) : $loop->the_post();
 	
 	// Load sub field values.
-    $location = get_sub_field('location');
-    $title = get_sub_field('description');
-    $description = get_sub_field('description'); ?>
+    $location = get_field('coordinates', $post->ID); ?>
 	
 	<div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>">
 		<div class="info_content">
-			<h3><?php echo esc_html( $title ); ?></h3>
-	        <p><em><?php echo esc_html( $location['address'] ); ?></em></p>
-	        <p><?php echo esc_html( $description ); ?></p>
-	      </div>
+			<h3 style="margin-top: 0;"><?php the_title(); ?></h3>
+	        <?php if ( $location ) {
+	        	echo '<p>' . $location['address'] . '</p>';
+	        } else {
+        		echo '<p>' . the_content() . '</p>';
+        	} ?>
+			<?php if( have_rows('cta_buttons', $post->ID) ):
+			while( have_rows('cta_buttons', $post->ID) ): the_row();
+			$weblink = get_sub_field('website_link', $post->ID);
+			$phone = get_sub_field('phone_number', $post->ID);
+			
+			if ( $weblink ) {
+				echo '<a href="' . $weblink . '" target="_blank">VISIT WEBSITE</a>';
+			} 
+			if ( $phone ) {
+				echo '<a href="tel:+1' . $phone . '">CALL</a>';
+			}
+			
+			endwhile;
+			endif; ?>
+	    </div>
     </div>
 	
 	<?php endwhile; ?>
 </div>
 <?php endif; wp_reset_postdata(); ?>
-
-<div class="acf-map" data-zoom="16">
-	<div class="marker" data-lat="41.9114243" data-lng="-70.7329279">
-		<div class="info_content">
-			<h3 style="margin-top: 0;">Alpha One Flight School</h3>
-			<p>246 South Meadow Rd, Plymouth, MA 02360, USA</p>
-			<a href="http://alpha-1.com">VISIT WEBSITE</a>
-			<a href="tel:+1508-747-1494">CALL</a>
-		</div>
-</div></div>
