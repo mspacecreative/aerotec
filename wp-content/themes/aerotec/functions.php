@@ -198,6 +198,9 @@ function serviceBuckets() {
 add_action('acf/init', 'my_acf_init');
 function my_acf_init() {
 	
+	// GOOGLE API
+	acf_update_setting('google_api_key', 'AIzaSyD4gZZuyh3LgDoqSqkoIwDTBnKar1h11cY');
+	
 	// check function exists
 	if( function_exists('acf_register_block') ) {
 		
@@ -488,3 +491,4 @@ include 'functions/upload-size.php';
 include 'functions/gutenberg-block-edits.php';
 include 'functions/excerpt.php';
 include 'functions/tinymce.php';
+include 'functions/google-map-filter.php';
