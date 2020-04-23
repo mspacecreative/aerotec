@@ -9,10 +9,9 @@
 		}
 	});*/
 	
-	var textCol = $('.col-container'),
-	var paraHeight = $('.carousel').find('p').height();
+	var paraHeight = $('.carousel').children('p').height();
 	
-	$('.middle-lg').children(textCol).css('padding-bottom', paraHeight);
+	$('.middle-lg').find('.col-container').css('padding-bottom', paraHeight);
 	
 	// HIDDEN CONTENT
 	$('.read-more.lightbox').each(function() {
