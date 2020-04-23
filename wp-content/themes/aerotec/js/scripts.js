@@ -12,7 +12,7 @@
 	var textCol = $('.col-container'),
 	var paraHeight = $('.carousel').find('p').height();
 	
-	$('.middle-lg').textCol.css('padding-bottom', paraHeight);
+	$('.middle-lg').children(textCol).css('padding-bottom', paraHeight);
 	
 	// HIDDEN CONTENT
 	$('.read-more.lightbox').each(function() {
