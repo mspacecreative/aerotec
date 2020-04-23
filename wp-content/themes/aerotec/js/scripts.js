@@ -9,9 +9,11 @@
 		}
 	});*/
 	
-	var paraHeight = $('.carousel').find('p').outerHeight();
+	var paraHeight = $('.carousel').find('p').outerHeight(),
+	var carouselCol = $('.carousel').parent();
 	
-	$('.middle-lg').find('.text-column').css('padding-bottom', paraHeight + 15);
+	//$('.middle-lg').find('.text-column').css('padding-bottom', paraHeight + 15);
+	carouselCol.siblings('.text-column').css('padding-bottom', paraHeight + 15);
 	
 	/*if ( $('.col-container').children().hasClass('carousel') ) {
 		$('.carousel').parent().css('padding-bottom', '0');
