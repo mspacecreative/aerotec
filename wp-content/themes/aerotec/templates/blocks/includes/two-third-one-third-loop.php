@@ -3,7 +3,7 @@ $boxed = get_field('boxed_column');
 
 if ( $boxed ): ?>
 
-<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 col-container bottom-margin-25">
+<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 col-container bottom-margin-25 text-column">
 	<?php the_field('two_third_column'); ?>
 </div>
 
@@ -40,7 +40,7 @@ if ( $boxed ): ?>
 
 else : ?>
 
-<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 col-container bottom-margin-25">
+<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 col-container bottom-margin-25 text-column">
 	<?php the_field('two_third_column'); ?>
 </div>
 

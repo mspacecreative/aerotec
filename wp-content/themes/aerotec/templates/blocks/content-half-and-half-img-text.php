@@ -70,7 +70,7 @@ if ( $bgcolor == 'lightgrey' && $textcolor == 'light' ): ?>
 	 		while( have_rows('left_column') ): the_row();
 	 		$heading = get_sub_field('heading');
 			$content = get_sub_field('content'); ?>
-			<div class="col-lg-6 mobile-margin-bottom-md-25 col-md-6 col-sm-12 col-xs-12 col-container bottom-margin-25">
+			<div class="col-lg-6 mobile-margin-bottom-md-25 col-md-6 col-sm-12 col-xs-12 col-container bottom-margin-25 text-column">
 				<?php if ( $heading ) {
 					echo '<h2 class="bottom-margin-50">' . $heading . '</h2>';
 				}

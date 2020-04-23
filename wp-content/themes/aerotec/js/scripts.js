@@ -11,11 +11,11 @@
 	
 	var paraHeight = $('.carousel').find('p').outerHeight();
 	
-	$('.middle-lg').find('.col-container').css('padding-bottom', paraHeight + 15);
+	$('.middle-lg').find('.text-column').css('padding-bottom', paraHeight + 15);
 	
-	if ( $('.col-container').children().hasClass('carousel') ) {
+	/*if ( $('.col-container').children().hasClass('carousel') ) {
 		$('.carousel').parent().css('padding-bottom', '0');
-	}
+	}*/
 	
 	// HIDDEN CONTENT
 	$('.read-more.lightbox').each(function() {
