@@ -17,6 +17,7 @@
 #instafeed .horizontal span, #services-grid-container .horizontal span {
 	top: -30px;
 	width: 90px;
+	margin-left: -45px;
 }
 
 #instafeed {
