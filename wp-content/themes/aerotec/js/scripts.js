@@ -13,6 +13,10 @@
 	
 	$('.middle-lg').find('.col-container').css('padding-bottom', paraHeight);
 	
+	if ( $('.col-container').children().hasClass('carousel') ) {
+		$(this).parent().css('padding-bottom', '0');
+	}
+	
 	// HIDDEN CONTENT
 	$('.read-more.lightbox').each(function() {
 		$(this).click(function() {
