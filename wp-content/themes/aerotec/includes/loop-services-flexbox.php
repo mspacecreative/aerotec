@@ -18,7 +18,7 @@
 			<div class="grid-inner">
 			<?php endif; ?>
 			<?php if ( has_post_thumbnail() ) { ?>
-			<?php echo the_post_thumbnail(); ?>
+				<span><?php echo the_post_thumbnail(); ?></span>
 			<?php } ?>
 				<div class="card-content">
 					<h3><?php the_title(); ?></h3>
