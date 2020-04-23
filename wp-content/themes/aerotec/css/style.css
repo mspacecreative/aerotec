@@ -44,14 +44,16 @@ p ~ h3 {
 	margin: 10px 0;
 }
 
-.links-wrap > a {
+.panel-overlay ~ .hidden-content p .links-wrap > a {
 	color: #b07335;
 	border: 2px solid #b07335;
+	text-decoration: none;
 }
 
-.light.inline-links-wrap > a, .light.links-wrap > a {
+.panel-overlay ~ .hidden-content p .light.inline-links-wrap > a, .panel-overlay ~ .hidden-content p .light.links-wrap > a {
 	color: #fff;
 	border: 2px solid #fff;
+	text-decoration: none;
 }
 
 .inline-links-wrap > a:hover, .links-wrap > a:hover {
