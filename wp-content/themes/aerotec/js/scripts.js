@@ -11,7 +11,7 @@
 	
 	var paraHeight = $('.carousel').find('p').outerHeight();
 	
-	$('.middle-lg').find('.col-container').css('padding-bottom', paraHeight);
+	$('.middle-lg').find('.col-container').css('padding-bottom', paraHeight + 15);
 	
 	if ( $('.col-container').children().hasClass('carousel') ) {
 		$('.carousel').parent().css('padding-bottom', '0');
