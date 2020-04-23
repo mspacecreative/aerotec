@@ -341,7 +341,7 @@ h4 {
 	margin-bottom: 0;
 }
 
-#left-area ul, .entry-content ul {
+#left-area ul, .entry-content ul, .carousel ul.slick-dots {
 	padding-bottom: 0;
 	margin: 15px 0;
 }
