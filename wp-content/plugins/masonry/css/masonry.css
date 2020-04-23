@@ -1,4 +1,4 @@
-#instafeed img, #services-grid-container img {
+#instafeed img, #services-grid-container span {
 	width: 100%;
 	height: auto;
 	display: block;
@@ -14,7 +14,7 @@
 	max-height: 30%;
 }
 
-#instafeed .horizontal img {
+#instafeed .horizontal span {
 	top: -30px;
 	width: 90px;
 	margin-left: -45px;
