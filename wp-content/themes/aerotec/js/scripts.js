@@ -4,7 +4,7 @@
 	var textCol = $('.col-container'),
 	var paraHeight = $('.carousel').children('p').height();
 	$('.middle-lg').each(function() {
-		if ( $(this).find('.carousel').children('p').length ) {
+		if ( $(this).children('.carousel > p').length ) {
 			textCol.css('padding-bottom', paraHeight);
 		}
 	});
