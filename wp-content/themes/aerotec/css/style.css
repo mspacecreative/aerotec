@@ -179,7 +179,7 @@ html {
 	margin-bottom: 0;
 }
 
-.carousel .slick-dots {
+body .carousel ul.slick-dots {
 	padding-left: 0;
 	bottom: -40px;
 	position: absolute;
