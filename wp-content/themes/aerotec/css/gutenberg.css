@@ -11,5 +11,5 @@
 }
 
 .block-editor img.components-responsive-wrapper__content[src$=".svg"] {
-	position: absolute!important;
+	position: absolute;
 }
