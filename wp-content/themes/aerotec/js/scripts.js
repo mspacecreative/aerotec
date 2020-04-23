@@ -9,12 +9,14 @@
 		}
 	});*/
 	
-	var paraHeight = $('.carousel').find('p').height();
+	function vertMiddleColPadding() {
+		var paraHeight = $('.carousel').find('p').height();
 	
-	$('.middle-lg').find('.col-container').css('padding-bottom', paraHeight);
-	
-	if ( $('.col-container').children().hasClass('carousel') ) {
-		$('.carousel').parent().css('padding-bottom', '0');
+		$('.middle-lg').find('.col-container').css('padding-bottom', paraHeight);
+		
+		if ( $('.col-container').children().hasClass('carousel') ) {
+			$('.carousel').parent().css('padding-bottom', '0');
+		}
 	}
 	
 	// HIDDEN CONTENT
@@ -141,6 +143,7 @@
 		pageContainerClear();
 		pgwGallery();
 		checkSize();
+		vertMiddleColPadding();
 		
 		$('.testimonials-slider, .photo-gallery').slick({
 		    dots: true,
@@ -168,6 +171,7 @@
 		bgImageContainer();
 		pageContainerClear();
 		checkSize();
+		vertMiddleColPadding();
 		
 		if ( $('.read-more').hasClass('expand') ) {
 			$(this).html('Close');
