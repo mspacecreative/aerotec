@@ -251,7 +251,7 @@ html {
 	font-size: 20px;
 }
 
-.panel-overlay li a, .panel-overlay p a {
+.panel-overlay ~ .hidden-content li a, .panel-overlay ~ .hidden-content p a {
 	color: #fff;
 	text-decoration: underline;
 	font-weight: bold;
