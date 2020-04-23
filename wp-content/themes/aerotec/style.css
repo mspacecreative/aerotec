@@ -565,6 +565,10 @@ span.wpcf7-list-item {
 	display: block;
 }
 
+.cta-buttons li a {
+	font-weight: bold;
+}
+
 .cta-button {
 	display: inline-block;
 	margin: 15px 0 0;

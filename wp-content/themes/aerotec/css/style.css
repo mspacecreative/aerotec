@@ -92,6 +92,7 @@ p ~ h3 {
 	padding: 15px 25px;
 	margin-top: auto;
 	align-self: flex-start;
+	font-weight: bold;
 }
 
 .slick-slide img {
