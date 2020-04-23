@@ -9,7 +9,7 @@
 		}
 	});*/
 	
-	var paraHeight = $('.carousel').children('p').height();
+	var paraHeight = $('.carousel').find('p').height();
 	
 	$('.middle-lg').find('.col-container').css('padding-bottom', paraHeight);
 	
