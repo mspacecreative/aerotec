@@ -3,8 +3,8 @@
 	// ADD PADDING TO COLUMN IF VERTICAL ALIGNMENT IS CENTERED AS THERE'S A CAPTION
 	var textCol = $('.col-container'),
 	var paraHeight = $('.carousel').children('p').height();
-	$('.middle-lg').find('.carousel').each(function() {
-		if ( $(this).children('p').length ) {
+	$('.middle-lg').each(function() {
+		if ( $(this).find('.carousel').children('p').length ) {
 			textCol.css('padding-bottom', paraHeight);
 		}
 	});
