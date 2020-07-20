@@ -222,7 +222,7 @@ html {
 
 .carousel .slick-next, .carousel .slick-prev {
 	transform: none;
-	margin-top: calc(-44px);
+	margin-top: calc(-24px);
 }
 
 .carousel.shop-tour .slick-next, .carousel.shop-tour .slick-prev {
